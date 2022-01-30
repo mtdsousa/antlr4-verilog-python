@@ -18,6 +18,9 @@ jobs:
           name: "Install system requirements"
           command: "sudo apt-get update && sudo apt-get install -y default-jre && sudo apt-get install -y default-jdk && sudo apt-get install -y curl"
       - run:
+          name: "Update git submodules"
+          command: "git pull --recurse-submodules"
+      - run:
           name: "Clean output directory"
           command: "rm antlr4-verilog/verilog/* && rm antlr4-verilog/systemverilog/*"
       - run:
