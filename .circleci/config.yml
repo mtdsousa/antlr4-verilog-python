@@ -5,7 +5,7 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  say-hello:
+  build:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
@@ -15,12 +15,26 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "Install system requirements"
+          command: "sudo apt-get install -y default-jre && sudo apt-get install -y default-jdk && sudo apt-get install -y curl"
+      - run:
+          name: "Clean output directory"
+          command: "rm antlr4-verilog/verilog/* && rm antlr4-verilog/systemverilog/*"
+      - run:
+          name: "Setup Python sub-packages"
+          command: "touch antlr4-verilog/verilog/__init__.py && touch antlr4-verilog/systemverilog/__init__.py"
+      - run:
+          name: "Generate Verilog ANTLR4 files"
+          command: >
+            java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/verilog/VerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogParser.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogPreprocessorParser.g4 -o antlr4-verilog/verilog
+      - run:
+          name: "Generate SystemVerilog ANTLR4 files"
+          command: >
+            java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 -o antlr4-verilog/systemverilog
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  build-test-workflow:
     jobs:
-      - say-hello
+      - build
