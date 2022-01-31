@@ -1,6 +1,6 @@
-module hello();
+module hello;
+    string s = "Hello";
     initial begin
-        string s = "Hello";
         $display("%s", s);
     end
 endmodule

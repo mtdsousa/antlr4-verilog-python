@@ -1,1 +1,3 @@
 *.class
+src/antlr4_verilog.egg-info
+env/
