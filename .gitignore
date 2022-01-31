@@ -1,4 +1,5 @@
 *.class
+__pycache__/
 dist/
 env/
 src/antlr4_verilog.egg-info
