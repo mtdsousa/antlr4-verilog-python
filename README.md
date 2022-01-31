@@ -5,7 +5,6 @@ Generated files from ANTLR4 for Verilog parsing
 Install this Python package
 ```
 python3 -m pip install antlr4_verilog
-# python3 -m pip install dist/latest.whl
 ``` 
 
 Use your own listener to walk through the AST:
