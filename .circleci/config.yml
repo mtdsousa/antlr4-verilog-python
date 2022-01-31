@@ -20,7 +20,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            python3 -m pip install dist/latest.whl
+            python3 -m pip install $CIRCLE_WORKING_DIRECTORY/dist/latest.whl
             python3 -m unittest test/test.py
 
 # Invoke jobs via workflows
