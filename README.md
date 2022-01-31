@@ -34,7 +34,7 @@ walker = ParseTreeWalker()
 walker.walk(listener, tree)
 print(listener.identifier) # 'ha'
 ```
-> Take a look at other listener methods for [Verilog](antlr4-verilog-python/src/antlr4_verilog/verilog/VerilogParserListener.py) and [SystemVerilog](antlr4-verilog-python/src/antlr4_verilog/systemverilog/SystemVerilogParserListener.py)
+> Take a look at other listener methods for [Verilog](src/antlr4_verilog/verilog/VerilogParserListener.py) and [SystemVerilog](src/antlr4_verilog/systemverilog/SystemVerilogParserListener.py)
 
 ## How to generate those files
 
