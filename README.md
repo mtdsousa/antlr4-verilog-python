@@ -1,5 +1,5 @@
-# ANTLR4 Verilog Grammar Files
-Generated files from ANTLR4 for Verilog parsing
+# ANTLR4-Verilog-Python
+Generated files from ANTLR4 for Verilog parsing in Python
 
 ![Build Status](https://img.shields.io/circleci/build/github/mtdsousa/antlr4-verilog-python?label=build-test)
 
