@@ -11,6 +11,9 @@ python3 -m pip install antlr4_verilog
 
 Use your own listener to walk through the AST:
 ```python
+from antlr4_verilog import InputStream, CommonTokenStream, ParseTreeWalker
+from antlr4_verilog.verilog import VerilogLexer, VerilogParser, VerilogParserListener
+
 design = '''
     module ha(a, b, sum, c);
         input a, b;
@@ -21,13 +24,13 @@ design = '''
     endmodule
 '''
 
-class ModuleIdentifierListener(VerilogParserListener.VerilogParserListener):
+class ModuleIdentifierListener(VerilogParserListener):
     def exitModule_declaration(self, ctx):
         self.identifier = ctx.module_identifier().getText()
 
-lexer = VerilogLexer.VerilogLexer(InputStream(design))
+lexer = VerilogLexer(InputStream(design))
 stream = CommonTokenStream(lexer)
-parser = VerilogParser.VerilogParser(stream)
+parser = VerilogParser(stream)
 
 tree = parser.source_text()
 listener = ModuleIdentifierListener()
