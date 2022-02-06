@@ -13,4 +13,7 @@ copies or substantial portions of the Software.
 
 '''
 
-__all__ = ['SystemVerilogLexer', 'SystemVerilogParser', 'SystemVerilogParserListener', 'SystemVerilogParserVisitor']
+from antlr4_verilog.systemverilog.SystemVerilogLexer import SystemVerilogLexer
+from antlr4_verilog.systemverilog.SystemVerilogParser import SystemVerilogParser
+from antlr4_verilog.systemverilog.SystemVerilogParserListener import SystemVerilogParserListener
+from antlr4_verilog.systemverilog.SystemVerilogParserVisitor import SystemVerilogParserVisitor

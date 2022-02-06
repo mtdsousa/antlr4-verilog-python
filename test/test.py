@@ -14,9 +14,8 @@ copies or substantial portions of the Software.
 '''
 import unittest
 
-from antlr4_verilog import *
-from antlr4_verilog.systemverilog import *
-from antlr4_verilog.verilog import *
+from antlr4_verilog import InputStream, CommonTokenStream, ParseTreeWalker
+from antlr4_verilog.verilog import VerilogLexer, VerilogParser, VerilogParserListener
 
 class TestVerilog(unittest.TestCase):
     def setUp(self):
@@ -29,14 +28,14 @@ class TestVerilog(unittest.TestCase):
                 assign c = a & b;
             endmodule
         '''
-        lexer = VerilogLexer.VerilogLexer(InputStream(design))
+        lexer = VerilogLexer(InputStream(design))
         stream = CommonTokenStream(lexer)
-        parser = VerilogParser.VerilogParser(stream)
+        parser = VerilogParser(stream)
         self.tree = parser.source_text()
         self.walker = ParseTreeWalker()
 
     def test_module_identifier(self):
-        class ModuleIdentifierListener(VerilogParserListener.VerilogParserListener):
+        class ModuleIdentifierListener(VerilogParserListener):
             def exitModule_declaration(self, ctx):
                 self.identifier = ctx.module_identifier().getText()
 
@@ -45,12 +44,12 @@ class TestVerilog(unittest.TestCase):
         self.assertEqual(listener.identifier, 'ha')
 
     def test_module_inputs(self):
-        class ModuleInputListener(VerilogParserListener.VerilogParserListener):
+        class ModuleInputListener(VerilogParserListener):
             def __init__(self):
                 self.declarations = []
             def exitInput_declaration(self, ctx):
                 for child in ctx.list_of_port_identifiers().getChildren():
-                    if isinstance(child, VerilogParser.VerilogParser.Port_identifierContext):
+                    if isinstance(child, VerilogParser.Port_identifierContext):
                         self.declarations.append(child.identifier().getText())
                     
 
