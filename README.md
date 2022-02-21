@@ -61,12 +61,12 @@ git clone https://github.com/antlr/grammars-v4.git extra/grammars-v4
 
 3. Call ANTLR for Verilog grammar:
 ```
-java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/verilog/VerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogParser.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogPreprocessorParser.g4 -o antlr4-verilog/verilog
+java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/verilog/VerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogParser.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogPreParser.g4 -o src/antlr4-verilog/verilog
 ```
 
 3. Call ANTLR for SystemVerilog grammar:
 ```
-java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 -o antlr4-verilog/systemverilog
+java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogPreParser.g4 -o src/antlr4-verilog/systemverilog
 ```
 
 ## How to test the grammar
@@ -76,7 +76,7 @@ java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool 
 java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Java -visitor `pwd`/extra/grammars-v4/verilog/verilog/VerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogParser.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogPreprocessorParser.g4 -o test/testrig/verilog
 ```
 ```
-java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Java -visitor `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 -o test/testrig/systemverilog
+java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Java -visitor `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogPreParser.g4 -o test/testrig/systemverilog
 ```
 
 2. Compile these recently generated files:
@@ -103,3 +103,6 @@ java -Xmx500M -cp "extra/antlr-4.9-complete.jar:test/testrig/verilog.jar:${CLASS
 java -Xmx500M -cp "extra/antlr-4.9-complete.jar:test/testrig/systemverilog.jar:${CLASSPATH}" org.antlr.v4.gui.TestRig SystemVerilog source_text test/testrig/test.sv -tree
 ```
 > You can use `-gui` to test it interactively
+
+## Acknowledgement
+We would like to appreciate the work from the ANTLR team and the Verilog/SystemVerilog grammar written by [Mustafa Said Ağca](https://github.com/msagca).

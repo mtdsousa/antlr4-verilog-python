@@ -1,4 +1,4 @@
-// Generated from /home/mtdsousa/workspace/antlr4-verilog/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
+// Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -46,6 +46,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitInclude_statement(SystemVerilogParser.Include_statementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#file_path_spec}.
+	 * @param ctx the parse tree
+	 */
+	void enterFile_path_spec(SystemVerilogParser.File_path_specContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#file_path_spec}.
+	 * @param ctx the parse tree
+	 */
+	void exitFile_path_spec(SystemVerilogParser.File_path_specContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#source_text}.
 	 * @param ctx the parse tree
@@ -196,16 +206,6 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitInterface_class_type(SystemVerilogParser.Interface_class_typeContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SystemVerilogParser#interface_class_declaration}.
-	 * @param ctx the parse tree
-	 */
-	void enterInterface_class_declaration(SystemVerilogParser.Interface_class_declarationContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SystemVerilogParser#interface_class_declaration}.
-	 * @param ctx the parse tree
-	 */
-	void exitInterface_class_declaration(SystemVerilogParser.Interface_class_declarationContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#interface_class_item}.
 	 * @param ctx the parse tree
@@ -386,6 +386,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitElaboration_system_task(SystemVerilogParser.Elaboration_system_taskContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#finish_number}.
+	 * @param ctx the parse tree
+	 */
+	void enterFinish_number(SystemVerilogParser.Finish_numberContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#finish_number}.
+	 * @param ctx the parse tree
+	 */
+	void exitFinish_number(SystemVerilogParser.Finish_numberContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#module_common_item}.
 	 * @param ctx the parse tree
@@ -1186,16 +1196,6 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitLifetime(SystemVerilogParser.LifetimeContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SystemVerilogParser#casting_type}.
-	 * @param ctx the parse tree
-	 */
-	void enterCasting_type(SystemVerilogParser.Casting_typeContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SystemVerilogParser#casting_type}.
-	 * @param ctx the parse tree
-	 */
-	void exitCasting_type(SystemVerilogParser.Casting_typeContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#data_type}.
 	 * @param ctx the parse tree
@@ -3387,6 +3387,276 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 */
 	void exitGenerate_item(SystemVerilogParser.Generate_itemContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_nonansi_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_nonansi_declaration(SystemVerilogParser.Udp_nonansi_declarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_nonansi_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_nonansi_declaration(SystemVerilogParser.Udp_nonansi_declarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_ansi_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_ansi_declaration(SystemVerilogParser.Udp_ansi_declarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_ansi_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_ansi_declaration(SystemVerilogParser.Udp_ansi_declarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_declaration(SystemVerilogParser.Udp_declarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_declaration(SystemVerilogParser.Udp_declarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_port_list}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_port_list(SystemVerilogParser.Udp_port_listContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_port_list}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_port_list(SystemVerilogParser.Udp_port_listContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_declaration_port_list}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_declaration_port_list(SystemVerilogParser.Udp_declaration_port_listContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_declaration_port_list}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_declaration_port_list(SystemVerilogParser.Udp_declaration_port_listContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_port_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_port_declaration(SystemVerilogParser.Udp_port_declarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_port_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_port_declaration(SystemVerilogParser.Udp_port_declarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_output_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_output_declaration(SystemVerilogParser.Udp_output_declarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_output_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_output_declaration(SystemVerilogParser.Udp_output_declarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_input_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_input_declaration(SystemVerilogParser.Udp_input_declarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_input_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_input_declaration(SystemVerilogParser.Udp_input_declarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_reg_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_reg_declaration(SystemVerilogParser.Udp_reg_declarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_reg_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_reg_declaration(SystemVerilogParser.Udp_reg_declarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_body}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_body(SystemVerilogParser.Udp_bodyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_body}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_body(SystemVerilogParser.Udp_bodyContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#combinational_body}.
+	 * @param ctx the parse tree
+	 */
+	void enterCombinational_body(SystemVerilogParser.Combinational_bodyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#combinational_body}.
+	 * @param ctx the parse tree
+	 */
+	void exitCombinational_body(SystemVerilogParser.Combinational_bodyContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#combinational_entry}.
+	 * @param ctx the parse tree
+	 */
+	void enterCombinational_entry(SystemVerilogParser.Combinational_entryContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#combinational_entry}.
+	 * @param ctx the parse tree
+	 */
+	void exitCombinational_entry(SystemVerilogParser.Combinational_entryContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#sequential_body}.
+	 * @param ctx the parse tree
+	 */
+	void enterSequential_body(SystemVerilogParser.Sequential_bodyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#sequential_body}.
+	 * @param ctx the parse tree
+	 */
+	void exitSequential_body(SystemVerilogParser.Sequential_bodyContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_initial_statement}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_initial_statement(SystemVerilogParser.Udp_initial_statementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_initial_statement}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_initial_statement(SystemVerilogParser.Udp_initial_statementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#init_val}.
+	 * @param ctx the parse tree
+	 */
+	void enterInit_val(SystemVerilogParser.Init_valContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#init_val}.
+	 * @param ctx the parse tree
+	 */
+	void exitInit_val(SystemVerilogParser.Init_valContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#sequential_entry}.
+	 * @param ctx the parse tree
+	 */
+	void enterSequential_entry(SystemVerilogParser.Sequential_entryContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#sequential_entry}.
+	 * @param ctx the parse tree
+	 */
+	void exitSequential_entry(SystemVerilogParser.Sequential_entryContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#seq_input_list}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeq_input_list(SystemVerilogParser.Seq_input_listContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#seq_input_list}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeq_input_list(SystemVerilogParser.Seq_input_listContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#level_input_list}.
+	 * @param ctx the parse tree
+	 */
+	void enterLevel_input_list(SystemVerilogParser.Level_input_listContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#level_input_list}.
+	 * @param ctx the parse tree
+	 */
+	void exitLevel_input_list(SystemVerilogParser.Level_input_listContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#edge_input_list}.
+	 * @param ctx the parse tree
+	 */
+	void enterEdge_input_list(SystemVerilogParser.Edge_input_listContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#edge_input_list}.
+	 * @param ctx the parse tree
+	 */
+	void exitEdge_input_list(SystemVerilogParser.Edge_input_listContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#edge_indicator}.
+	 * @param ctx the parse tree
+	 */
+	void enterEdge_indicator(SystemVerilogParser.Edge_indicatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#edge_indicator}.
+	 * @param ctx the parse tree
+	 */
+	void exitEdge_indicator(SystemVerilogParser.Edge_indicatorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#current_state}.
+	 * @param ctx the parse tree
+	 */
+	void enterCurrent_state(SystemVerilogParser.Current_stateContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#current_state}.
+	 * @param ctx the parse tree
+	 */
+	void exitCurrent_state(SystemVerilogParser.Current_stateContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#next_state}.
+	 * @param ctx the parse tree
+	 */
+	void enterNext_state(SystemVerilogParser.Next_stateContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#next_state}.
+	 * @param ctx the parse tree
+	 */
+	void exitNext_state(SystemVerilogParser.Next_stateContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#output_symbol}.
+	 * @param ctx the parse tree
+	 */
+	void enterOutput_symbol(SystemVerilogParser.Output_symbolContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#output_symbol}.
+	 * @param ctx the parse tree
+	 */
+	void exitOutput_symbol(SystemVerilogParser.Output_symbolContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#level_symbol}.
+	 * @param ctx the parse tree
+	 */
+	void enterLevel_symbol(SystemVerilogParser.Level_symbolContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#level_symbol}.
+	 * @param ctx the parse tree
+	 */
+	void exitLevel_symbol(SystemVerilogParser.Level_symbolContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#edge_symbol}.
+	 * @param ctx the parse tree
+	 */
+	void enterEdge_symbol(SystemVerilogParser.Edge_symbolContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#edge_symbol}.
+	 * @param ctx the parse tree
+	 */
+	void exitEdge_symbol(SystemVerilogParser.Edge_symbolContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_instantiation}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_instantiation(SystemVerilogParser.Udp_instantiationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_instantiation}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_instantiation(SystemVerilogParser.Udp_instantiationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_instance}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_instance(SystemVerilogParser.Udp_instanceContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_instance}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_instance(SystemVerilogParser.Udp_instanceContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#continuous_assign}.
 	 * @param ctx the parse tree
 	 */
@@ -4827,6 +5097,366 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 */
 	void exitPolarity_operator(SystemVerilogParser.Polarity_operatorContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#system_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterSystem_timing_check(SystemVerilogParser.System_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#system_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitSystem_timing_check(SystemVerilogParser.System_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#setup_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetup_timing_check(SystemVerilogParser.Setup_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#setup_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetup_timing_check(SystemVerilogParser.Setup_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#hold_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterHold_timing_check(SystemVerilogParser.Hold_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#hold_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitHold_timing_check(SystemVerilogParser.Hold_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#setuphold_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterSetuphold_timing_check(SystemVerilogParser.Setuphold_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#setuphold_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitSetuphold_timing_check(SystemVerilogParser.Setuphold_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#recovery_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterRecovery_timing_check(SystemVerilogParser.Recovery_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#recovery_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitRecovery_timing_check(SystemVerilogParser.Recovery_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#removal_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterRemoval_timing_check(SystemVerilogParser.Removal_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#removal_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitRemoval_timing_check(SystemVerilogParser.Removal_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#recrem_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterRecrem_timing_check(SystemVerilogParser.Recrem_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#recrem_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitRecrem_timing_check(SystemVerilogParser.Recrem_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#skew_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterSkew_timing_check(SystemVerilogParser.Skew_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#skew_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitSkew_timing_check(SystemVerilogParser.Skew_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#timeskew_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterTimeskew_timing_check(SystemVerilogParser.Timeskew_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#timeskew_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitTimeskew_timing_check(SystemVerilogParser.Timeskew_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#fullskew_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterFullskew_timing_check(SystemVerilogParser.Fullskew_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#fullskew_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitFullskew_timing_check(SystemVerilogParser.Fullskew_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#period_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterPeriod_timing_check(SystemVerilogParser.Period_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#period_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitPeriod_timing_check(SystemVerilogParser.Period_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#width_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterWidth_timing_check(SystemVerilogParser.Width_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#width_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitWidth_timing_check(SystemVerilogParser.Width_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#nochange_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void enterNochange_timing_check(SystemVerilogParser.Nochange_timing_checkContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#nochange_timing_check}.
+	 * @param ctx the parse tree
+	 */
+	void exitNochange_timing_check(SystemVerilogParser.Nochange_timing_checkContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#timecheck_condition}.
+	 * @param ctx the parse tree
+	 */
+	void enterTimecheck_condition(SystemVerilogParser.Timecheck_conditionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#timecheck_condition}.
+	 * @param ctx the parse tree
+	 */
+	void exitTimecheck_condition(SystemVerilogParser.Timecheck_conditionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#controlled_reference_event}.
+	 * @param ctx the parse tree
+	 */
+	void enterControlled_reference_event(SystemVerilogParser.Controlled_reference_eventContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#controlled_reference_event}.
+	 * @param ctx the parse tree
+	 */
+	void exitControlled_reference_event(SystemVerilogParser.Controlled_reference_eventContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#data_event}.
+	 * @param ctx the parse tree
+	 */
+	void enterData_event(SystemVerilogParser.Data_eventContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#data_event}.
+	 * @param ctx the parse tree
+	 */
+	void exitData_event(SystemVerilogParser.Data_eventContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#delayed_data}.
+	 * @param ctx the parse tree
+	 */
+	void enterDelayed_data(SystemVerilogParser.Delayed_dataContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#delayed_data}.
+	 * @param ctx the parse tree
+	 */
+	void exitDelayed_data(SystemVerilogParser.Delayed_dataContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#delayed_reference}.
+	 * @param ctx the parse tree
+	 */
+	void enterDelayed_reference(SystemVerilogParser.Delayed_referenceContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#delayed_reference}.
+	 * @param ctx the parse tree
+	 */
+	void exitDelayed_reference(SystemVerilogParser.Delayed_referenceContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#end_edge_offset}.
+	 * @param ctx the parse tree
+	 */
+	void enterEnd_edge_offset(SystemVerilogParser.End_edge_offsetContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#end_edge_offset}.
+	 * @param ctx the parse tree
+	 */
+	void exitEnd_edge_offset(SystemVerilogParser.End_edge_offsetContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#event_based_flag}.
+	 * @param ctx the parse tree
+	 */
+	void enterEvent_based_flag(SystemVerilogParser.Event_based_flagContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#event_based_flag}.
+	 * @param ctx the parse tree
+	 */
+	void exitEvent_based_flag(SystemVerilogParser.Event_based_flagContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#notifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterNotifier(SystemVerilogParser.NotifierContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#notifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitNotifier(SystemVerilogParser.NotifierContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#reference_event}.
+	 * @param ctx the parse tree
+	 */
+	void enterReference_event(SystemVerilogParser.Reference_eventContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#reference_event}.
+	 * @param ctx the parse tree
+	 */
+	void exitReference_event(SystemVerilogParser.Reference_eventContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#remain_active_flag}.
+	 * @param ctx the parse tree
+	 */
+	void enterRemain_active_flag(SystemVerilogParser.Remain_active_flagContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#remain_active_flag}.
+	 * @param ctx the parse tree
+	 */
+	void exitRemain_active_flag(SystemVerilogParser.Remain_active_flagContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#timestamp_condition}.
+	 * @param ctx the parse tree
+	 */
+	void enterTimestamp_condition(SystemVerilogParser.Timestamp_conditionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#timestamp_condition}.
+	 * @param ctx the parse tree
+	 */
+	void exitTimestamp_condition(SystemVerilogParser.Timestamp_conditionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#start_edge_offset}.
+	 * @param ctx the parse tree
+	 */
+	void enterStart_edge_offset(SystemVerilogParser.Start_edge_offsetContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#start_edge_offset}.
+	 * @param ctx the parse tree
+	 */
+	void exitStart_edge_offset(SystemVerilogParser.Start_edge_offsetContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#threshold}.
+	 * @param ctx the parse tree
+	 */
+	void enterThreshold(SystemVerilogParser.ThresholdContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#threshold}.
+	 * @param ctx the parse tree
+	 */
+	void exitThreshold(SystemVerilogParser.ThresholdContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#timing_check_limit}.
+	 * @param ctx the parse tree
+	 */
+	void enterTiming_check_limit(SystemVerilogParser.Timing_check_limitContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#timing_check_limit}.
+	 * @param ctx the parse tree
+	 */
+	void exitTiming_check_limit(SystemVerilogParser.Timing_check_limitContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#timing_check_event}.
+	 * @param ctx the parse tree
+	 */
+	void enterTiming_check_event(SystemVerilogParser.Timing_check_eventContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#timing_check_event}.
+	 * @param ctx the parse tree
+	 */
+	void exitTiming_check_event(SystemVerilogParser.Timing_check_eventContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#controlled_timing_check_event}.
+	 * @param ctx the parse tree
+	 */
+	void enterControlled_timing_check_event(SystemVerilogParser.Controlled_timing_check_eventContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#controlled_timing_check_event}.
+	 * @param ctx the parse tree
+	 */
+	void exitControlled_timing_check_event(SystemVerilogParser.Controlled_timing_check_eventContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#timing_check_event_control}.
+	 * @param ctx the parse tree
+	 */
+	void enterTiming_check_event_control(SystemVerilogParser.Timing_check_event_controlContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#timing_check_event_control}.
+	 * @param ctx the parse tree
+	 */
+	void exitTiming_check_event_control(SystemVerilogParser.Timing_check_event_controlContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#specify_terminal_descriptor}.
+	 * @param ctx the parse tree
+	 */
+	void enterSpecify_terminal_descriptor(SystemVerilogParser.Specify_terminal_descriptorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#specify_terminal_descriptor}.
+	 * @param ctx the parse tree
+	 */
+	void exitSpecify_terminal_descriptor(SystemVerilogParser.Specify_terminal_descriptorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#edge_control_specifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterEdge_control_specifier(SystemVerilogParser.Edge_control_specifierContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#edge_control_specifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitEdge_control_specifier(SystemVerilogParser.Edge_control_specifierContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#edge_descriptor}.
+	 * @param ctx the parse tree
+	 */
+	void enterEdge_descriptor(SystemVerilogParser.Edge_descriptorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#edge_descriptor}.
+	 * @param ctx the parse tree
+	 */
+	void exitEdge_descriptor(SystemVerilogParser.Edge_descriptorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#timing_check_condition}.
+	 * @param ctx the parse tree
+	 */
+	void enterTiming_check_condition(SystemVerilogParser.Timing_check_conditionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#timing_check_condition}.
+	 * @param ctx the parse tree
+	 */
+	void exitTiming_check_condition(SystemVerilogParser.Timing_check_conditionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#scalar_timing_check_condition}.
+	 * @param ctx the parse tree
+	 */
+	void enterScalar_timing_check_condition(SystemVerilogParser.Scalar_timing_check_conditionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#scalar_timing_check_condition}.
+	 * @param ctx the parse tree
+	 */
+	void exitScalar_timing_check_condition(SystemVerilogParser.Scalar_timing_check_conditionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#scalar_constant}.
+	 * @param ctx the parse tree
+	 */
+	void enterScalar_constant(SystemVerilogParser.Scalar_constantContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#scalar_constant}.
+	 * @param ctx the parse tree
+	 */
+	void exitScalar_constant(SystemVerilogParser.Scalar_constantContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#concatenation}.
 	 * @param ctx the parse tree
 	 */
@@ -4957,16 +5587,6 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 */
 	void exitEmpty_unpacked_array_concatenation(SystemVerilogParser.Empty_unpacked_array_concatenationContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SystemVerilogParser#constant_function_call}.
-	 * @param ctx the parse tree
-	 */
-	void enterConstant_function_call(SystemVerilogParser.Constant_function_callContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SystemVerilogParser#constant_function_call}.
-	 * @param ctx the parse tree
-	 */
-	void exitConstant_function_call(SystemVerilogParser.Constant_function_callContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#tf_call}.
 	 * @param ctx the parse tree
 	 */
@@ -5017,6 +5637,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 */
 	void exitList_of_arguments(SystemVerilogParser.List_of_argumentsContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#method_call}.
+	 * @param ctx the parse tree
+	 */
+	void enterMethod_call(SystemVerilogParser.Method_callContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#method_call}.
+	 * @param ctx the parse tree
+	 */
+	void exitMethod_call(SystemVerilogParser.Method_callContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#method_call_body}.
 	 * @param ctx the parse tree
 	 */
@@ -5056,6 +5686,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitRandomize_call(SystemVerilogParser.Randomize_callContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#method_call_root}.
+	 * @param ctx the parse tree
+	 */
+	void enterMethod_call_root(SystemVerilogParser.Method_call_rootContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#method_call_root}.
+	 * @param ctx the parse tree
+	 */
+	void exitMethod_call_root(SystemVerilogParser.Method_call_rootContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#array_method_name}.
 	 * @param ctx the parse tree
@@ -5297,6 +5937,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 */
 	void exitPrimary_literal(SystemVerilogParser.Primary_literalContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#time_literal}.
+	 * @param ctx the parse tree
+	 */
+	void enterTime_literal(SystemVerilogParser.Time_literalContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#time_literal}.
+	 * @param ctx the parse tree
+	 */
+	void exitTime_literal(SystemVerilogParser.Time_literalContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#implicit_class_handle}.
 	 * @param ctx the parse tree
 	 */
@@ -5366,16 +6016,6 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitConstant_let_expression(SystemVerilogParser.Constant_let_expressionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SystemVerilogParser#cast}.
-	 * @param ctx the parse tree
-	 */
-	void enterCast(SystemVerilogParser.CastContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SystemVerilogParser#cast}.
-	 * @param ctx the parse tree
-	 */
-	void exitCast(SystemVerilogParser.CastContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#net_lvalue}.
 	 * @param ctx the parse tree
@@ -5466,6 +6106,96 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitNumber(SystemVerilogParser.NumberContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#integral_number}.
+	 * @param ctx the parse tree
+	 */
+	void enterIntegral_number(SystemVerilogParser.Integral_numberContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#integral_number}.
+	 * @param ctx the parse tree
+	 */
+	void exitIntegral_number(SystemVerilogParser.Integral_numberContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#decimal_number}.
+	 * @param ctx the parse tree
+	 */
+	void enterDecimal_number(SystemVerilogParser.Decimal_numberContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#decimal_number}.
+	 * @param ctx the parse tree
+	 */
+	void exitDecimal_number(SystemVerilogParser.Decimal_numberContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#binary_number}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinary_number(SystemVerilogParser.Binary_numberContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#binary_number}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinary_number(SystemVerilogParser.Binary_numberContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#octal_number}.
+	 * @param ctx the parse tree
+	 */
+	void enterOctal_number(SystemVerilogParser.Octal_numberContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#octal_number}.
+	 * @param ctx the parse tree
+	 */
+	void exitOctal_number(SystemVerilogParser.Octal_numberContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#hex_number}.
+	 * @param ctx the parse tree
+	 */
+	void enterHex_number(SystemVerilogParser.Hex_numberContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#hex_number}.
+	 * @param ctx the parse tree
+	 */
+	void exitHex_number(SystemVerilogParser.Hex_numberContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#real_number}.
+	 * @param ctx the parse tree
+	 */
+	void enterReal_number(SystemVerilogParser.Real_numberContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#real_number}.
+	 * @param ctx the parse tree
+	 */
+	void exitReal_number(SystemVerilogParser.Real_numberContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#unsigned_number}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnsigned_number(SystemVerilogParser.Unsigned_numberContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#unsigned_number}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnsigned_number(SystemVerilogParser.Unsigned_numberContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#unbased_unsized_literal}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnbased_unsized_literal(SystemVerilogParser.Unbased_unsized_literalContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#unbased_unsized_literal}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnbased_unsized_literal(SystemVerilogParser.Unbased_unsized_literalContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#string_literal}.
+	 * @param ctx the parse tree
+	 */
+	void enterString_literal(SystemVerilogParser.String_literalContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#string_literal}.
+	 * @param ctx the parse tree
+	 */
+	void exitString_literal(SystemVerilogParser.String_literalContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#attribute_instance}.
 	 * @param ctx the parse tree
@@ -5676,6 +6406,26 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitEnum_identifier(SystemVerilogParser.Enum_identifierContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#escaped_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterEscaped_identifier(SystemVerilogParser.Escaped_identifierContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#escaped_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitEscaped_identifier(SystemVerilogParser.Escaped_identifierContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#formal_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterFormal_identifier(SystemVerilogParser.Formal_identifierContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#formal_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitFormal_identifier(SystemVerilogParser.Formal_identifierContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#formal_port_identifier}.
 	 * @param ctx the parse tree
@@ -6177,6 +6927,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 */
 	void exitSignal_identifier(SystemVerilogParser.Signal_identifierContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#simple_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterSimple_identifier(SystemVerilogParser.Simple_identifierContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#simple_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitSimple_identifier(SystemVerilogParser.Simple_identifierContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#specparam_identifier}.
 	 * @param ctx the parse tree
 	 */
@@ -6186,6 +6946,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitSpecparam_identifier(SystemVerilogParser.Specparam_identifierContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#system_tf_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterSystem_tf_identifier(SystemVerilogParser.System_tf_identifierContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#system_tf_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitSystem_tf_identifier(SystemVerilogParser.System_tf_identifierContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#task_identifier}.
 	 * @param ctx the parse tree
@@ -6207,6 +6977,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 */
 	void exitTf_identifier(SystemVerilogParser.Tf_identifierContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#terminal_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterTerminal_identifier(SystemVerilogParser.Terminal_identifierContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#terminal_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitTerminal_identifier(SystemVerilogParser.Terminal_identifierContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#topmodule_identifier}.
 	 * @param ctx the parse tree
 	 */
@@ -6226,6 +7006,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitType_identifier(SystemVerilogParser.Type_identifierContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#udp_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterUdp_identifier(SystemVerilogParser.Udp_identifierContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#udp_identifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitUdp_identifier(SystemVerilogParser.Udp_identifierContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#variable_identifier}.
 	 * @param ctx the parse tree

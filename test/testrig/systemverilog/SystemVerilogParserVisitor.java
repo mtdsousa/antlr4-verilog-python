@@ -1,4 +1,4 @@
-// Generated from /home/mtdsousa/workspace/antlr4-verilog/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
+// Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -33,6 +33,12 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitInclude_statement(SystemVerilogParser.Include_statementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#file_path_spec}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFile_path_spec(SystemVerilogParser.File_path_specContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#source_text}.
 	 * @param ctx the parse tree
@@ -123,12 +129,6 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitInterface_class_type(SystemVerilogParser.Interface_class_typeContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SystemVerilogParser#interface_class_declaration}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitInterface_class_declaration(SystemVerilogParser.Interface_class_declarationContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#interface_class_item}.
 	 * @param ctx the parse tree
@@ -237,6 +237,12 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitElaboration_system_task(SystemVerilogParser.Elaboration_system_taskContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#finish_number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFinish_number(SystemVerilogParser.Finish_numberContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#module_common_item}.
 	 * @param ctx the parse tree
@@ -717,12 +723,6 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitLifetime(SystemVerilogParser.LifetimeContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SystemVerilogParser#casting_type}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitCasting_type(SystemVerilogParser.Casting_typeContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#data_type}.
 	 * @param ctx the parse tree
@@ -2038,6 +2038,168 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitGenerate_item(SystemVerilogParser.Generate_itemContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_nonansi_declaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_nonansi_declaration(SystemVerilogParser.Udp_nonansi_declarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_ansi_declaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_ansi_declaration(SystemVerilogParser.Udp_ansi_declarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_declaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_declaration(SystemVerilogParser.Udp_declarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_port_list}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_port_list(SystemVerilogParser.Udp_port_listContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_declaration_port_list}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_declaration_port_list(SystemVerilogParser.Udp_declaration_port_listContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_port_declaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_port_declaration(SystemVerilogParser.Udp_port_declarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_output_declaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_output_declaration(SystemVerilogParser.Udp_output_declarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_input_declaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_input_declaration(SystemVerilogParser.Udp_input_declarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_reg_declaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_reg_declaration(SystemVerilogParser.Udp_reg_declarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_body}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_body(SystemVerilogParser.Udp_bodyContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#combinational_body}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCombinational_body(SystemVerilogParser.Combinational_bodyContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#combinational_entry}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCombinational_entry(SystemVerilogParser.Combinational_entryContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#sequential_body}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSequential_body(SystemVerilogParser.Sequential_bodyContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_initial_statement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_initial_statement(SystemVerilogParser.Udp_initial_statementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#init_val}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInit_val(SystemVerilogParser.Init_valContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#sequential_entry}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSequential_entry(SystemVerilogParser.Sequential_entryContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#seq_input_list}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeq_input_list(SystemVerilogParser.Seq_input_listContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#level_input_list}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLevel_input_list(SystemVerilogParser.Level_input_listContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#edge_input_list}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEdge_input_list(SystemVerilogParser.Edge_input_listContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#edge_indicator}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEdge_indicator(SystemVerilogParser.Edge_indicatorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#current_state}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCurrent_state(SystemVerilogParser.Current_stateContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#next_state}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNext_state(SystemVerilogParser.Next_stateContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#output_symbol}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOutput_symbol(SystemVerilogParser.Output_symbolContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#level_symbol}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLevel_symbol(SystemVerilogParser.Level_symbolContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#edge_symbol}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEdge_symbol(SystemVerilogParser.Edge_symbolContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_instantiation}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_instantiation(SystemVerilogParser.Udp_instantiationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_instance}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_instance(SystemVerilogParser.Udp_instanceContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#continuous_assign}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -2902,6 +3064,222 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPolarity_operator(SystemVerilogParser.Polarity_operatorContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#system_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSystem_timing_check(SystemVerilogParser.System_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#setup_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSetup_timing_check(SystemVerilogParser.Setup_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#hold_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitHold_timing_check(SystemVerilogParser.Hold_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#setuphold_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSetuphold_timing_check(SystemVerilogParser.Setuphold_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#recovery_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRecovery_timing_check(SystemVerilogParser.Recovery_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#removal_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRemoval_timing_check(SystemVerilogParser.Removal_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#recrem_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRecrem_timing_check(SystemVerilogParser.Recrem_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#skew_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSkew_timing_check(SystemVerilogParser.Skew_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#timeskew_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTimeskew_timing_check(SystemVerilogParser.Timeskew_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#fullskew_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFullskew_timing_check(SystemVerilogParser.Fullskew_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#period_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPeriod_timing_check(SystemVerilogParser.Period_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#width_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitWidth_timing_check(SystemVerilogParser.Width_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#nochange_timing_check}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNochange_timing_check(SystemVerilogParser.Nochange_timing_checkContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#timecheck_condition}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTimecheck_condition(SystemVerilogParser.Timecheck_conditionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#controlled_reference_event}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitControlled_reference_event(SystemVerilogParser.Controlled_reference_eventContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#data_event}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitData_event(SystemVerilogParser.Data_eventContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#delayed_data}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDelayed_data(SystemVerilogParser.Delayed_dataContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#delayed_reference}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDelayed_reference(SystemVerilogParser.Delayed_referenceContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#end_edge_offset}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEnd_edge_offset(SystemVerilogParser.End_edge_offsetContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#event_based_flag}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEvent_based_flag(SystemVerilogParser.Event_based_flagContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#notifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNotifier(SystemVerilogParser.NotifierContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#reference_event}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitReference_event(SystemVerilogParser.Reference_eventContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#remain_active_flag}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRemain_active_flag(SystemVerilogParser.Remain_active_flagContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#timestamp_condition}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTimestamp_condition(SystemVerilogParser.Timestamp_conditionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#start_edge_offset}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStart_edge_offset(SystemVerilogParser.Start_edge_offsetContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#threshold}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitThreshold(SystemVerilogParser.ThresholdContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#timing_check_limit}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTiming_check_limit(SystemVerilogParser.Timing_check_limitContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#timing_check_event}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTiming_check_event(SystemVerilogParser.Timing_check_eventContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#controlled_timing_check_event}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitControlled_timing_check_event(SystemVerilogParser.Controlled_timing_check_eventContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#timing_check_event_control}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTiming_check_event_control(SystemVerilogParser.Timing_check_event_controlContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#specify_terminal_descriptor}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSpecify_terminal_descriptor(SystemVerilogParser.Specify_terminal_descriptorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#edge_control_specifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEdge_control_specifier(SystemVerilogParser.Edge_control_specifierContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#edge_descriptor}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEdge_descriptor(SystemVerilogParser.Edge_descriptorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#timing_check_condition}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTiming_check_condition(SystemVerilogParser.Timing_check_conditionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#scalar_timing_check_condition}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitScalar_timing_check_condition(SystemVerilogParser.Scalar_timing_check_conditionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#scalar_constant}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitScalar_constant(SystemVerilogParser.Scalar_constantContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#concatenation}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -2980,12 +3358,6 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitEmpty_unpacked_array_concatenation(SystemVerilogParser.Empty_unpacked_array_concatenationContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SystemVerilogParser#constant_function_call}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitConstant_function_call(SystemVerilogParser.Constant_function_callContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#tf_call}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -3016,6 +3388,12 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitList_of_arguments(SystemVerilogParser.List_of_argumentsContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#method_call}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMethod_call(SystemVerilogParser.Method_callContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#method_call_body}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -3039,6 +3417,12 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitRandomize_call(SystemVerilogParser.Randomize_callContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#method_call_root}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMethod_call_root(SystemVerilogParser.Method_call_rootContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#array_method_name}.
 	 * @param ctx the parse tree
@@ -3184,6 +3568,12 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPrimary_literal(SystemVerilogParser.Primary_literalContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#time_literal}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTime_literal(SystemVerilogParser.Time_literalContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#implicit_class_handle}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -3225,12 +3615,6 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitConstant_let_expression(SystemVerilogParser.Constant_let_expressionContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SystemVerilogParser#cast}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitCast(SystemVerilogParser.CastContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#net_lvalue}.
 	 * @param ctx the parse tree
@@ -3285,6 +3669,60 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitNumber(SystemVerilogParser.NumberContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#integral_number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIntegral_number(SystemVerilogParser.Integral_numberContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#decimal_number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDecimal_number(SystemVerilogParser.Decimal_numberContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#binary_number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBinary_number(SystemVerilogParser.Binary_numberContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#octal_number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOctal_number(SystemVerilogParser.Octal_numberContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#hex_number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitHex_number(SystemVerilogParser.Hex_numberContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#real_number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitReal_number(SystemVerilogParser.Real_numberContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#unsigned_number}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUnsigned_number(SystemVerilogParser.Unsigned_numberContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#unbased_unsized_literal}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUnbased_unsized_literal(SystemVerilogParser.Unbased_unsized_literalContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#string_literal}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitString_literal(SystemVerilogParser.String_literalContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#attribute_instance}.
 	 * @param ctx the parse tree
@@ -3411,6 +3849,18 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitEnum_identifier(SystemVerilogParser.Enum_identifierContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#escaped_identifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEscaped_identifier(SystemVerilogParser.Escaped_identifierContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#formal_identifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFormal_identifier(SystemVerilogParser.Formal_identifierContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#formal_port_identifier}.
 	 * @param ctx the parse tree
@@ -3712,11 +4162,23 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitSignal_identifier(SystemVerilogParser.Signal_identifierContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#simple_identifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSimple_identifier(SystemVerilogParser.Simple_identifierContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#specparam_identifier}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitSpecparam_identifier(SystemVerilogParser.Specparam_identifierContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#system_tf_identifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSystem_tf_identifier(SystemVerilogParser.System_tf_identifierContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#task_identifier}.
 	 * @param ctx the parse tree
@@ -3730,6 +4192,12 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitTf_identifier(SystemVerilogParser.Tf_identifierContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#terminal_identifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTerminal_identifier(SystemVerilogParser.Terminal_identifierContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#topmodule_identifier}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -3741,6 +4209,12 @@ public interface SystemVerilogParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitType_identifier(SystemVerilogParser.Type_identifierContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SystemVerilogParser#udp_identifier}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitUdp_identifier(SystemVerilogParser.Udp_identifierContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SystemVerilogParser#variable_identifier}.
 	 * @param ctx the parse tree

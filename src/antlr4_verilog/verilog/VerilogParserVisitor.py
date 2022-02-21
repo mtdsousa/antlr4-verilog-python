@@ -1,4 +1,4 @@
-# Generated from /home/mtdsousa/workspace/antlr4-verilog/build/grammars-v4/verilog/verilog/VerilogParser.g4 by ANTLR 4.9
+# Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/verilog/VerilogParser.g4 by ANTLR 4.9
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .VerilogParser import VerilogParser
@@ -8,321 +8,6 @@ else:
 # This class defines a complete generic visitor for a parse tree produced by VerilogParser.
 
 class VerilogParserVisitor(ParseTreeVisitor):
-
-    # Visit a parse tree produced by VerilogParser#display_tasks.
-    def visitDisplay_tasks(self, ctx:VerilogParser.Display_tasksContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#display_task_name.
-    def visitDisplay_task_name(self, ctx:VerilogParser.Display_task_nameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#list_of_arguments.
-    def visitList_of_arguments(self, ctx:VerilogParser.List_of_argumentsContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#argument.
-    def visitArgument(self, ctx:VerilogParser.ArgumentContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#strobe_tasks.
-    def visitStrobe_tasks(self, ctx:VerilogParser.Strobe_tasksContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#strobe_task_name.
-    def visitStrobe_task_name(self, ctx:VerilogParser.Strobe_task_nameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#monitor_tasks.
-    def visitMonitor_tasks(self, ctx:VerilogParser.Monitor_tasksContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#monitor_task_name.
-    def visitMonitor_task_name(self, ctx:VerilogParser.Monitor_task_nameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#file_open_function.
-    def visitFile_open_function(self, ctx:VerilogParser.File_open_functionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#file_close_task.
-    def visitFile_close_task(self, ctx:VerilogParser.File_close_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#multi_channel_descriptor.
-    def visitMulti_channel_descriptor(self, ctx:VerilogParser.Multi_channel_descriptorContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#fd.
-    def visitFd(self, ctx:VerilogParser.FdContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#file_name.
-    def visitFile_name(self, ctx:VerilogParser.File_nameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#type_.
-    def visitType_(self, ctx:VerilogParser.Type_Context):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#file_output_tasks.
-    def visitFile_output_tasks(self, ctx:VerilogParser.File_output_tasksContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#file_output_task_name.
-    def visitFile_output_task_name(self, ctx:VerilogParser.File_output_task_nameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#load_memory_tasks.
-    def visitLoad_memory_tasks(self, ctx:VerilogParser.Load_memory_tasksContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#memory_name.
-    def visitMemory_name(self, ctx:VerilogParser.Memory_nameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#start_addr.
-    def visitStart_addr(self, ctx:VerilogParser.Start_addrContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#finish_addr.
-    def visitFinish_addr(self, ctx:VerilogParser.Finish_addrContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#filename.
-    def visitFilename(self, ctx:VerilogParser.FilenameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#finish_task.
-    def visitFinish_task(self, ctx:VerilogParser.Finish_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#finish_number.
-    def visitFinish_number(self, ctx:VerilogParser.Finish_numberContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#stop_task.
-    def visitStop_task(self, ctx:VerilogParser.Stop_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#time_function.
-    def visitTime_function(self, ctx:VerilogParser.Time_functionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#stime_function.
-    def visitStime_function(self, ctx:VerilogParser.Stime_functionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#realtime_function.
-    def visitRealtime_function(self, ctx:VerilogParser.Realtime_functionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#conversion_functions.
-    def visitConversion_functions(self, ctx:VerilogParser.Conversion_functionsContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#conversion_function_name.
-    def visitConversion_function_name(self, ctx:VerilogParser.Conversion_function_nameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#constant_argument.
-    def visitConstant_argument(self, ctx:VerilogParser.Constant_argumentContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#random_function.
-    def visitRandom_function(self, ctx:VerilogParser.Random_functionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#seed.
-    def visitSeed(self, ctx:VerilogParser.SeedContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dist_functions.
-    def visitDist_functions(self, ctx:VerilogParser.Dist_functionsContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#start_.
-    def visitStart_(self, ctx:VerilogParser.Start_Context):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#end.
-    def visitEnd(self, ctx:VerilogParser.EndContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#mean.
-    def visitMean(self, ctx:VerilogParser.MeanContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#standard_deviation.
-    def visitStandard_deviation(self, ctx:VerilogParser.Standard_deviationContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#degree_of_freedom.
-    def visitDegree_of_freedom(self, ctx:VerilogParser.Degree_of_freedomContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#k_stage.
-    def visitK_stage(self, ctx:VerilogParser.K_stageContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#math_functions.
-    def visitMath_functions(self, ctx:VerilogParser.Math_functionsContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#integer_math_functions.
-    def visitInteger_math_functions(self, ctx:VerilogParser.Integer_math_functionsContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#real_math_functions.
-    def visitReal_math_functions(self, ctx:VerilogParser.Real_math_functionsContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#single_argument_real_math_function_name.
-    def visitSingle_argument_real_math_function_name(self, ctx:VerilogParser.Single_argument_real_math_function_nameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#double_argument_real_math_function_name.
-    def visitDouble_argument_real_math_function_name(self, ctx:VerilogParser.Double_argument_real_math_function_nameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpfile_task.
-    def visitDumpfile_task(self, ctx:VerilogParser.Dumpfile_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpvars_task.
-    def visitDumpvars_task(self, ctx:VerilogParser.Dumpvars_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#list_of_modules_or_variables.
-    def visitList_of_modules_or_variables(self, ctx:VerilogParser.List_of_modules_or_variablesContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#module_or_variable.
-    def visitModule_or_variable(self, ctx:VerilogParser.Module_or_variableContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#levels.
-    def visitLevels(self, ctx:VerilogParser.LevelsContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpoff_task.
-    def visitDumpoff_task(self, ctx:VerilogParser.Dumpoff_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpon_task.
-    def visitDumpon_task(self, ctx:VerilogParser.Dumpon_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpall_task.
-    def visitDumpall_task(self, ctx:VerilogParser.Dumpall_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumplimit_task.
-    def visitDumplimit_task(self, ctx:VerilogParser.Dumplimit_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#file_size.
-    def visitFile_size(self, ctx:VerilogParser.File_sizeContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpflush_task.
-    def visitDumpflush_task(self, ctx:VerilogParser.Dumpflush_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpports_task.
-    def visitDumpports_task(self, ctx:VerilogParser.Dumpports_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#scope_list.
-    def visitScope_list(self, ctx:VerilogParser.Scope_listContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#file_pathname.
-    def visitFile_pathname(self, ctx:VerilogParser.File_pathnameContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpportsoff_task.
-    def visitDumpportsoff_task(self, ctx:VerilogParser.Dumpportsoff_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpportson_task.
-    def visitDumpportson_task(self, ctx:VerilogParser.Dumpportson_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpportsall_task.
-    def visitDumpportsall_task(self, ctx:VerilogParser.Dumpportsall_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpportslimit_task.
-    def visitDumpportslimit_task(self, ctx:VerilogParser.Dumpportslimit_taskContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#dumpportsflush_task.
-    def visitDumpportsflush_task(self, ctx:VerilogParser.Dumpportsflush_taskContext):
-        return self.visitChildren(ctx)
-
 
     # Visit a parse tree produced by VerilogParser#library_text.
     def visitLibrary_text(self, ctx:VerilogParser.Library_textContext):
@@ -341,6 +26,11 @@ class VerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by VerilogParser#include_statement.
     def visitInclude_statement(self, ctx:VerilogParser.Include_statementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#file_path_spec.
+    def visitFile_path_spec(self, ctx:VerilogParser.File_path_specContext):
         return self.visitChildren(ctx)
 
 
@@ -1009,6 +699,11 @@ class VerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by VerilogParser#case_generate_item.
+    def visitCase_generate_item(self, ctx:VerilogParser.Case_generate_itemContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by VerilogParser#generate_block.
     def visitGenerate_block(self, ctx:VerilogParser.Generate_blockContext):
         return self.visitChildren(ctx)
@@ -1016,6 +711,136 @@ class VerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by VerilogParser#generate_block_or_null.
     def visitGenerate_block_or_null(self, ctx:VerilogParser.Generate_block_or_nullContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_declaration.
+    def visitUdp_declaration(self, ctx:VerilogParser.Udp_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_port_list.
+    def visitUdp_port_list(self, ctx:VerilogParser.Udp_port_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_declaration_port_list.
+    def visitUdp_declaration_port_list(self, ctx:VerilogParser.Udp_declaration_port_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_port_declaration.
+    def visitUdp_port_declaration(self, ctx:VerilogParser.Udp_port_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_output_declaration.
+    def visitUdp_output_declaration(self, ctx:VerilogParser.Udp_output_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_input_declaration.
+    def visitUdp_input_declaration(self, ctx:VerilogParser.Udp_input_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_reg_declaration.
+    def visitUdp_reg_declaration(self, ctx:VerilogParser.Udp_reg_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_body.
+    def visitUdp_body(self, ctx:VerilogParser.Udp_bodyContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#combinational_body.
+    def visitCombinational_body(self, ctx:VerilogParser.Combinational_bodyContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#combinational_entry.
+    def visitCombinational_entry(self, ctx:VerilogParser.Combinational_entryContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#sequential_body.
+    def visitSequential_body(self, ctx:VerilogParser.Sequential_bodyContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_initial_statement.
+    def visitUdp_initial_statement(self, ctx:VerilogParser.Udp_initial_statementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#init_val.
+    def visitInit_val(self, ctx:VerilogParser.Init_valContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#sequential_entry.
+    def visitSequential_entry(self, ctx:VerilogParser.Sequential_entryContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#seq_input_list.
+    def visitSeq_input_list(self, ctx:VerilogParser.Seq_input_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#level_input_list.
+    def visitLevel_input_list(self, ctx:VerilogParser.Level_input_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#edge_input_list.
+    def visitEdge_input_list(self, ctx:VerilogParser.Edge_input_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#edge_indicator.
+    def visitEdge_indicator(self, ctx:VerilogParser.Edge_indicatorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#current_state.
+    def visitCurrent_state(self, ctx:VerilogParser.Current_stateContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#next_state.
+    def visitNext_state(self, ctx:VerilogParser.Next_stateContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#output_symbol.
+    def visitOutput_symbol(self, ctx:VerilogParser.Output_symbolContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#level_symbol.
+    def visitLevel_symbol(self, ctx:VerilogParser.Level_symbolContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#edge_symbol.
+    def visitEdge_symbol(self, ctx:VerilogParser.Edge_symbolContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_instantiation.
+    def visitUdp_instantiation(self, ctx:VerilogParser.Udp_instantiationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#udp_instance.
+    def visitUdp_instance(self, ctx:VerilogParser.Udp_instanceContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#name_of_udp_instance.
+    def visitName_of_udp_instance(self, ctx:VerilogParser.Name_of_udp_instanceContext):
         return self.visitChildren(ctx)
 
 
@@ -1116,11 +941,6 @@ class VerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by VerilogParser#event_expression.
     def visitEvent_expression(self, ctx:VerilogParser.Event_expressionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by VerilogParser#event_primary.
-    def visitEvent_primary(self, ctx:VerilogParser.Event_primaryContext):
         return self.visitChildren(ctx)
 
 
@@ -1369,6 +1189,186 @@ class VerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by VerilogParser#system_timing_check.
+    def visitSystem_timing_check(self, ctx:VerilogParser.System_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#setup_timing_check.
+    def visitSetup_timing_check(self, ctx:VerilogParser.Setup_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#hold_timing_check.
+    def visitHold_timing_check(self, ctx:VerilogParser.Hold_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#setuphold_timing_check.
+    def visitSetuphold_timing_check(self, ctx:VerilogParser.Setuphold_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#recovery_timing_check.
+    def visitRecovery_timing_check(self, ctx:VerilogParser.Recovery_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#removal_timing_check.
+    def visitRemoval_timing_check(self, ctx:VerilogParser.Removal_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#recrem_timing_check.
+    def visitRecrem_timing_check(self, ctx:VerilogParser.Recrem_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#skew_timing_check.
+    def visitSkew_timing_check(self, ctx:VerilogParser.Skew_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#timeskew_timing_check.
+    def visitTimeskew_timing_check(self, ctx:VerilogParser.Timeskew_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#fullskew_timing_check.
+    def visitFullskew_timing_check(self, ctx:VerilogParser.Fullskew_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#period_timing_check.
+    def visitPeriod_timing_check(self, ctx:VerilogParser.Period_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#width_timing_check.
+    def visitWidth_timing_check(self, ctx:VerilogParser.Width_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#nochange_timing_check.
+    def visitNochange_timing_check(self, ctx:VerilogParser.Nochange_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#checktime_condition.
+    def visitChecktime_condition(self, ctx:VerilogParser.Checktime_conditionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#controlled_reference_event.
+    def visitControlled_reference_event(self, ctx:VerilogParser.Controlled_reference_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#data_event.
+    def visitData_event(self, ctx:VerilogParser.Data_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#delayed_data.
+    def visitDelayed_data(self, ctx:VerilogParser.Delayed_dataContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#delayed_reference.
+    def visitDelayed_reference(self, ctx:VerilogParser.Delayed_referenceContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#end_edge_offset.
+    def visitEnd_edge_offset(self, ctx:VerilogParser.End_edge_offsetContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#event_based_flag.
+    def visitEvent_based_flag(self, ctx:VerilogParser.Event_based_flagContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#notifier.
+    def visitNotifier(self, ctx:VerilogParser.NotifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#reference_event.
+    def visitReference_event(self, ctx:VerilogParser.Reference_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#remain_active_flag.
+    def visitRemain_active_flag(self, ctx:VerilogParser.Remain_active_flagContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#stamptime_condition.
+    def visitStamptime_condition(self, ctx:VerilogParser.Stamptime_conditionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#start_edge_offset.
+    def visitStart_edge_offset(self, ctx:VerilogParser.Start_edge_offsetContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#threshold.
+    def visitThreshold(self, ctx:VerilogParser.ThresholdContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#timing_check_limit.
+    def visitTiming_check_limit(self, ctx:VerilogParser.Timing_check_limitContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#timing_check_event.
+    def visitTiming_check_event(self, ctx:VerilogParser.Timing_check_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#controlled_timing_check_event.
+    def visitControlled_timing_check_event(self, ctx:VerilogParser.Controlled_timing_check_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#timing_check_event_control.
+    def visitTiming_check_event_control(self, ctx:VerilogParser.Timing_check_event_controlContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#specify_terminal_descriptor.
+    def visitSpecify_terminal_descriptor(self, ctx:VerilogParser.Specify_terminal_descriptorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#edge_control_specifier.
+    def visitEdge_control_specifier(self, ctx:VerilogParser.Edge_control_specifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#edge_descriptor.
+    def visitEdge_descriptor(self, ctx:VerilogParser.Edge_descriptorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#timing_check_condition.
+    def visitTiming_check_condition(self, ctx:VerilogParser.Timing_check_conditionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#scalar_timing_check_condition.
+    def visitScalar_timing_check_condition(self, ctx:VerilogParser.Scalar_timing_check_conditionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#scalar_constant.
+    def visitScalar_constant(self, ctx:VerilogParser.Scalar_constantContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by VerilogParser#concatenation.
     def visitConcatenation(self, ctx:VerilogParser.ConcatenationContext):
         return self.visitChildren(ctx)
@@ -1539,6 +1539,41 @@ class VerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by VerilogParser#real_number.
+    def visitReal_number(self, ctx:VerilogParser.Real_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#decimal_number.
+    def visitDecimal_number(self, ctx:VerilogParser.Decimal_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#binary_number.
+    def visitBinary_number(self, ctx:VerilogParser.Binary_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#octal_number.
+    def visitOctal_number(self, ctx:VerilogParser.Octal_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#hex_number.
+    def visitHex_number(self, ctx:VerilogParser.Hex_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#unsigned_number.
+    def visitUnsigned_number(self, ctx:VerilogParser.Unsigned_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#string_.
+    def visitString_(self, ctx:VerilogParser.String_Context):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by VerilogParser#attribute_instance.
     def visitAttribute_instance(self, ctx:VerilogParser.Attribute_instanceContext):
         return self.visitChildren(ctx)
@@ -1566,6 +1601,11 @@ class VerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by VerilogParser#config_identifier.
     def visitConfig_identifier(self, ctx:VerilogParser.Config_identifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#escaped_identifier.
+    def visitEscaped_identifier(self, ctx:VerilogParser.Escaped_identifierContext):
         return self.visitChildren(ctx)
 
 
@@ -1694,6 +1734,11 @@ class VerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by VerilogParser#simple_identifier.
+    def visitSimple_identifier(self, ctx:VerilogParser.Simple_identifierContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by VerilogParser#specparam_identifier.
     def visitSpecparam_identifier(self, ctx:VerilogParser.Specparam_identifierContext):
         return self.visitChildren(ctx)
@@ -1716,6 +1761,11 @@ class VerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by VerilogParser#terminal_identifier.
     def visitTerminal_identifier(self, ctx:VerilogParser.Terminal_identifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by VerilogParser#text_macro_identifier.
+    def visitText_macro_identifier(self, ctx:VerilogParser.Text_macro_identifierContext):
         return self.visitChildren(ctx)
 
 

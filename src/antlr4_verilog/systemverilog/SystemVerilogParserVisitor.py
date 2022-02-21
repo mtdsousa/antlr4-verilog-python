@@ -1,4 +1,4 @@
-# Generated from /home/mtdsousa/workspace/antlr4-verilog/build/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
+# Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .SystemVerilogParser import SystemVerilogParser
@@ -26,6 +26,11 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#include_statement.
     def visitInclude_statement(self, ctx:SystemVerilogParser.Include_statementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#file_path_spec.
+    def visitFile_path_spec(self, ctx:SystemVerilogParser.File_path_specContext):
         return self.visitChildren(ctx)
 
 
@@ -101,11 +106,6 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#interface_class_type.
     def visitInterface_class_type(self, ctx:SystemVerilogParser.Interface_class_typeContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by SystemVerilogParser#interface_class_declaration.
-    def visitInterface_class_declaration(self, ctx:SystemVerilogParser.Interface_class_declarationContext):
         return self.visitChildren(ctx)
 
 
@@ -196,6 +196,11 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#elaboration_system_task.
     def visitElaboration_system_task(self, ctx:SystemVerilogParser.Elaboration_system_taskContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#finish_number.
+    def visitFinish_number(self, ctx:SystemVerilogParser.Finish_numberContext):
         return self.visitChildren(ctx)
 
 
@@ -596,11 +601,6 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#lifetime.
     def visitLifetime(self, ctx:SystemVerilogParser.LifetimeContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by SystemVerilogParser#casting_type.
-    def visitCasting_type(self, ctx:SystemVerilogParser.Casting_typeContext):
         return self.visitChildren(ctx)
 
 
@@ -1699,6 +1699,141 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SystemVerilogParser#udp_nonansi_declaration.
+    def visitUdp_nonansi_declaration(self, ctx:SystemVerilogParser.Udp_nonansi_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_ansi_declaration.
+    def visitUdp_ansi_declaration(self, ctx:SystemVerilogParser.Udp_ansi_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_declaration.
+    def visitUdp_declaration(self, ctx:SystemVerilogParser.Udp_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_port_list.
+    def visitUdp_port_list(self, ctx:SystemVerilogParser.Udp_port_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_declaration_port_list.
+    def visitUdp_declaration_port_list(self, ctx:SystemVerilogParser.Udp_declaration_port_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_port_declaration.
+    def visitUdp_port_declaration(self, ctx:SystemVerilogParser.Udp_port_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_output_declaration.
+    def visitUdp_output_declaration(self, ctx:SystemVerilogParser.Udp_output_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_input_declaration.
+    def visitUdp_input_declaration(self, ctx:SystemVerilogParser.Udp_input_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_reg_declaration.
+    def visitUdp_reg_declaration(self, ctx:SystemVerilogParser.Udp_reg_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_body.
+    def visitUdp_body(self, ctx:SystemVerilogParser.Udp_bodyContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#combinational_body.
+    def visitCombinational_body(self, ctx:SystemVerilogParser.Combinational_bodyContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#combinational_entry.
+    def visitCombinational_entry(self, ctx:SystemVerilogParser.Combinational_entryContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#sequential_body.
+    def visitSequential_body(self, ctx:SystemVerilogParser.Sequential_bodyContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_initial_statement.
+    def visitUdp_initial_statement(self, ctx:SystemVerilogParser.Udp_initial_statementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#init_val.
+    def visitInit_val(self, ctx:SystemVerilogParser.Init_valContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#sequential_entry.
+    def visitSequential_entry(self, ctx:SystemVerilogParser.Sequential_entryContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#seq_input_list.
+    def visitSeq_input_list(self, ctx:SystemVerilogParser.Seq_input_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#level_input_list.
+    def visitLevel_input_list(self, ctx:SystemVerilogParser.Level_input_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#edge_input_list.
+    def visitEdge_input_list(self, ctx:SystemVerilogParser.Edge_input_listContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#edge_indicator.
+    def visitEdge_indicator(self, ctx:SystemVerilogParser.Edge_indicatorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#current_state.
+    def visitCurrent_state(self, ctx:SystemVerilogParser.Current_stateContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#next_state.
+    def visitNext_state(self, ctx:SystemVerilogParser.Next_stateContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#output_symbol.
+    def visitOutput_symbol(self, ctx:SystemVerilogParser.Output_symbolContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#level_symbol.
+    def visitLevel_symbol(self, ctx:SystemVerilogParser.Level_symbolContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#edge_symbol.
+    def visitEdge_symbol(self, ctx:SystemVerilogParser.Edge_symbolContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_instantiation.
+    def visitUdp_instantiation(self, ctx:SystemVerilogParser.Udp_instantiationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_instance.
+    def visitUdp_instance(self, ctx:SystemVerilogParser.Udp_instanceContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SystemVerilogParser#continuous_assign.
     def visitContinuous_assign(self, ctx:SystemVerilogParser.Continuous_assignContext):
         return self.visitChildren(ctx)
@@ -2419,6 +2554,186 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SystemVerilogParser#system_timing_check.
+    def visitSystem_timing_check(self, ctx:SystemVerilogParser.System_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#setup_timing_check.
+    def visitSetup_timing_check(self, ctx:SystemVerilogParser.Setup_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#hold_timing_check.
+    def visitHold_timing_check(self, ctx:SystemVerilogParser.Hold_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#setuphold_timing_check.
+    def visitSetuphold_timing_check(self, ctx:SystemVerilogParser.Setuphold_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#recovery_timing_check.
+    def visitRecovery_timing_check(self, ctx:SystemVerilogParser.Recovery_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#removal_timing_check.
+    def visitRemoval_timing_check(self, ctx:SystemVerilogParser.Removal_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#recrem_timing_check.
+    def visitRecrem_timing_check(self, ctx:SystemVerilogParser.Recrem_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#skew_timing_check.
+    def visitSkew_timing_check(self, ctx:SystemVerilogParser.Skew_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#timeskew_timing_check.
+    def visitTimeskew_timing_check(self, ctx:SystemVerilogParser.Timeskew_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#fullskew_timing_check.
+    def visitFullskew_timing_check(self, ctx:SystemVerilogParser.Fullskew_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#period_timing_check.
+    def visitPeriod_timing_check(self, ctx:SystemVerilogParser.Period_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#width_timing_check.
+    def visitWidth_timing_check(self, ctx:SystemVerilogParser.Width_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#nochange_timing_check.
+    def visitNochange_timing_check(self, ctx:SystemVerilogParser.Nochange_timing_checkContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#timecheck_condition.
+    def visitTimecheck_condition(self, ctx:SystemVerilogParser.Timecheck_conditionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#controlled_reference_event.
+    def visitControlled_reference_event(self, ctx:SystemVerilogParser.Controlled_reference_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#data_event.
+    def visitData_event(self, ctx:SystemVerilogParser.Data_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#delayed_data.
+    def visitDelayed_data(self, ctx:SystemVerilogParser.Delayed_dataContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#delayed_reference.
+    def visitDelayed_reference(self, ctx:SystemVerilogParser.Delayed_referenceContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#end_edge_offset.
+    def visitEnd_edge_offset(self, ctx:SystemVerilogParser.End_edge_offsetContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#event_based_flag.
+    def visitEvent_based_flag(self, ctx:SystemVerilogParser.Event_based_flagContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#notifier.
+    def visitNotifier(self, ctx:SystemVerilogParser.NotifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#reference_event.
+    def visitReference_event(self, ctx:SystemVerilogParser.Reference_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#remain_active_flag.
+    def visitRemain_active_flag(self, ctx:SystemVerilogParser.Remain_active_flagContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#timestamp_condition.
+    def visitTimestamp_condition(self, ctx:SystemVerilogParser.Timestamp_conditionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#start_edge_offset.
+    def visitStart_edge_offset(self, ctx:SystemVerilogParser.Start_edge_offsetContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#threshold.
+    def visitThreshold(self, ctx:SystemVerilogParser.ThresholdContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#timing_check_limit.
+    def visitTiming_check_limit(self, ctx:SystemVerilogParser.Timing_check_limitContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#timing_check_event.
+    def visitTiming_check_event(self, ctx:SystemVerilogParser.Timing_check_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#controlled_timing_check_event.
+    def visitControlled_timing_check_event(self, ctx:SystemVerilogParser.Controlled_timing_check_eventContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#timing_check_event_control.
+    def visitTiming_check_event_control(self, ctx:SystemVerilogParser.Timing_check_event_controlContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#specify_terminal_descriptor.
+    def visitSpecify_terminal_descriptor(self, ctx:SystemVerilogParser.Specify_terminal_descriptorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#edge_control_specifier.
+    def visitEdge_control_specifier(self, ctx:SystemVerilogParser.Edge_control_specifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#edge_descriptor.
+    def visitEdge_descriptor(self, ctx:SystemVerilogParser.Edge_descriptorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#timing_check_condition.
+    def visitTiming_check_condition(self, ctx:SystemVerilogParser.Timing_check_conditionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#scalar_timing_check_condition.
+    def visitScalar_timing_check_condition(self, ctx:SystemVerilogParser.Scalar_timing_check_conditionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#scalar_constant.
+    def visitScalar_constant(self, ctx:SystemVerilogParser.Scalar_constantContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SystemVerilogParser#concatenation.
     def visitConcatenation(self, ctx:SystemVerilogParser.ConcatenationContext):
         return self.visitChildren(ctx)
@@ -2484,11 +2799,6 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by SystemVerilogParser#constant_function_call.
-    def visitConstant_function_call(self, ctx:SystemVerilogParser.Constant_function_callContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by SystemVerilogParser#tf_call.
     def visitTf_call(self, ctx:SystemVerilogParser.Tf_callContext):
         return self.visitChildren(ctx)
@@ -2514,6 +2824,11 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SystemVerilogParser#method_call.
+    def visitMethod_call(self, ctx:SystemVerilogParser.Method_callContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SystemVerilogParser#method_call_body.
     def visitMethod_call_body(self, ctx:SystemVerilogParser.Method_call_bodyContext):
         return self.visitChildren(ctx)
@@ -2531,6 +2846,11 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#randomize_call.
     def visitRandomize_call(self, ctx:SystemVerilogParser.Randomize_callContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#method_call_root.
+    def visitMethod_call_root(self, ctx:SystemVerilogParser.Method_call_rootContext):
         return self.visitChildren(ctx)
 
 
@@ -2654,6 +2974,11 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SystemVerilogParser#time_literal.
+    def visitTime_literal(self, ctx:SystemVerilogParser.Time_literalContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SystemVerilogParser#implicit_class_handle.
     def visitImplicit_class_handle(self, ctx:SystemVerilogParser.Implicit_class_handleContext):
         return self.visitChildren(ctx)
@@ -2686,11 +3011,6 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#constant_let_expression.
     def visitConstant_let_expression(self, ctx:SystemVerilogParser.Constant_let_expressionContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by SystemVerilogParser#cast.
-    def visitCast(self, ctx:SystemVerilogParser.CastContext):
         return self.visitChildren(ctx)
 
 
@@ -2736,6 +3056,51 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#number.
     def visitNumber(self, ctx:SystemVerilogParser.NumberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#integral_number.
+    def visitIntegral_number(self, ctx:SystemVerilogParser.Integral_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#decimal_number.
+    def visitDecimal_number(self, ctx:SystemVerilogParser.Decimal_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#binary_number.
+    def visitBinary_number(self, ctx:SystemVerilogParser.Binary_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#octal_number.
+    def visitOctal_number(self, ctx:SystemVerilogParser.Octal_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#hex_number.
+    def visitHex_number(self, ctx:SystemVerilogParser.Hex_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#real_number.
+    def visitReal_number(self, ctx:SystemVerilogParser.Real_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#unsigned_number.
+    def visitUnsigned_number(self, ctx:SystemVerilogParser.Unsigned_numberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#unbased_unsized_literal.
+    def visitUnbased_unsized_literal(self, ctx:SystemVerilogParser.Unbased_unsized_literalContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#string_literal.
+    def visitString_literal(self, ctx:SystemVerilogParser.String_literalContext):
         return self.visitChildren(ctx)
 
 
@@ -2841,6 +3206,16 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#enum_identifier.
     def visitEnum_identifier(self, ctx:SystemVerilogParser.Enum_identifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#escaped_identifier.
+    def visitEscaped_identifier(self, ctx:SystemVerilogParser.Escaped_identifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#formal_identifier.
+    def visitFormal_identifier(self, ctx:SystemVerilogParser.Formal_identifierContext):
         return self.visitChildren(ctx)
 
 
@@ -3094,8 +3469,18 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SystemVerilogParser#simple_identifier.
+    def visitSimple_identifier(self, ctx:SystemVerilogParser.Simple_identifierContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SystemVerilogParser#specparam_identifier.
     def visitSpecparam_identifier(self, ctx:SystemVerilogParser.Specparam_identifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#system_tf_identifier.
+    def visitSystem_tf_identifier(self, ctx:SystemVerilogParser.System_tf_identifierContext):
         return self.visitChildren(ctx)
 
 
@@ -3109,6 +3494,11 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by SystemVerilogParser#terminal_identifier.
+    def visitTerminal_identifier(self, ctx:SystemVerilogParser.Terminal_identifierContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by SystemVerilogParser#topmodule_identifier.
     def visitTopmodule_identifier(self, ctx:SystemVerilogParser.Topmodule_identifierContext):
         return self.visitChildren(ctx)
@@ -3116,6 +3506,11 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#type_identifier.
     def visitType_identifier(self, ctx:SystemVerilogParser.Type_identifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#udp_identifier.
+    def visitUdp_identifier(self, ctx:SystemVerilogParser.Udp_identifierContext):
         return self.visitChildren(ctx)
 
 

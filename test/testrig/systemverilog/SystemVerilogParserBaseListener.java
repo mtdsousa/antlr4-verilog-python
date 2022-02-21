@@ -1,4 +1,4 @@
-// Generated from /home/mtdsousa/workspace/antlr4-verilog/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
+// Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -58,6 +58,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitInclude_statement(SystemVerilogParser.Include_statementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFile_path_spec(SystemVerilogParser.File_path_specContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFile_path_spec(SystemVerilogParser.File_path_specContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -238,18 +250,6 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitInterface_class_type(SystemVerilogParser.Interface_class_typeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterInterface_class_declaration(SystemVerilogParser.Interface_class_declarationContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitInterface_class_declaration(SystemVerilogParser.Interface_class_declarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -466,6 +466,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitElaboration_system_task(SystemVerilogParser.Elaboration_system_taskContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFinish_number(SystemVerilogParser.Finish_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFinish_number(SystemVerilogParser.Finish_numberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1426,18 +1438,6 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitLifetime(SystemVerilogParser.LifetimeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterCasting_type(SystemVerilogParser.Casting_typeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitCasting_type(SystemVerilogParser.Casting_typeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -4071,6 +4071,330 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterUdp_nonansi_declaration(SystemVerilogParser.Udp_nonansi_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_nonansi_declaration(SystemVerilogParser.Udp_nonansi_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_ansi_declaration(SystemVerilogParser.Udp_ansi_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_ansi_declaration(SystemVerilogParser.Udp_ansi_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_declaration(SystemVerilogParser.Udp_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_declaration(SystemVerilogParser.Udp_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_port_list(SystemVerilogParser.Udp_port_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_port_list(SystemVerilogParser.Udp_port_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_declaration_port_list(SystemVerilogParser.Udp_declaration_port_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_declaration_port_list(SystemVerilogParser.Udp_declaration_port_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_port_declaration(SystemVerilogParser.Udp_port_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_port_declaration(SystemVerilogParser.Udp_port_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_output_declaration(SystemVerilogParser.Udp_output_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_output_declaration(SystemVerilogParser.Udp_output_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_input_declaration(SystemVerilogParser.Udp_input_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_input_declaration(SystemVerilogParser.Udp_input_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_reg_declaration(SystemVerilogParser.Udp_reg_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_reg_declaration(SystemVerilogParser.Udp_reg_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_body(SystemVerilogParser.Udp_bodyContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_body(SystemVerilogParser.Udp_bodyContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCombinational_body(SystemVerilogParser.Combinational_bodyContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCombinational_body(SystemVerilogParser.Combinational_bodyContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCombinational_entry(SystemVerilogParser.Combinational_entryContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCombinational_entry(SystemVerilogParser.Combinational_entryContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSequential_body(SystemVerilogParser.Sequential_bodyContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSequential_body(SystemVerilogParser.Sequential_bodyContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_initial_statement(SystemVerilogParser.Udp_initial_statementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_initial_statement(SystemVerilogParser.Udp_initial_statementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInit_val(SystemVerilogParser.Init_valContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInit_val(SystemVerilogParser.Init_valContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSequential_entry(SystemVerilogParser.Sequential_entryContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSequential_entry(SystemVerilogParser.Sequential_entryContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSeq_input_list(SystemVerilogParser.Seq_input_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeq_input_list(SystemVerilogParser.Seq_input_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLevel_input_list(SystemVerilogParser.Level_input_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLevel_input_list(SystemVerilogParser.Level_input_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEdge_input_list(SystemVerilogParser.Edge_input_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEdge_input_list(SystemVerilogParser.Edge_input_listContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEdge_indicator(SystemVerilogParser.Edge_indicatorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEdge_indicator(SystemVerilogParser.Edge_indicatorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCurrent_state(SystemVerilogParser.Current_stateContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCurrent_state(SystemVerilogParser.Current_stateContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNext_state(SystemVerilogParser.Next_stateContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNext_state(SystemVerilogParser.Next_stateContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOutput_symbol(SystemVerilogParser.Output_symbolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOutput_symbol(SystemVerilogParser.Output_symbolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLevel_symbol(SystemVerilogParser.Level_symbolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLevel_symbol(SystemVerilogParser.Level_symbolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEdge_symbol(SystemVerilogParser.Edge_symbolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEdge_symbol(SystemVerilogParser.Edge_symbolContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_instantiation(SystemVerilogParser.Udp_instantiationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_instantiation(SystemVerilogParser.Udp_instantiationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_instance(SystemVerilogParser.Udp_instanceContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_instance(SystemVerilogParser.Udp_instanceContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterContinuous_assign(SystemVerilogParser.Continuous_assignContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -5799,6 +6123,438 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterSystem_timing_check(SystemVerilogParser.System_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSystem_timing_check(SystemVerilogParser.System_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSetup_timing_check(SystemVerilogParser.Setup_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSetup_timing_check(SystemVerilogParser.Setup_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterHold_timing_check(SystemVerilogParser.Hold_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitHold_timing_check(SystemVerilogParser.Hold_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSetuphold_timing_check(SystemVerilogParser.Setuphold_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSetuphold_timing_check(SystemVerilogParser.Setuphold_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRecovery_timing_check(SystemVerilogParser.Recovery_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRecovery_timing_check(SystemVerilogParser.Recovery_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRemoval_timing_check(SystemVerilogParser.Removal_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRemoval_timing_check(SystemVerilogParser.Removal_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRecrem_timing_check(SystemVerilogParser.Recrem_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRecrem_timing_check(SystemVerilogParser.Recrem_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSkew_timing_check(SystemVerilogParser.Skew_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSkew_timing_check(SystemVerilogParser.Skew_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTimeskew_timing_check(SystemVerilogParser.Timeskew_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTimeskew_timing_check(SystemVerilogParser.Timeskew_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFullskew_timing_check(SystemVerilogParser.Fullskew_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFullskew_timing_check(SystemVerilogParser.Fullskew_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPeriod_timing_check(SystemVerilogParser.Period_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPeriod_timing_check(SystemVerilogParser.Period_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterWidth_timing_check(SystemVerilogParser.Width_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitWidth_timing_check(SystemVerilogParser.Width_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNochange_timing_check(SystemVerilogParser.Nochange_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNochange_timing_check(SystemVerilogParser.Nochange_timing_checkContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTimecheck_condition(SystemVerilogParser.Timecheck_conditionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTimecheck_condition(SystemVerilogParser.Timecheck_conditionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterControlled_reference_event(SystemVerilogParser.Controlled_reference_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitControlled_reference_event(SystemVerilogParser.Controlled_reference_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterData_event(SystemVerilogParser.Data_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitData_event(SystemVerilogParser.Data_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDelayed_data(SystemVerilogParser.Delayed_dataContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDelayed_data(SystemVerilogParser.Delayed_dataContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDelayed_reference(SystemVerilogParser.Delayed_referenceContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDelayed_reference(SystemVerilogParser.Delayed_referenceContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEnd_edge_offset(SystemVerilogParser.End_edge_offsetContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEnd_edge_offset(SystemVerilogParser.End_edge_offsetContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEvent_based_flag(SystemVerilogParser.Event_based_flagContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEvent_based_flag(SystemVerilogParser.Event_based_flagContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNotifier(SystemVerilogParser.NotifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNotifier(SystemVerilogParser.NotifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterReference_event(SystemVerilogParser.Reference_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitReference_event(SystemVerilogParser.Reference_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRemain_active_flag(SystemVerilogParser.Remain_active_flagContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRemain_active_flag(SystemVerilogParser.Remain_active_flagContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTimestamp_condition(SystemVerilogParser.Timestamp_conditionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTimestamp_condition(SystemVerilogParser.Timestamp_conditionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStart_edge_offset(SystemVerilogParser.Start_edge_offsetContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStart_edge_offset(SystemVerilogParser.Start_edge_offsetContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterThreshold(SystemVerilogParser.ThresholdContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitThreshold(SystemVerilogParser.ThresholdContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTiming_check_limit(SystemVerilogParser.Timing_check_limitContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTiming_check_limit(SystemVerilogParser.Timing_check_limitContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTiming_check_event(SystemVerilogParser.Timing_check_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTiming_check_event(SystemVerilogParser.Timing_check_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterControlled_timing_check_event(SystemVerilogParser.Controlled_timing_check_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitControlled_timing_check_event(SystemVerilogParser.Controlled_timing_check_eventContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTiming_check_event_control(SystemVerilogParser.Timing_check_event_controlContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTiming_check_event_control(SystemVerilogParser.Timing_check_event_controlContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSpecify_terminal_descriptor(SystemVerilogParser.Specify_terminal_descriptorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSpecify_terminal_descriptor(SystemVerilogParser.Specify_terminal_descriptorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEdge_control_specifier(SystemVerilogParser.Edge_control_specifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEdge_control_specifier(SystemVerilogParser.Edge_control_specifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEdge_descriptor(SystemVerilogParser.Edge_descriptorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEdge_descriptor(SystemVerilogParser.Edge_descriptorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTiming_check_condition(SystemVerilogParser.Timing_check_conditionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTiming_check_condition(SystemVerilogParser.Timing_check_conditionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterScalar_timing_check_condition(SystemVerilogParser.Scalar_timing_check_conditionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitScalar_timing_check_condition(SystemVerilogParser.Scalar_timing_check_conditionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterScalar_constant(SystemVerilogParser.Scalar_constantContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitScalar_constant(SystemVerilogParser.Scalar_constantContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterConcatenation(SystemVerilogParser.ConcatenationContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -5955,18 +6711,6 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterConstant_function_call(SystemVerilogParser.Constant_function_callContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitConstant_function_call(SystemVerilogParser.Constant_function_callContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterTf_call(SystemVerilogParser.Tf_callContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -6027,6 +6771,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterMethod_call(SystemVerilogParser.Method_callContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMethod_call(SystemVerilogParser.Method_callContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterMethod_call_body(SystemVerilogParser.Method_call_bodyContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -6070,6 +6826,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitRandomize_call(SystemVerilogParser.Randomize_callContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMethod_call_root(SystemVerilogParser.Method_call_rootContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMethod_call_root(SystemVerilogParser.Method_call_rootContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -6363,6 +7131,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterTime_literal(SystemVerilogParser.Time_literalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTime_literal(SystemVerilogParser.Time_literalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterImplicit_class_handle(SystemVerilogParser.Implicit_class_handleContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -6442,18 +7222,6 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitConstant_let_expression(SystemVerilogParser.Constant_let_expressionContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterCast(SystemVerilogParser.CastContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitCast(SystemVerilogParser.CastContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -6562,6 +7330,114 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitNumber(SystemVerilogParser.NumberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterIntegral_number(SystemVerilogParser.Integral_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitIntegral_number(SystemVerilogParser.Integral_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDecimal_number(SystemVerilogParser.Decimal_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDecimal_number(SystemVerilogParser.Decimal_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBinary_number(SystemVerilogParser.Binary_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBinary_number(SystemVerilogParser.Binary_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOctal_number(SystemVerilogParser.Octal_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOctal_number(SystemVerilogParser.Octal_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterHex_number(SystemVerilogParser.Hex_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitHex_number(SystemVerilogParser.Hex_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterReal_number(SystemVerilogParser.Real_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitReal_number(SystemVerilogParser.Real_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUnsigned_number(SystemVerilogParser.Unsigned_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUnsigned_number(SystemVerilogParser.Unsigned_numberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUnbased_unsized_literal(SystemVerilogParser.Unbased_unsized_literalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUnbased_unsized_literal(SystemVerilogParser.Unbased_unsized_literalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterString_literal(SystemVerilogParser.String_literalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitString_literal(SystemVerilogParser.String_literalContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -6814,6 +7690,30 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitEnum_identifier(SystemVerilogParser.Enum_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEscaped_identifier(SystemVerilogParser.Escaped_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEscaped_identifier(SystemVerilogParser.Escaped_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFormal_identifier(SystemVerilogParser.Formal_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFormal_identifier(SystemVerilogParser.Formal_identifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -7419,6 +8319,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterSimple_identifier(SystemVerilogParser.Simple_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSimple_identifier(SystemVerilogParser.Simple_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterSpecparam_identifier(SystemVerilogParser.Specparam_identifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -7426,6 +8338,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitSpecparam_identifier(SystemVerilogParser.Specparam_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSystem_tf_identifier(SystemVerilogParser.System_tf_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSystem_tf_identifier(SystemVerilogParser.System_tf_identifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -7455,6 +8379,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterTerminal_identifier(SystemVerilogParser.Terminal_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTerminal_identifier(SystemVerilogParser.Terminal_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterTopmodule_identifier(SystemVerilogParser.Topmodule_identifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -7474,6 +8410,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitType_identifier(SystemVerilogParser.Type_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUdp_identifier(SystemVerilogParser.Udp_identifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUdp_identifier(SystemVerilogParser.Udp_identifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

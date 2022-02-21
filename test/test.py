@@ -16,6 +16,7 @@ import unittest
 
 from antlr4_verilog import InputStream, CommonTokenStream, ParseTreeWalker
 from antlr4_verilog.verilog import VerilogLexer, VerilogParser, VerilogParserListener
+from antlr4_verilog.systemverilog import SystemVerilogLexer, SystemVerilogParser, SystemVerilogParserListener
 
 class TestVerilog(unittest.TestCase):
     def setUp(self):
@@ -56,6 +57,51 @@ class TestVerilog(unittest.TestCase):
         listener = ModuleInputListener()
         self.walker.walk(listener, self.tree)
         self.assertEqual(listener.declarations, ['a', 'b'])
+
+class TestSystemVerilog(unittest.TestCase):
+    def setUp(self):
+        design = '''
+            module hello;
+                string s = "Hello";
+                initial begin
+                    $display("%s", s);
+                end
+            endmodule            
+        '''
+        lexer = SystemVerilogLexer(InputStream(design))
+        stream = CommonTokenStream(lexer)
+        parser = SystemVerilogParser(stream)
+        self.tree = parser.source_text()
+        self.walker = ParseTreeWalker()
+
+    def test_module_identifier(self):
+        class ModuleIdentifierListener(SystemVerilogParserListener):
+            def exitModule_declaration(self, ctx):
+                self.identifier = ctx.module_ansi_header().module_identifier().getText()
+
+        listener = ModuleIdentifierListener()
+        self.walker.walk(listener, self.tree)
+        self.assertEqual(listener.identifier, 'hello')
+
+    def test_variable_assignment(self):
+        class VariableAssignmentListener(SystemVerilogParserListener):
+            def exitVariable_decl_assignment(self, ctx):
+                self.identifier = ctx.variable_identifier().getText()
+                self.expression = ctx.expression().getText()
+        
+        listener = VariableAssignmentListener()
+        self.walker.walk(listener, self.tree)
+        self.assertEqual(listener.identifier, 's')
+        self.assertEqual(listener.expression, '"Hello"')
+
+    def test_system_task(self):
+        class SystemTaskListener(SystemVerilogParserListener):
+            def exitSystem_tf_call(self, ctx):
+                self.identifier = ctx.system_tf_identifier().getText()
+        
+        listener = SystemTaskListener()
+        self.walker.walk(listener, self.tree)
+        self.assertEqual(listener.identifier, '$display')
 
 if __name__ == '__main__':
     unittest.main()
