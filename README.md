@@ -40,6 +40,8 @@ print(listener.identifier) # 'ha'
 ```
 > Take a look at other listener methods for [Verilog](src/antlr4_verilog/verilog/VerilogParserListener.py) and [SystemVerilog](src/antlr4_verilog/systemverilog/SystemVerilogParserListener.py)
 
+> You may find more examples in the [test file](test/test.py)
+
 ## How to generate those files
 
 System requirements (Ubuntu):
@@ -51,7 +53,7 @@ sudo apt-get install -y curl
 
 1. Get ANTLR4:
 ```bash
-curl https://www.antlr.org/download/antlr-4.9-complete.jar -o extra/antlr-4.9-complete.jar
+curl https://www.antlr.org/download/antlr-4.10.1-complete.jar -o extra/antlr-4.10.1-complete.jar
 ```
 
 2. Get ANTLR grammars:
@@ -61,30 +63,30 @@ git clone https://github.com/antlr/grammars-v4.git extra/grammars-v4
 
 3. Call ANTLR for Verilog grammar:
 ```
-java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/verilog/VerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogParser.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogPreParser.g4 -o src/antlr4-verilog/verilog
+java -Xmx500M -cp "extra/antlr-4.10.1-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/verilog/VerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogParser.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogPreParser.g4 -o src/antlr4_verilog/verilog
 ```
 
 3. Call ANTLR for SystemVerilog grammar:
 ```
-java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogPreParser.g4 -o src/antlr4-verilog/systemverilog
+java -Xmx500M -cp "extra/antlr-4.10.1-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Python3 -visitor `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogPreParser.g4 -o src/antlr4_verilog/systemverilog
 ```
 
 ## How to test the grammar
 
 1. Generate Java files:
 ```
-java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Java -visitor `pwd`/extra/grammars-v4/verilog/verilog/VerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogParser.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogPreprocessorParser.g4 -o test/testrig/verilog
+java -Xmx500M -cp "extra/antlr-4.10.1-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Java -visitor `pwd`/extra/grammars-v4/verilog/verilog/VerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogParser.g4 `pwd`/extra/grammars-v4/verilog/verilog/VerilogPreParser.g4 -o test/testrig/verilog
 ```
 ```
-java -Xmx500M -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Java -visitor `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogPreParser.g4 -o test/testrig/systemverilog
+java -Xmx500M -cp "extra/antlr-4.10.1-complete.jar:${CLASSPATH}" org.antlr.v4.Tool -Dlanguage=Java -visitor `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogLexer.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 `pwd`/extra/grammars-v4/verilog/systemverilog/SystemVerilogPreParser.g4 -o test/testrig/systemverilog
 ```
 
 2. Compile these recently generated files:
 ```
-javac -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" test/testrig/verilog/*.java
+javac -cp "extra/antlr-4.10.1-complete.jar:${CLASSPATH}" test/testrig/verilog/*.java
 ```
 ```
-javac -cp "extra/antlr-4.9-complete.jar:${CLASSPATH}" test/testrig/systemverilog/*.java
+javac -cp "extra/antlr-4.10.1-complete.jar:${CLASSPATH}" test/testrig/systemverilog/*.java
 ```
 
 3. Create JAR files:

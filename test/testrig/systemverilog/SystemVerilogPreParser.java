@@ -1,4 +1,4 @@
-// Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/systemverilog/SystemVerilogPreParser.g4 by ANTLR 4.9
+// Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4/verilog/systemverilog/SystemVerilogPreParser.g4 by ANTLR 4.10.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -10,83 +10,82 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class SystemVerilogPreParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.10.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
 		EM=1, EMEQ=2, EMEQEQ=3, EMEQQM=4, DQ=5, DQDPIDQ=6, DQDPIMICDQ=7, HA=8, 
-		HAHA=9, HAMIHA=10, HAZERO=11, HAEQHA=12, DL=13, DLERROR=14, DLFATAL=15, 
-		DLFULLSKEW=16, DLHOLD=17, DLINFO=18, DLNOCHANGE=19, DLPERIOD=20, DLRECOVERY=21, 
-		DLRECREM=22, DLREMOVAL=23, DLROOTDT=24, DLSETUP=25, DLSETUPHOLD=26, DLSKEW=27, 
-		DLTIMESKEW=28, DLUNIT=29, DLWARNING=30, DLWIDTH=31, MO=32, MOEQ=33, AM=34, 
-		AMAM=35, AMAMAM=36, AMEQ=37, LP=38, RP=39, AS=40, ASAS=41, ASSL=42, ASCLCLAS=43, 
-		ASEQ=44, ASGT=45, PL=46, PLPL=47, PLCL=48, PLEQ=49, CO=50, MI=51, MIMI=52, 
-		MICL=53, MIEQ=54, MIGT=55, MIGTGT=56, MIINCDIR=57, DT=58, DTAS=59, SL=60, 
-		SLAS=61, SLSL=62, SLEQ=63, ONESTEP=64, CL=65, CLSL=66, CLCL=67, CLEQ=68, 
-		SC=69, LT=70, LTMIGT=71, LTLT=72, LTLTLT=73, LTLTLTEQ=74, LTLTEQ=75, LTEQ=76, 
-		EQ=77, EQEQ=78, EQEQEQ=79, EQEQQM=80, EQGT=81, GT=82, GTEQ=83, GTGT=84, 
-		GTGTEQ=85, GTGTGT=86, GTGTGTEQ=87, QM=88, AT=89, ATAT=90, PATHPULSEDL=91, 
-		LB=92, BSAP=93, RB=94, CA=95, CAEQ=96, CATI=97, GA=98, ACCEPT_ON=99, ALIAS=100, 
-		ALWAYS=101, ALWAYS_COMB=102, ALWAYS_FF=103, ALWAYS_LATCH=104, AND=105, 
-		ASSERT=106, ASSIGN=107, ASSUME=108, AUTOMATIC=109, BEFORE=110, BEGIN=111, 
-		BIND=112, BINS=113, BINSOF=114, BIT=115, BREAK=116, BUF=117, BUFIFZERO=118, 
-		BUFIFONE=119, BYTE=120, CASE=121, CASEX=122, CASEZ=123, CELL=124, CHANDLE=125, 
-		CHECKER=126, CLASS=127, CLOCKING=128, CMOS=129, CONFIG=130, CONST=131, 
-		CONSTRAINT=132, CONTEXT=133, CONTINUE=134, COVER=135, COVERGROUP=136, 
-		COVERPOINT=137, CROSS=138, DEASSIGN=139, DEFAULT=140, DEFPARAM=141, DESIGN=142, 
-		DISABLE=143, DIST=144, DO=145, EDGE=146, ELSE=147, END=148, ENDCASE=149, 
-		ENDCHECKER=150, ENDCLASS=151, ENDCLOCKING=152, ENDCONFIG=153, ENDFUNCTION=154, 
-		ENDGENERATE=155, ENDGROUP=156, ENDINTERFACE=157, ENDMODULE=158, ENDPACKAGE=159, 
-		ENDPRIMITIVE=160, ENDPROGRAM=161, ENDPROPERTY=162, ENDSEQUENCE=163, ENDSPECIFY=164, 
-		ENDTABLE=165, ENDTASK=166, ENUM=167, EVENT=168, EXPECT=169, EXPORT=170, 
-		EXTENDS=171, EXTERN=172, FINAL=173, FIRST_MATCH=174, FOR=175, FORCE=176, 
-		FOREACH=177, FOREVER=178, FORK=179, FORKJOIN=180, FUNCTION=181, GENERATE=182, 
-		GENVAR=183, GLOBAL=184, HIGHZZERO=185, HIGHZONE=186, IF=187, IFF=188, 
-		IFNONE=189, IGNORE_BINS=190, ILLEGAL_BINS=191, IMPLEMENTS=192, IMPLIES=193, 
-		IMPORT=194, INCLUDE=195, INITIAL=196, INOUT=197, INPUT=198, INSIDE=199, 
-		INSTANCE=200, INT=201, INTEGER=202, INTERCONNECT=203, INTERFACE=204, INTERSECT=205, 
-		JOIN=206, JOIN_ANY=207, JOIN_NONE=208, LARGE=209, LET=210, LIBLIST=211, 
-		LIBRARY=212, LOCAL=213, LOCALPARAM=214, LOGIC=215, LONGINT=216, MACROMODULE=217, 
-		MATCHES=218, MEDIUM=219, MODPORT=220, MODULE=221, NAND=222, NEGEDGE=223, 
-		NETTYPE=224, NEW=225, NEXTTIME=226, NMOS=227, NOR=228, NOSHOWCANCELLED=229, 
-		NOT=230, NOTIFZERO=231, NOTIFONE=232, NULL=233, OPTIONDT=234, OR=235, 
-		OUTPUT=236, PACKAGE=237, PACKED=238, PARAMETER=239, PMOS=240, POSEDGE=241, 
-		PRIMITIVE=242, PRIORITY=243, PROGRAM=244, PROPERTY=245, PROTECTED=246, 
-		PULLZERO=247, PULLONE=248, PULLDOWN=249, PULLUP=250, PULSESTYLE_ONDETECT=251, 
-		PULSESTYLE_ONEVENT=252, PURE=253, RAND=254, RANDC=255, RANDCASE=256, RANDOMIZE=257, 
-		RANDSEQUENCE=258, RCMOS=259, REAL=260, REALTIME=261, REF=262, REG=263, 
-		REJECT_ON=264, RELEASE=265, REPEAT=266, RESTRICT=267, RETURN=268, RNMOS=269, 
-		RPMOS=270, RTRAN=271, RTRANIFZERO=272, RTRANIFONE=273, S_ALWAYS=274, S_EVENTUALLY=275, 
-		S_NEXTTIME=276, S_UNTIL=277, S_UNTIL_WITH=278, SAMPLE=279, SCALARED=280, 
-		SEQUENCE=281, SHORTINT=282, SHORTREAL=283, SHOWCANCELLED=284, SIGNED=285, 
-		SMALL=286, SOFT=287, SOLVE=288, SPECIFY=289, SPECPARAM=290, STATIC=291, 
-		STD=292, STRING=293, STRONG=294, STRONGZERO=295, STRONGONE=296, STRUCT=297, 
-		SUPER=298, SUPPLYZERO=299, SUPPLYONE=300, SYNC_ACCEPT_ON=301, SYNC_REJECT_ON=302, 
-		TABLE=303, TAGGED=304, TASK=305, THIS=306, THROUGHOUT=307, TIME=308, TIMEPRECISION=309, 
-		TIMEUNIT=310, TRAN=311, TRANIFZERO=312, TRANIFONE=313, TRI=314, TRIZERO=315, 
-		TRIONE=316, TRIAND=317, TRIOR=318, TRIREG=319, TYPE=320, TYPE_OPTIONDT=321, 
-		TYPEDEF=322, UNION=323, UNIQUE=324, UNIQUEZERO=325, UNSIGNED=326, UNTIL=327, 
-		UNTIL_WITH=328, UNTYPED=329, USE=330, UWIRE=331, VAR=332, VECTORED=333, 
-		VIRTUAL=334, VOID=335, WAIT=336, WAIT_ORDER=337, WAND=338, WEAK=339, WEAKZERO=340, 
-		WEAKONE=341, WHILE=342, WILDCARD=343, WIRE=344, WITH=345, WITHIN=346, 
-		WOR=347, XNOR=348, XOR=349, LC=350, VL=351, VLMIGT=352, VLEQ=353, VLEQGT=354, 
-		VLVL=355, RC=356, TI=357, TIAM=358, TICA=359, TIVL=360, TIME_LITERAL=361, 
-		DECIMAL_NUMBER=362, BINARY_NUMBER=363, OCTAL_NUMBER=364, HEX_NUMBER=365, 
-		REAL_NUMBER=366, UNBASED_UNSIZED_LITERAL=367, STRING_LITERAL=368, COMMENT=369, 
-		ESCAPED_IDENTIFIER=370, SIMPLE_IDENTIFIER=371, SYSTEM_TF_IDENTIFIER=372, 
-		WHITE_SPACE=373, FILE_PATH_SPEC=374, FINISH_NUMBER=375, INIT_VAL=376, 
-		OUTPUT_SYMBOL=377, LEVEL_SYMBOL=378, EDGE_SYMBOL=379, EDGE_DESCRIPTOR=380, 
-		SCALAR_CONSTANT=381, FILE_DIRECTIVE=382, LINE_DIRECTIVE_=383, BEGIN_KEYWORDS_DIRECTIVE=384, 
-		CELLDEFINE_DIRECTIVE=385, DEFAULT_NETTYPE_DIRECTIVE=386, DEFINE_DIRECTIVE=387, 
-		ELSE_DIRECTIVE=388, ELSIF_DIRECTIVE=389, END_KEYWORDS_DIRECTIVE=390, ENDCELLDEFINE_DIRECTIVE=391, 
-		ENDIF_DIRECTIVE=392, IFDEF_DIRECTIVE=393, IFNDEF_DIRECTIVE=394, INCLUDE_DIRECTIVE=395, 
-		LINE_DIRECTIVE=396, NOUNCONNECTED_DRIVE_DIRECTIVE=397, PRAGMA_DIRECTIVE=398, 
-		RESETALL_DIRECTIVE=399, TIMESCALE_DIRECTIVE=400, UNCONNECTED_DRIVE_DIRECTIVE=401, 
-		UNDEF_DIRECTIVE=402, UNDEFINEALL_DIRECTIVE=403, MACRO_USAGE=404, DIRECTIVE_TEXT=405, 
-		DIRECTIVE_IDENTIFIER=406, DIRECTIVE_COMMENT=407, DIRECTIVE_WHITE_SPACE=408, 
-		DIRECTIVE_NEWLINE=409, MACRO_TEXT=410, MT_ESC_NEWLINE=411, SOURCE_TEXT=412;
+		HAHA=9, HAMIHA=10, HAEQHA=11, DL=12, DLERROR=13, DLFATAL=14, DLFULLSKEW=15, 
+		DLHOLD=16, DLINFO=17, DLNOCHANGE=18, DLPERIOD=19, DLRECOVERY=20, DLRECREM=21, 
+		DLREMOVAL=22, DLROOTDT=23, DLSETUP=24, DLSETUPHOLD=25, DLSKEW=26, DLTIMESKEW=27, 
+		DLUNIT=28, DLWARNING=29, DLWIDTH=30, MO=31, MOEQ=32, AM=33, AMAM=34, AMAMAM=35, 
+		AMEQ=36, AP=37, LP=38, RP=39, AS=40, ASAS=41, ASSL=42, ASCLCLAS=43, ASEQ=44, 
+		ASGT=45, PL=46, PLPL=47, PLCL=48, PLEQ=49, CO=50, MI=51, MIMI=52, MICL=53, 
+		MIEQ=54, MIGT=55, MIGTGT=56, DT=57, DTAS=58, SL=59, SLAS=60, SLSL=61, 
+		SLEQ=62, ONESTEP=63, CL=64, CLSL=65, CLCL=66, CLEQ=67, SC=68, LT=69, LTMIGT=70, 
+		LTLT=71, LTLTLT=72, LTLTLTEQ=73, LTLTEQ=74, LTEQ=75, EQ=76, EQEQ=77, EQEQEQ=78, 
+		EQEQQM=79, EQGT=80, GT=81, GTEQ=82, GTGT=83, GTGTEQ=84, GTGTGT=85, GTGTGTEQ=86, 
+		QM=87, AT=88, ATAT=89, PATHPULSEDL=90, LB=91, RB=92, CA=93, CAEQ=94, CATI=95, 
+		GA=96, ACCEPT_ON=97, ALIAS=98, ALWAYS=99, ALWAYS_COMB=100, ALWAYS_FF=101, 
+		ALWAYS_LATCH=102, AND=103, ASSERT=104, ASSIGN=105, ASSUME=106, AUTOMATIC=107, 
+		BEFORE=108, BEGIN=109, BIND=110, BINS=111, BINSOF=112, BIT=113, BREAK=114, 
+		BUF=115, BUFIFZERO=116, BUFIFONE=117, BYTE=118, CASE=119, CASEX=120, CASEZ=121, 
+		CELL=122, CHANDLE=123, CHECKER=124, CLASS=125, CLOCKING=126, CMOS=127, 
+		CONFIG=128, CONST=129, CONSTRAINT=130, CONTEXT=131, CONTINUE=132, COVER=133, 
+		COVERGROUP=134, COVERPOINT=135, CROSS=136, DEASSIGN=137, DEFAULT=138, 
+		DEFPARAM=139, DESIGN=140, DISABLE=141, DIST=142, DO=143, EDGE=144, ELSE=145, 
+		END=146, ENDCASE=147, ENDCHECKER=148, ENDCLASS=149, ENDCLOCKING=150, ENDCONFIG=151, 
+		ENDFUNCTION=152, ENDGENERATE=153, ENDGROUP=154, ENDINTERFACE=155, ENDMODULE=156, 
+		ENDPACKAGE=157, ENDPRIMITIVE=158, ENDPROGRAM=159, ENDPROPERTY=160, ENDSEQUENCE=161, 
+		ENDSPECIFY=162, ENDTABLE=163, ENDTASK=164, ENUM=165, EVENT=166, EXPECT=167, 
+		EXPORT=168, EXTENDS=169, EXTERN=170, FINAL=171, FIRST_MATCH=172, FOR=173, 
+		FORCE=174, FOREACH=175, FOREVER=176, FORK=177, FORKJOIN=178, FUNCTION=179, 
+		GENERATE=180, GENVAR=181, GLOBAL=182, HIGHZZERO=183, HIGHZONE=184, IF=185, 
+		IFF=186, IFNONE=187, IGNORE_BINS=188, ILLEGAL_BINS=189, IMPLEMENTS=190, 
+		IMPLIES=191, IMPORT=192, INCLUDE=193, INITIAL=194, INOUT=195, INPUT=196, 
+		INSIDE=197, INSTANCE=198, INT=199, INTEGER=200, INTERCONNECT=201, INTERFACE=202, 
+		INTERSECT=203, JOIN=204, JOIN_ANY=205, JOIN_NONE=206, LARGE=207, LET=208, 
+		LIBLIST=209, LIBRARY=210, LOCAL=211, LOCALPARAM=212, LOGIC=213, LONGINT=214, 
+		MACROMODULE=215, MATCHES=216, MEDIUM=217, MODPORT=218, MODULE=219, NAND=220, 
+		NEGEDGE=221, NETTYPE=222, NEW=223, NEXTTIME=224, NMOS=225, NOR=226, NOSHOWCANCELLED=227, 
+		NOT=228, NOTIFZERO=229, NOTIFONE=230, NULL=231, OPTIONDT=232, OR=233, 
+		OUTPUT=234, PACKAGE=235, PACKED=236, PARAMETER=237, PMOS=238, POSEDGE=239, 
+		PRIMITIVE=240, PRIORITY=241, PROGRAM=242, PROPERTY=243, PROTECTED=244, 
+		PULLZERO=245, PULLONE=246, PULLDOWN=247, PULLUP=248, PULSESTYLE_ONDETECT=249, 
+		PULSESTYLE_ONEVENT=250, PURE=251, RAND=252, RANDC=253, RANDCASE=254, RANDOMIZE=255, 
+		RANDSEQUENCE=256, RCMOS=257, REAL=258, REALTIME=259, REF=260, REG=261, 
+		REJECT_ON=262, RELEASE=263, REPEAT=264, RESTRICT=265, RETURN=266, RNMOS=267, 
+		RPMOS=268, RTRAN=269, RTRANIFZERO=270, RTRANIFONE=271, S_ALWAYS=272, S_EVENTUALLY=273, 
+		S_NEXTTIME=274, S_UNTIL=275, S_UNTIL_WITH=276, SAMPLE=277, SCALARED=278, 
+		SEQUENCE=279, SHORTINT=280, SHORTREAL=281, SHOWCANCELLED=282, SIGNED=283, 
+		SMALL=284, SOFT=285, SOLVE=286, SPECIFY=287, SPECPARAM=288, STATIC=289, 
+		STD=290, STRING=291, STRONG=292, STRONGZERO=293, STRONGONE=294, STRUCT=295, 
+		SUPER=296, SUPPLYZERO=297, SUPPLYONE=298, SYNC_ACCEPT_ON=299, SYNC_REJECT_ON=300, 
+		TABLE=301, TAGGED=302, TASK=303, THIS=304, THROUGHOUT=305, TIME=306, TIMEPRECISION=307, 
+		TIMEUNIT=308, TRAN=309, TRANIFZERO=310, TRANIFONE=311, TRI=312, TRIZERO=313, 
+		TRIONE=314, TRIAND=315, TRIOR=316, TRIREG=317, TYPE=318, TYPE_OPTIONDT=319, 
+		TYPEDEF=320, UNION=321, UNIQUE=322, UNIQUEZERO=323, UNSIGNED=324, UNTIL=325, 
+		UNTIL_WITH=326, UNTYPED=327, USE=328, UWIRE=329, VAR=330, VECTORED=331, 
+		VIRTUAL=332, VOID=333, WAIT=334, WAIT_ORDER=335, WAND=336, WEAK=337, WEAKZERO=338, 
+		WEAKONE=339, WHILE=340, WILDCARD=341, WIRE=342, WITH=343, WITHIN=344, 
+		WOR=345, XNOR=346, XOR=347, LC=348, VL=349, VLMIGT=350, VLEQ=351, VLEQGT=352, 
+		VLVL=353, RC=354, TI=355, TIAM=356, TICA=357, TIVL=358, TIME_LITERAL=359, 
+		DECIMAL_NUMBER=360, BINARY_NUMBER=361, OCTAL_NUMBER=362, HEX_NUMBER=363, 
+		REAL_NUMBER=364, UNBASED_UNSIZED_LITERAL=365, STRING_LITERAL=366, COMMENT=367, 
+		ESCAPED_IDENTIFIER=368, SIMPLE_IDENTIFIER=369, SYSTEM_TF_IDENTIFIER=370, 
+		WHITE_SPACE=371, ZERO_OR_ONE_Z_OR_X=372, MIINCDIR=373, FILE_PATH_SPEC=374, 
+		OUTPUT_OR_LEVEL_SYMBOL=375, LEVEL_ONLY_SYMBOL=376, EDGE_SYMBOL=377, FILE_DIRECTIVE=378, 
+		LINE_DIRECTIVE_=379, BEGIN_KEYWORDS_DIRECTIVE=380, CELLDEFINE_DIRECTIVE=381, 
+		DEFAULT_NETTYPE_DIRECTIVE=382, DEFINE_DIRECTIVE=383, ELSE_DIRECTIVE=384, 
+		ELSIF_DIRECTIVE=385, END_KEYWORDS_DIRECTIVE=386, ENDCELLDEFINE_DIRECTIVE=387, 
+		ENDIF_DIRECTIVE=388, IFDEF_DIRECTIVE=389, IFNDEF_DIRECTIVE=390, INCLUDE_DIRECTIVE=391, 
+		LINE_DIRECTIVE=392, NOUNCONNECTED_DRIVE_DIRECTIVE=393, PRAGMA_DIRECTIVE=394, 
+		RESETALL_DIRECTIVE=395, TIMESCALE_DIRECTIVE=396, UNCONNECTED_DRIVE_DIRECTIVE=397, 
+		UNDEF_DIRECTIVE=398, UNDEFINEALL_DIRECTIVE=399, MACRO_USAGE=400, DIRECTIVE_TEXT=401, 
+		DIRECTIVE_IDENTIFIER=402, DIRECTIVE_COMMENT=403, DIRECTIVE_WHITE_SPACE=404, 
+		DIRECTIVE_NEWLINE=405, MACRO_TEXT=406, MACRO_ESC_NEWLINE=407, SOURCE_TEXT=408;
 	public static final int
 		RULE_source_text = 0, RULE_compiler_directive = 1, RULE_file_directive = 2, 
 		RULE_line_directive_ = 3, RULE_begin_keywords_directive = 4, RULE_celldefine_directive = 5, 
@@ -117,112 +116,112 @@ public class SystemVerilogPreParser extends Parser {
 	private static String[] makeLiteralNames() {
 		return new String[] {
 			null, "'!'", "'!='", "'!=='", "'!=?'", "'\"'", "'\"DPI\"'", "'\"DPI-C\"'", 
-			"'#'", "'##'", "'#-#'", "'#0'", "'#=#'", "'$'", "'$error'", "'$fatal'", 
-			"'$fullskew'", "'$hold'", "'$info'", "'$nochange'", "'$period'", "'$recovery'", 
-			"'$recrem'", "'$removal'", "'$root.'", "'$setup'", "'$setuphold'", "'$skew'", 
-			"'$timeskew'", "'$unit'", "'$warning'", "'$width'", "'%'", "'%='", "'&'", 
-			"'&&'", "'&&&'", "'&='", "'('", "')'", "'*'", "'**'", "'*/'", "'*::*'", 
-			"'*='", "'*>'", "'+'", "'++'", "'+:'", "'+='", "','", "'-'", "'--'", 
-			"'-:'", "'-='", "'->'", "'->>'", "'-incdir'", "'.'", "'.*'", "'/'", "'/*'", 
-			"'//'", "'/='", "'1step'", "':'", "':/'", "'::'", "':='", "';'", "'<'", 
-			"'<->'", "'<<'", "'<<<'", "'<<<='", "'<<='", "'<='", "'='", "'=='", "'==='", 
-			"'==?'", "'=>'", "'>'", "'>='", "'>>'", "'>>='", "'>>>'", "'>>>='", "'?'", 
-			"'@'", "'@@'", "'PATHPULSE$'", "'['", "'''", "']'", "'^'", "'^='", "'^~'", 
-			null, "'accept_on'", "'alias'", "'always'", "'always_comb'", "'always_ff'", 
-			"'always_latch'", "'and'", "'assert'", "'assign'", "'assume'", "'automatic'", 
-			"'before'", "'begin'", "'bind'", "'bins'", "'binsof'", "'bit'", "'break'", 
-			"'buf'", "'bufif0'", "'bufif1'", "'byte'", "'case'", "'casex'", "'casez'", 
-			"'cell'", "'chandle'", "'checker'", "'class'", "'clocking'", "'cmos'", 
-			"'config'", "'const'", "'constraint'", "'context'", "'continue'", "'cover'", 
-			"'covergroup'", "'coverpoint'", "'cross'", "'deassign'", "'default'", 
-			"'defparam'", "'design'", "'disable'", "'dist'", "'do'", "'edge'", "'else'", 
-			"'end'", "'endcase'", "'endchecker'", "'endclass'", "'endclocking'", 
-			"'endconfig'", "'endfunction'", "'endgenerate'", "'endgroup'", "'endinterface'", 
-			"'endmodule'", "'endpackage'", "'endprimitive'", "'endprogram'", "'endproperty'", 
-			"'endsequence'", "'endspecify'", "'endtable'", "'endtask'", "'enum'", 
-			"'event'", "'expect'", "'export'", "'extends'", "'extern'", "'final'", 
-			"'first_match'", "'for'", "'force'", "'foreach'", "'forever'", "'fork'", 
-			"'forkjoin'", "'function'", "'generate'", "'genvar'", "'global'", "'highz0'", 
-			"'highz1'", "'if'", "'iff'", "'ifnone'", "'ignore_bins'", "'illegal_bins'", 
-			"'implements'", "'implies'", "'import'", "'include'", "'initial'", "'inout'", 
-			"'input'", "'inside'", "'instance'", "'int'", "'integer'", "'interconnect'", 
-			"'interface'", "'intersect'", "'join'", "'join_any'", "'join_none'", 
-			"'large'", "'let'", "'liblist'", "'library'", "'local'", "'localparam'", 
-			"'logic'", "'longint'", "'macromodule'", "'matches'", "'medium'", "'modport'", 
-			"'module'", "'nand'", "'negedge'", "'nettype'", "'new'", "'nexttime'", 
-			"'nmos'", "'nor'", "'noshowcancelled'", "'not'", "'notif0'", "'notif1'", 
-			"'null'", "'option.'", "'or'", "'output'", "'package'", "'packed'", "'parameter'", 
-			"'pmos'", "'posedge'", "'primitive'", "'priority'", "'program'", "'property'", 
-			"'protected'", "'pull0'", "'pull1'", "'pulldown'", "'pullup'", "'pulsestyle_ondetect'", 
-			"'pulsestyle_onevent'", "'pure'", "'rand'", "'randc'", "'randcase'", 
-			"'randomize'", "'randsequence'", "'rcmos'", "'real'", "'realtime'", "'ref'", 
-			"'reg'", "'reject_on'", "'release'", "'repeat'", "'restrict'", "'return'", 
-			"'rnmos'", "'rpmos'", "'rtran'", "'rtranif0'", "'rtranif1'", "'s_always'", 
-			"'s_eventually'", "'s_nexttime'", "'s_until'", "'s_until_with'", "'sample'", 
-			"'scalared'", "'sequence'", "'shortint'", "'shortreal'", "'showcancelled'", 
-			"'signed'", "'small'", "'soft'", "'solve'", "'specify'", "'specparam'", 
-			"'static'", "'std'", "'string'", "'strong'", "'strong0'", "'strong1'", 
-			"'struct'", "'super'", "'supply0'", "'supply1'", "'sync_accept_on'", 
-			"'sync_reject_on'", "'table'", "'tagged'", "'task'", "'this'", "'throughout'", 
-			"'time'", "'timeprecision'", "'timeunit'", "'tran'", "'tranif0'", "'tranif1'", 
-			"'tri'", "'tri0'", "'tri1'", "'triand'", "'trior'", "'trireg'", "'type'", 
-			"'type_option.'", "'typedef'", "'union'", "'unique'", "'unique0'", "'unsigned'", 
-			"'until'", "'until_with'", "'untyped'", "'use'", "'uwire'", "'var'", 
-			"'vectored'", "'virtual'", "'void'", "'wait'", "'wait_order'", "'wand'", 
-			"'weak'", "'weak0'", "'weak1'", "'while'", "'wildcard'", "'wire'", "'with'", 
-			"'within'", "'wor'", "'xnor'", "'xor'", "'{'", "'|'", "'|->'", "'|='", 
-			"'|=>'", "'||'", "'}'", "'~'", "'~&'", "'~^'", "'~|'", null, null, null, 
-			null, null, null, null, null, null, null, null, null, null, null, null, 
-			null, null, null, null, null, null, "'__FILE__'", "'__LINE__'", null, 
-			"'celldefine'", null, null, null, null, "'end_keywords'", "'endcelldefine'", 
-			null, null, null, null, null, "'nounconnected_drive'", null, "'resetall'", 
-			null, null, null, "'undefineall'"
+			"'#'", "'##'", "'#-#'", "'#=#'", "'$'", "'$error'", "'$fatal'", "'$fullskew'", 
+			"'$hold'", "'$info'", "'$nochange'", "'$period'", "'$recovery'", "'$recrem'", 
+			"'$removal'", "'$root.'", "'$setup'", "'$setuphold'", "'$skew'", "'$timeskew'", 
+			"'$unit'", "'$warning'", "'$width'", "'%'", "'%='", "'&'", "'&&'", "'&&&'", 
+			"'&='", "'''", "'('", "')'", "'*'", "'**'", "'*/'", "'*::*'", "'*='", 
+			"'*>'", "'+'", "'++'", "'+:'", "'+='", "','", "'-'", "'--'", "'-:'", 
+			"'-='", "'->'", "'->>'", "'.'", "'.*'", "'/'", "'/*'", "'//'", "'/='", 
+			"'1step'", "':'", "':/'", "'::'", "':='", "';'", "'<'", "'<->'", "'<<'", 
+			"'<<<'", "'<<<='", "'<<='", "'<='", "'='", "'=='", "'==='", "'==?'", 
+			"'=>'", "'>'", "'>='", "'>>'", "'>>='", "'>>>'", "'>>>='", "'?'", "'@'", 
+			"'@@'", "'PATHPULSE$'", "'['", "']'", "'^'", "'^='", "'^~'", null, "'accept_on'", 
+			"'alias'", "'always'", "'always_comb'", "'always_ff'", "'always_latch'", 
+			"'and'", "'assert'", "'assign'", "'assume'", "'automatic'", "'before'", 
+			"'begin'", "'bind'", "'bins'", "'binsof'", "'bit'", "'break'", "'buf'", 
+			"'bufif0'", "'bufif1'", "'byte'", "'case'", "'casex'", "'casez'", "'cell'", 
+			"'chandle'", "'checker'", "'class'", "'clocking'", "'cmos'", "'config'", 
+			"'const'", "'constraint'", "'context'", "'continue'", "'cover'", "'covergroup'", 
+			"'coverpoint'", "'cross'", "'deassign'", "'default'", "'defparam'", "'design'", 
+			"'disable'", "'dist'", "'do'", "'edge'", "'else'", "'end'", "'endcase'", 
+			"'endchecker'", "'endclass'", "'endclocking'", "'endconfig'", "'endfunction'", 
+			"'endgenerate'", "'endgroup'", "'endinterface'", "'endmodule'", "'endpackage'", 
+			"'endprimitive'", "'endprogram'", "'endproperty'", "'endsequence'", "'endspecify'", 
+			"'endtable'", "'endtask'", "'enum'", "'event'", "'expect'", "'export'", 
+			"'extends'", "'extern'", "'final'", "'first_match'", "'for'", "'force'", 
+			"'foreach'", "'forever'", "'fork'", "'forkjoin'", "'function'", "'generate'", 
+			"'genvar'", "'global'", "'highz0'", "'highz1'", "'if'", "'iff'", "'ifnone'", 
+			"'ignore_bins'", "'illegal_bins'", "'implements'", "'implies'", "'import'", 
+			"'include'", "'initial'", "'inout'", "'input'", "'inside'", "'instance'", 
+			"'int'", "'integer'", "'interconnect'", "'interface'", "'intersect'", 
+			"'join'", "'join_any'", "'join_none'", "'large'", "'let'", "'liblist'", 
+			"'library'", "'local'", "'localparam'", "'logic'", "'longint'", "'macromodule'", 
+			"'matches'", "'medium'", "'modport'", "'module'", "'nand'", "'negedge'", 
+			"'nettype'", "'new'", "'nexttime'", "'nmos'", "'nor'", "'noshowcancelled'", 
+			"'not'", "'notif0'", "'notif1'", "'null'", "'option.'", "'or'", "'output'", 
+			"'package'", "'packed'", "'parameter'", "'pmos'", "'posedge'", "'primitive'", 
+			"'priority'", "'program'", "'property'", "'protected'", "'pull0'", "'pull1'", 
+			"'pulldown'", "'pullup'", "'pulsestyle_ondetect'", "'pulsestyle_onevent'", 
+			"'pure'", "'rand'", "'randc'", "'randcase'", "'randomize'", "'randsequence'", 
+			"'rcmos'", "'real'", "'realtime'", "'ref'", "'reg'", "'reject_on'", "'release'", 
+			"'repeat'", "'restrict'", "'return'", "'rnmos'", "'rpmos'", "'rtran'", 
+			"'rtranif0'", "'rtranif1'", "'s_always'", "'s_eventually'", "'s_nexttime'", 
+			"'s_until'", "'s_until_with'", "'sample'", "'scalared'", "'sequence'", 
+			"'shortint'", "'shortreal'", "'showcancelled'", "'signed'", "'small'", 
+			"'soft'", "'solve'", "'specify'", "'specparam'", "'static'", "'std'", 
+			"'string'", "'strong'", "'strong0'", "'strong1'", "'struct'", "'super'", 
+			"'supply0'", "'supply1'", "'sync_accept_on'", "'sync_reject_on'", "'table'", 
+			"'tagged'", "'task'", "'this'", "'throughout'", "'time'", "'timeprecision'", 
+			"'timeunit'", "'tran'", "'tranif0'", "'tranif1'", "'tri'", "'tri0'", 
+			"'tri1'", "'triand'", "'trior'", "'trireg'", "'type'", "'type_option.'", 
+			"'typedef'", "'union'", "'unique'", "'unique0'", "'unsigned'", "'until'", 
+			"'until_with'", "'untyped'", "'use'", "'uwire'", "'var'", "'vectored'", 
+			"'virtual'", "'void'", "'wait'", "'wait_order'", "'wand'", "'weak'", 
+			"'weak0'", "'weak1'", "'while'", "'wildcard'", "'wire'", "'with'", "'within'", 
+			"'wor'", "'xnor'", "'xor'", "'{'", "'|'", "'|->'", "'|='", "'|=>'", "'||'", 
+			"'}'", "'~'", "'~&'", "'~^'", "'~|'", null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, "'-incdir'", null, null, 
+			null, null, "'__FILE__'", "'__LINE__'", null, "'celldefine'", null, null, 
+			null, null, "'end_keywords'", "'endcelldefine'", null, null, null, null, 
+			null, "'nounconnected_drive'", null, "'resetall'", null, null, null, 
+			"'undefineall'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
 			null, "EM", "EMEQ", "EMEQEQ", "EMEQQM", "DQ", "DQDPIDQ", "DQDPIMICDQ", 
-			"HA", "HAHA", "HAMIHA", "HAZERO", "HAEQHA", "DL", "DLERROR", "DLFATAL", 
-			"DLFULLSKEW", "DLHOLD", "DLINFO", "DLNOCHANGE", "DLPERIOD", "DLRECOVERY", 
-			"DLRECREM", "DLREMOVAL", "DLROOTDT", "DLSETUP", "DLSETUPHOLD", "DLSKEW", 
-			"DLTIMESKEW", "DLUNIT", "DLWARNING", "DLWIDTH", "MO", "MOEQ", "AM", "AMAM", 
-			"AMAMAM", "AMEQ", "LP", "RP", "AS", "ASAS", "ASSL", "ASCLCLAS", "ASEQ", 
-			"ASGT", "PL", "PLPL", "PLCL", "PLEQ", "CO", "MI", "MIMI", "MICL", "MIEQ", 
-			"MIGT", "MIGTGT", "MIINCDIR", "DT", "DTAS", "SL", "SLAS", "SLSL", "SLEQ", 
-			"ONESTEP", "CL", "CLSL", "CLCL", "CLEQ", "SC", "LT", "LTMIGT", "LTLT", 
-			"LTLTLT", "LTLTLTEQ", "LTLTEQ", "LTEQ", "EQ", "EQEQ", "EQEQEQ", "EQEQQM", 
-			"EQGT", "GT", "GTEQ", "GTGT", "GTGTEQ", "GTGTGT", "GTGTGTEQ", "QM", "AT", 
-			"ATAT", "PATHPULSEDL", "LB", "BSAP", "RB", "CA", "CAEQ", "CATI", "GA", 
-			"ACCEPT_ON", "ALIAS", "ALWAYS", "ALWAYS_COMB", "ALWAYS_FF", "ALWAYS_LATCH", 
-			"AND", "ASSERT", "ASSIGN", "ASSUME", "AUTOMATIC", "BEFORE", "BEGIN", 
-			"BIND", "BINS", "BINSOF", "BIT", "BREAK", "BUF", "BUFIFZERO", "BUFIFONE", 
-			"BYTE", "CASE", "CASEX", "CASEZ", "CELL", "CHANDLE", "CHECKER", "CLASS", 
-			"CLOCKING", "CMOS", "CONFIG", "CONST", "CONSTRAINT", "CONTEXT", "CONTINUE", 
-			"COVER", "COVERGROUP", "COVERPOINT", "CROSS", "DEASSIGN", "DEFAULT", 
-			"DEFPARAM", "DESIGN", "DISABLE", "DIST", "DO", "EDGE", "ELSE", "END", 
-			"ENDCASE", "ENDCHECKER", "ENDCLASS", "ENDCLOCKING", "ENDCONFIG", "ENDFUNCTION", 
-			"ENDGENERATE", "ENDGROUP", "ENDINTERFACE", "ENDMODULE", "ENDPACKAGE", 
-			"ENDPRIMITIVE", "ENDPROGRAM", "ENDPROPERTY", "ENDSEQUENCE", "ENDSPECIFY", 
-			"ENDTABLE", "ENDTASK", "ENUM", "EVENT", "EXPECT", "EXPORT", "EXTENDS", 
-			"EXTERN", "FINAL", "FIRST_MATCH", "FOR", "FORCE", "FOREACH", "FOREVER", 
-			"FORK", "FORKJOIN", "FUNCTION", "GENERATE", "GENVAR", "GLOBAL", "HIGHZZERO", 
-			"HIGHZONE", "IF", "IFF", "IFNONE", "IGNORE_BINS", "ILLEGAL_BINS", "IMPLEMENTS", 
-			"IMPLIES", "IMPORT", "INCLUDE", "INITIAL", "INOUT", "INPUT", "INSIDE", 
-			"INSTANCE", "INT", "INTEGER", "INTERCONNECT", "INTERFACE", "INTERSECT", 
-			"JOIN", "JOIN_ANY", "JOIN_NONE", "LARGE", "LET", "LIBLIST", "LIBRARY", 
-			"LOCAL", "LOCALPARAM", "LOGIC", "LONGINT", "MACROMODULE", "MATCHES", 
-			"MEDIUM", "MODPORT", "MODULE", "NAND", "NEGEDGE", "NETTYPE", "NEW", "NEXTTIME", 
-			"NMOS", "NOR", "NOSHOWCANCELLED", "NOT", "NOTIFZERO", "NOTIFONE", "NULL", 
-			"OPTIONDT", "OR", "OUTPUT", "PACKAGE", "PACKED", "PARAMETER", "PMOS", 
-			"POSEDGE", "PRIMITIVE", "PRIORITY", "PROGRAM", "PROPERTY", "PROTECTED", 
-			"PULLZERO", "PULLONE", "PULLDOWN", "PULLUP", "PULSESTYLE_ONDETECT", "PULSESTYLE_ONEVENT", 
-			"PURE", "RAND", "RANDC", "RANDCASE", "RANDOMIZE", "RANDSEQUENCE", "RCMOS", 
-			"REAL", "REALTIME", "REF", "REG", "REJECT_ON", "RELEASE", "REPEAT", "RESTRICT", 
-			"RETURN", "RNMOS", "RPMOS", "RTRAN", "RTRANIFZERO", "RTRANIFONE", "S_ALWAYS", 
-			"S_EVENTUALLY", "S_NEXTTIME", "S_UNTIL", "S_UNTIL_WITH", "SAMPLE", "SCALARED", 
-			"SEQUENCE", "SHORTINT", "SHORTREAL", "SHOWCANCELLED", "SIGNED", "SMALL", 
-			"SOFT", "SOLVE", "SPECIFY", "SPECPARAM", "STATIC", "STD", "STRING", "STRONG", 
+			"HA", "HAHA", "HAMIHA", "HAEQHA", "DL", "DLERROR", "DLFATAL", "DLFULLSKEW", 
+			"DLHOLD", "DLINFO", "DLNOCHANGE", "DLPERIOD", "DLRECOVERY", "DLRECREM", 
+			"DLREMOVAL", "DLROOTDT", "DLSETUP", "DLSETUPHOLD", "DLSKEW", "DLTIMESKEW", 
+			"DLUNIT", "DLWARNING", "DLWIDTH", "MO", "MOEQ", "AM", "AMAM", "AMAMAM", 
+			"AMEQ", "AP", "LP", "RP", "AS", "ASAS", "ASSL", "ASCLCLAS", "ASEQ", "ASGT", 
+			"PL", "PLPL", "PLCL", "PLEQ", "CO", "MI", "MIMI", "MICL", "MIEQ", "MIGT", 
+			"MIGTGT", "DT", "DTAS", "SL", "SLAS", "SLSL", "SLEQ", "ONESTEP", "CL", 
+			"CLSL", "CLCL", "CLEQ", "SC", "LT", "LTMIGT", "LTLT", "LTLTLT", "LTLTLTEQ", 
+			"LTLTEQ", "LTEQ", "EQ", "EQEQ", "EQEQEQ", "EQEQQM", "EQGT", "GT", "GTEQ", 
+			"GTGT", "GTGTEQ", "GTGTGT", "GTGTGTEQ", "QM", "AT", "ATAT", "PATHPULSEDL", 
+			"LB", "RB", "CA", "CAEQ", "CATI", "GA", "ACCEPT_ON", "ALIAS", "ALWAYS", 
+			"ALWAYS_COMB", "ALWAYS_FF", "ALWAYS_LATCH", "AND", "ASSERT", "ASSIGN", 
+			"ASSUME", "AUTOMATIC", "BEFORE", "BEGIN", "BIND", "BINS", "BINSOF", "BIT", 
+			"BREAK", "BUF", "BUFIFZERO", "BUFIFONE", "BYTE", "CASE", "CASEX", "CASEZ", 
+			"CELL", "CHANDLE", "CHECKER", "CLASS", "CLOCKING", "CMOS", "CONFIG", 
+			"CONST", "CONSTRAINT", "CONTEXT", "CONTINUE", "COVER", "COVERGROUP", 
+			"COVERPOINT", "CROSS", "DEASSIGN", "DEFAULT", "DEFPARAM", "DESIGN", "DISABLE", 
+			"DIST", "DO", "EDGE", "ELSE", "END", "ENDCASE", "ENDCHECKER", "ENDCLASS", 
+			"ENDCLOCKING", "ENDCONFIG", "ENDFUNCTION", "ENDGENERATE", "ENDGROUP", 
+			"ENDINTERFACE", "ENDMODULE", "ENDPACKAGE", "ENDPRIMITIVE", "ENDPROGRAM", 
+			"ENDPROPERTY", "ENDSEQUENCE", "ENDSPECIFY", "ENDTABLE", "ENDTASK", "ENUM", 
+			"EVENT", "EXPECT", "EXPORT", "EXTENDS", "EXTERN", "FINAL", "FIRST_MATCH", 
+			"FOR", "FORCE", "FOREACH", "FOREVER", "FORK", "FORKJOIN", "FUNCTION", 
+			"GENERATE", "GENVAR", "GLOBAL", "HIGHZZERO", "HIGHZONE", "IF", "IFF", 
+			"IFNONE", "IGNORE_BINS", "ILLEGAL_BINS", "IMPLEMENTS", "IMPLIES", "IMPORT", 
+			"INCLUDE", "INITIAL", "INOUT", "INPUT", "INSIDE", "INSTANCE", "INT", 
+			"INTEGER", "INTERCONNECT", "INTERFACE", "INTERSECT", "JOIN", "JOIN_ANY", 
+			"JOIN_NONE", "LARGE", "LET", "LIBLIST", "LIBRARY", "LOCAL", "LOCALPARAM", 
+			"LOGIC", "LONGINT", "MACROMODULE", "MATCHES", "MEDIUM", "MODPORT", "MODULE", 
+			"NAND", "NEGEDGE", "NETTYPE", "NEW", "NEXTTIME", "NMOS", "NOR", "NOSHOWCANCELLED", 
+			"NOT", "NOTIFZERO", "NOTIFONE", "NULL", "OPTIONDT", "OR", "OUTPUT", "PACKAGE", 
+			"PACKED", "PARAMETER", "PMOS", "POSEDGE", "PRIMITIVE", "PRIORITY", "PROGRAM", 
+			"PROPERTY", "PROTECTED", "PULLZERO", "PULLONE", "PULLDOWN", "PULLUP", 
+			"PULSESTYLE_ONDETECT", "PULSESTYLE_ONEVENT", "PURE", "RAND", "RANDC", 
+			"RANDCASE", "RANDOMIZE", "RANDSEQUENCE", "RCMOS", "REAL", "REALTIME", 
+			"REF", "REG", "REJECT_ON", "RELEASE", "REPEAT", "RESTRICT", "RETURN", 
+			"RNMOS", "RPMOS", "RTRAN", "RTRANIFZERO", "RTRANIFONE", "S_ALWAYS", "S_EVENTUALLY", 
+			"S_NEXTTIME", "S_UNTIL", "S_UNTIL_WITH", "SAMPLE", "SCALARED", "SEQUENCE", 
+			"SHORTINT", "SHORTREAL", "SHOWCANCELLED", "SIGNED", "SMALL", "SOFT", 
+			"SOLVE", "SPECIFY", "SPECPARAM", "STATIC", "STD", "STRING", "STRONG", 
 			"STRONGZERO", "STRONGONE", "STRUCT", "SUPER", "SUPPLYZERO", "SUPPLYONE", 
 			"SYNC_ACCEPT_ON", "SYNC_REJECT_ON", "TABLE", "TAGGED", "TASK", "THIS", 
 			"THROUGHOUT", "TIME", "TIMEPRECISION", "TIMEUNIT", "TRAN", "TRANIFZERO", 
@@ -235,17 +234,17 @@ public class SystemVerilogPreParser extends Parser {
 			"RC", "TI", "TIAM", "TICA", "TIVL", "TIME_LITERAL", "DECIMAL_NUMBER", 
 			"BINARY_NUMBER", "OCTAL_NUMBER", "HEX_NUMBER", "REAL_NUMBER", "UNBASED_UNSIZED_LITERAL", 
 			"STRING_LITERAL", "COMMENT", "ESCAPED_IDENTIFIER", "SIMPLE_IDENTIFIER", 
-			"SYSTEM_TF_IDENTIFIER", "WHITE_SPACE", "FILE_PATH_SPEC", "FINISH_NUMBER", 
-			"INIT_VAL", "OUTPUT_SYMBOL", "LEVEL_SYMBOL", "EDGE_SYMBOL", "EDGE_DESCRIPTOR", 
-			"SCALAR_CONSTANT", "FILE_DIRECTIVE", "LINE_DIRECTIVE_", "BEGIN_KEYWORDS_DIRECTIVE", 
-			"CELLDEFINE_DIRECTIVE", "DEFAULT_NETTYPE_DIRECTIVE", "DEFINE_DIRECTIVE", 
-			"ELSE_DIRECTIVE", "ELSIF_DIRECTIVE", "END_KEYWORDS_DIRECTIVE", "ENDCELLDEFINE_DIRECTIVE", 
-			"ENDIF_DIRECTIVE", "IFDEF_DIRECTIVE", "IFNDEF_DIRECTIVE", "INCLUDE_DIRECTIVE", 
-			"LINE_DIRECTIVE", "NOUNCONNECTED_DRIVE_DIRECTIVE", "PRAGMA_DIRECTIVE", 
-			"RESETALL_DIRECTIVE", "TIMESCALE_DIRECTIVE", "UNCONNECTED_DRIVE_DIRECTIVE", 
-			"UNDEF_DIRECTIVE", "UNDEFINEALL_DIRECTIVE", "MACRO_USAGE", "DIRECTIVE_TEXT", 
-			"DIRECTIVE_IDENTIFIER", "DIRECTIVE_COMMENT", "DIRECTIVE_WHITE_SPACE", 
-			"DIRECTIVE_NEWLINE", "MACRO_TEXT", "MT_ESC_NEWLINE", "SOURCE_TEXT"
+			"SYSTEM_TF_IDENTIFIER", "WHITE_SPACE", "ZERO_OR_ONE_Z_OR_X", "MIINCDIR", 
+			"FILE_PATH_SPEC", "OUTPUT_OR_LEVEL_SYMBOL", "LEVEL_ONLY_SYMBOL", "EDGE_SYMBOL", 
+			"FILE_DIRECTIVE", "LINE_DIRECTIVE_", "BEGIN_KEYWORDS_DIRECTIVE", "CELLDEFINE_DIRECTIVE", 
+			"DEFAULT_NETTYPE_DIRECTIVE", "DEFINE_DIRECTIVE", "ELSE_DIRECTIVE", "ELSIF_DIRECTIVE", 
+			"END_KEYWORDS_DIRECTIVE", "ENDCELLDEFINE_DIRECTIVE", "ENDIF_DIRECTIVE", 
+			"IFDEF_DIRECTIVE", "IFNDEF_DIRECTIVE", "INCLUDE_DIRECTIVE", "LINE_DIRECTIVE", 
+			"NOUNCONNECTED_DRIVE_DIRECTIVE", "PRAGMA_DIRECTIVE", "RESETALL_DIRECTIVE", 
+			"TIMESCALE_DIRECTIVE", "UNCONNECTED_DRIVE_DIRECTIVE", "UNDEF_DIRECTIVE", 
+			"UNDEFINEALL_DIRECTIVE", "MACRO_USAGE", "DIRECTIVE_TEXT", "DIRECTIVE_IDENTIFIER", 
+			"DIRECTIVE_COMMENT", "DIRECTIVE_WHITE_SPACE", "DIRECTIVE_NEWLINE", "MACRO_TEXT", 
+			"MACRO_ESC_NEWLINE", "SOURCE_TEXT"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -2154,6 +2153,10 @@ public class SystemVerilogPreParser extends Parser {
 		public TerminalNode MACRO_TEXT(int i) {
 			return getToken(SystemVerilogPreParser.MACRO_TEXT, i);
 		}
+		public List<TerminalNode> MACRO_ESC_NEWLINE() { return getTokens(SystemVerilogPreParser.MACRO_ESC_NEWLINE); }
+		public TerminalNode MACRO_ESC_NEWLINE(int i) {
+			return getToken(SystemVerilogPreParser.MACRO_ESC_NEWLINE, i);
+		}
 		public Macro_textContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2183,11 +2186,19 @@ public class SystemVerilogPreParser extends Parser {
 			setState(229);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (_la==MACRO_TEXT) {
+			while (_la==MACRO_TEXT || _la==MACRO_ESC_NEWLINE) {
 				{
 				{
 				setState(226);
-				match(MACRO_TEXT);
+				_la = _input.LA(1);
+				if ( !(_la==MACRO_TEXT || _la==MACRO_ESC_NEWLINE) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				}
 				}
 				setState(231);
@@ -2208,79 +2219,144 @@ public class SystemVerilogPreParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\u019e\u00eb\4\2\t"+
-		"\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13"+
-		"\t\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
-		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31\t\31"+
-		"\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\4\36\t\36\4\37\t\37\4 \t \3\2"+
-		"\7\2B\n\2\f\2\16\2E\13\2\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3"+
-		"\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\5\3[\n\3\3\4\3\4\3\4\3\5\3\5\3\5\3"+
-		"\6\3\6\3\6\3\6\3\7\3\7\3\7\3\b\3\b\3\b\3\b\3\t\3\t\3\t\3\n\3\n\3\n\3\13"+
-		"\3\13\3\13\3\13\3\13\7\13y\n\13\f\13\16\13|\13\13\3\13\5\13\177\n\13\3"+
-		"\13\3\13\3\f\3\f\3\f\3\f\3\f\7\f\u0088\n\f\f\f\16\f\u008b\13\f\3\f\5\f"+
-		"\u008e\n\f\3\f\3\f\3\r\3\r\3\r\3\r\3\16\3\16\3\16\3\16\3\17\3\17\3\17"+
-		"\3\20\3\20\3\20\3\20\3\21\3\21\3\21\3\22\3\22\3\22\3\22\3\22\3\23\3\23"+
-		"\3\23\3\24\3\24\3\24\3\24\3\25\3\25\3\25\3\25\3\26\3\26\3\26\3\26\3\27"+
-		"\3\27\3\27\3\30\3\30\3\30\3\30\3\30\3\31\3\31\3\31\3\31\3\32\3\32\3\32"+
-		"\3\33\3\33\3\34\3\34\7\34\u00cb\n\34\f\34\16\34\u00ce\13\34\3\35\3\35"+
-		"\7\35\u00d2\n\35\f\35\16\35\u00d5\13\35\3\36\3\36\7\36\u00d9\n\36\f\36"+
-		"\16\36\u00dc\13\36\3\37\3\37\7\37\u00e0\n\37\f\37\16\37\u00e3\13\37\3"+
-		" \7 \u00e6\n \f \16 \u00e9\13 \3 \2\2!\2\4\6\b\n\f\16\20\22\24\26\30\32"+
-		"\34\36 \"$&(*,.\60\62\64\668:<>\2\2\2\u00ec\2C\3\2\2\2\4Z\3\2\2\2\6\\"+
-		"\3\2\2\2\b_\3\2\2\2\nb\3\2\2\2\ff\3\2\2\2\16i\3\2\2\2\20m\3\2\2\2\22p"+
-		"\3\2\2\2\24s\3\2\2\2\26\u0082\3\2\2\2\30\u0091\3\2\2\2\32\u0095\3\2\2"+
-		"\2\34\u0099\3\2\2\2\36\u009c\3\2\2\2 \u00a0\3\2\2\2\"\u00a3\3\2\2\2$\u00a8"+
-		"\3\2\2\2&\u00ab\3\2\2\2(\u00af\3\2\2\2*\u00b3\3\2\2\2,\u00b7\3\2\2\2."+
-		"\u00ba\3\2\2\2\60\u00bf\3\2\2\2\62\u00c3\3\2\2\2\64\u00c6\3\2\2\2\66\u00cc"+
-		"\3\2\2\28\u00d3\3\2\2\2:\u00da\3\2\2\2<\u00e1\3\2\2\2>\u00e7\3\2\2\2@"+
-		"B\5\4\3\2A@\3\2\2\2BE\3\2\2\2CA\3\2\2\2CD\3\2\2\2D\3\3\2\2\2EC\3\2\2\2"+
-		"F[\5\6\4\2G[\5\b\5\2H[\5\n\6\2I[\5\f\7\2J[\5\16\b\2K[\5\20\t\2L[\5\22"+
-		"\n\2M[\5\24\13\2N[\5\26\f\2O[\5\30\r\2P[\5\32\16\2Q[\5\34\17\2R[\5\36"+
-		"\20\2S[\5 \21\2T[\5\"\22\2U[\5$\23\2V[\5&\24\2W[\5(\25\2X[\5*\26\2Y[\5"+
-		",\27\2ZF\3\2\2\2ZG\3\2\2\2ZH\3\2\2\2ZI\3\2\2\2ZJ\3\2\2\2ZK\3\2\2\2ZL\3"+
-		"\2\2\2ZM\3\2\2\2ZN\3\2\2\2ZO\3\2\2\2ZP\3\2\2\2ZQ\3\2\2\2ZR\3\2\2\2ZS\3"+
-		"\2\2\2ZT\3\2\2\2ZU\3\2\2\2ZV\3\2\2\2ZW\3\2\2\2ZX\3\2\2\2ZY\3\2\2\2[\5"+
-		"\3\2\2\2\\]\7d\2\2]^\7\u0180\2\2^\7\3\2\2\2_`\7d\2\2`a\7\u0181\2\2a\t"+
-		"\3\2\2\2bc\7d\2\2cd\7\u0182\2\2de\7\u0197\2\2e\13\3\2\2\2fg\7d\2\2gh\7"+
-		"\u0183\2\2h\r\3\2\2\2ij\7d\2\2jk\7\u0184\2\2kl\7\u0197\2\2l\17\3\2\2\2"+
-		"mn\7d\2\2no\7\u0189\2\2o\21\3\2\2\2pq\7d\2\2qr\7\u0188\2\2r\23\3\2\2\2"+
-		"st\7d\2\2tu\7\u018b\2\2uv\5\64\33\2vz\5\66\34\2wy\5.\30\2xw\3\2\2\2y|"+
-		"\3\2\2\2zx\3\2\2\2z{\3\2\2\2{~\3\2\2\2|z\3\2\2\2}\177\5\60\31\2~}\3\2"+
-		"\2\2~\177\3\2\2\2\177\u0080\3\2\2\2\u0080\u0081\5\62\32\2\u0081\25\3\2"+
-		"\2\2\u0082\u0083\7d\2\2\u0083\u0084\7\u018c\2\2\u0084\u0085\5\64\33\2"+
-		"\u0085\u0089\58\35\2\u0086\u0088\5.\30\2\u0087\u0086\3\2\2\2\u0088\u008b"+
-		"\3\2\2\2\u0089\u0087\3\2\2\2\u0089\u008a\3\2\2\2\u008a\u008d\3\2\2\2\u008b"+
-		"\u0089\3\2\2\2\u008c\u008e\5\60\31\2\u008d\u008c\3\2\2\2\u008d\u008e\3"+
-		"\2\2\2\u008e\u008f\3\2\2\2\u008f\u0090\5\62\32\2\u0090\27\3\2\2\2\u0091"+
-		"\u0092\7d\2\2\u0092\u0093\7\u018d\2\2\u0093\u0094\7\u0197\2\2\u0094\31"+
-		"\3\2\2\2\u0095\u0096\7d\2\2\u0096\u0097\7\u018e\2\2\u0097\u0098\7\u0197"+
-		"\2\2\u0098\33\3\2\2\2\u0099\u009a\7d\2\2\u009a\u009b\7\u018f\2\2\u009b"+
-		"\35\3\2\2\2\u009c\u009d\7d\2\2\u009d\u009e\7\u0190\2\2\u009e\u009f\7\u0197"+
-		"\2\2\u009f\37\3\2\2\2\u00a0\u00a1\7d\2\2\u00a1\u00a2\7\u0191\2\2\u00a2"+
-		"!\3\2\2\2\u00a3\u00a4\7d\2\2\u00a4\u00a5\7\u0185\2\2\u00a5\u00a6\5\64"+
-		"\33\2\u00a6\u00a7\5> \2\u00a7#\3\2\2\2\u00a8\u00a9\7d\2\2\u00a9\u00aa"+
-		"\7\u0196\2\2\u00aa%\3\2\2\2\u00ab\u00ac\7d\2\2\u00ac\u00ad\7\u0192\2\2"+
-		"\u00ad\u00ae\7\u0197\2\2\u00ae\'\3\2\2\2\u00af\u00b0\7d\2\2\u00b0\u00b1"+
-		"\7\u0193\2\2\u00b1\u00b2\7\u0197\2\2\u00b2)\3\2\2\2\u00b3\u00b4\7d\2\2"+
-		"\u00b4\u00b5\7\u0194\2\2\u00b5\u00b6\5\64\33\2\u00b6+\3\2\2\2\u00b7\u00b8"+
-		"\7d\2\2\u00b8\u00b9\7\u0195\2\2\u00b9-\3\2\2\2\u00ba\u00bb\7d\2\2\u00bb"+
-		"\u00bc\7\u0187\2\2\u00bc\u00bd\5\64\33\2\u00bd\u00be\5:\36\2\u00be/\3"+
-		"\2\2\2\u00bf\u00c0\7d\2\2\u00c0\u00c1\7\u0186\2\2\u00c1\u00c2\5<\37\2"+
-		"\u00c2\61\3\2\2\2\u00c3\u00c4\7d\2\2\u00c4\u00c5\7\u018a\2\2\u00c5\63"+
-		"\3\2\2\2\u00c6\u00c7\7\u0198\2\2\u00c7\65\3\2\2\2\u00c8\u00cb\7\u019e"+
-		"\2\2\u00c9\u00cb\5\4\3\2\u00ca\u00c8\3\2\2\2\u00ca\u00c9\3\2\2\2\u00cb"+
-		"\u00ce\3\2\2\2\u00cc\u00ca\3\2\2\2\u00cc\u00cd\3\2\2\2\u00cd\67\3\2\2"+
-		"\2\u00ce\u00cc\3\2\2\2\u00cf\u00d2\7\u019e\2\2\u00d0\u00d2\5\4\3\2\u00d1"+
-		"\u00cf\3\2\2\2\u00d1\u00d0\3\2\2\2\u00d2\u00d5\3\2\2\2\u00d3\u00d1\3\2"+
-		"\2\2\u00d3\u00d4\3\2\2\2\u00d49\3\2\2\2\u00d5\u00d3\3\2\2\2\u00d6\u00d9"+
-		"\7\u019e\2\2\u00d7\u00d9\5\4\3\2\u00d8\u00d6\3\2\2\2\u00d8\u00d7\3\2\2"+
-		"\2\u00d9\u00dc\3\2\2\2\u00da\u00d8\3\2\2\2\u00da\u00db\3\2\2\2\u00db;"+
-		"\3\2\2\2\u00dc\u00da\3\2\2\2\u00dd\u00e0\7\u019e\2\2\u00de\u00e0\5\4\3"+
-		"\2\u00df\u00dd\3\2\2\2\u00df\u00de\3\2\2\2\u00e0\u00e3\3\2\2\2\u00e1\u00df"+
-		"\3\2\2\2\u00e1\u00e2\3\2\2\2\u00e2=\3\2\2\2\u00e3\u00e1\3\2\2\2\u00e4"+
-		"\u00e6\7\u019c\2\2\u00e5\u00e4\3\2\2\2\u00e6\u00e9\3\2\2\2\u00e7\u00e5"+
-		"\3\2\2\2\u00e7\u00e8\3\2\2\2\u00e8?\3\2\2\2\u00e9\u00e7\3\2\2\2\21CZz"+
-		"~\u0089\u008d\u00ca\u00cc\u00d1\u00d3\u00d8\u00da\u00df\u00e1\u00e7";
+		"\u0004\u0001\u0198\u00e9\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001"+
+		"\u0002\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004"+
+		"\u0002\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007"+
+		"\u0002\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0002\u000b\u0007\u000b"+
+		"\u0002\f\u0007\f\u0002\r\u0007\r\u0002\u000e\u0007\u000e\u0002\u000f\u0007"+
+		"\u000f\u0002\u0010\u0007\u0010\u0002\u0011\u0007\u0011\u0002\u0012\u0007"+
+		"\u0012\u0002\u0013\u0007\u0013\u0002\u0014\u0007\u0014\u0002\u0015\u0007"+
+		"\u0015\u0002\u0016\u0007\u0016\u0002\u0017\u0007\u0017\u0002\u0018\u0007"+
+		"\u0018\u0002\u0019\u0007\u0019\u0002\u001a\u0007\u001a\u0002\u001b\u0007"+
+		"\u001b\u0002\u001c\u0007\u001c\u0002\u001d\u0007\u001d\u0002\u001e\u0007"+
+		"\u001e\u0001\u0000\u0005\u0000@\b\u0000\n\u0000\f\u0000C\t\u0000\u0001"+
+		"\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001"+
+		"\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001"+
+		"\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001"+
+		"\u0001\u0001\u0001\u0003\u0001Y\b\u0001\u0001\u0002\u0001\u0002\u0001"+
+		"\u0002\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0004\u0001\u0004\u0001"+
+		"\u0004\u0001\u0004\u0001\u0005\u0001\u0005\u0001\u0005\u0001\u0006\u0001"+
+		"\u0006\u0001\u0006\u0001\u0006\u0001\u0007\u0001\u0007\u0001\u0007\u0001"+
+		"\b\u0001\b\u0001\b\u0001\t\u0001\t\u0001\t\u0001\t\u0001\t\u0005\tw\b"+
+		"\t\n\t\f\tz\t\t\u0001\t\u0003\t}\b\t\u0001\t\u0001\t\u0001\n\u0001\n\u0001"+
+		"\n\u0001\n\u0001\n\u0005\n\u0086\b\n\n\n\f\n\u0089\t\n\u0001\n\u0003\n"+
+		"\u008c\b\n\u0001\n\u0001\n\u0001\u000b\u0001\u000b\u0001\u000b\u0001\u000b"+
+		"\u0001\f\u0001\f\u0001\f\u0001\f\u0001\r\u0001\r\u0001\r\u0001\u000e\u0001"+
+		"\u000e\u0001\u000e\u0001\u000e\u0001\u000f\u0001\u000f\u0001\u000f\u0001"+
+		"\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0011\u0001"+
+		"\u0011\u0001\u0011\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001"+
+		"\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0014\u0001\u0014\u0001"+
+		"\u0014\u0001\u0014\u0001\u0015\u0001\u0015\u0001\u0015\u0001\u0016\u0001"+
+		"\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001\u0017\u0001\u0017\u0001"+
+		"\u0017\u0001\u0017\u0001\u0018\u0001\u0018\u0001\u0018\u0001\u0019\u0001"+
+		"\u0019\u0001\u001a\u0001\u001a\u0005\u001a\u00c9\b\u001a\n\u001a\f\u001a"+
+		"\u00cc\t\u001a\u0001\u001b\u0001\u001b\u0005\u001b\u00d0\b\u001b\n\u001b"+
+		"\f\u001b\u00d3\t\u001b\u0001\u001c\u0001\u001c\u0005\u001c\u00d7\b\u001c"+
+		"\n\u001c\f\u001c\u00da\t\u001c\u0001\u001d\u0001\u001d\u0005\u001d\u00de"+
+		"\b\u001d\n\u001d\f\u001d\u00e1\t\u001d\u0001\u001e\u0005\u001e\u00e4\b"+
+		"\u001e\n\u001e\f\u001e\u00e7\t\u001e\u0001\u001e\u0000\u0000\u001f\u0000"+
+		"\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0016\u0018\u001a\u001c"+
+		"\u001e \"$&(*,.02468:<\u0000\u0001\u0001\u0000\u0196\u0197\u00ea\u0000"+
+		"A\u0001\u0000\u0000\u0000\u0002X\u0001\u0000\u0000\u0000\u0004Z\u0001"+
+		"\u0000\u0000\u0000\u0006]\u0001\u0000\u0000\u0000\b`\u0001\u0000\u0000"+
+		"\u0000\nd\u0001\u0000\u0000\u0000\fg\u0001\u0000\u0000\u0000\u000ek\u0001"+
+		"\u0000\u0000\u0000\u0010n\u0001\u0000\u0000\u0000\u0012q\u0001\u0000\u0000"+
+		"\u0000\u0014\u0080\u0001\u0000\u0000\u0000\u0016\u008f\u0001\u0000\u0000"+
+		"\u0000\u0018\u0093\u0001\u0000\u0000\u0000\u001a\u0097\u0001\u0000\u0000"+
+		"\u0000\u001c\u009a\u0001\u0000\u0000\u0000\u001e\u009e\u0001\u0000\u0000"+
+		"\u0000 \u00a1\u0001\u0000\u0000\u0000\"\u00a6\u0001\u0000\u0000\u0000"+
+		"$\u00a9\u0001\u0000\u0000\u0000&\u00ad\u0001\u0000\u0000\u0000(\u00b1"+
+		"\u0001\u0000\u0000\u0000*\u00b5\u0001\u0000\u0000\u0000,\u00b8\u0001\u0000"+
+		"\u0000\u0000.\u00bd\u0001\u0000\u0000\u00000\u00c1\u0001\u0000\u0000\u0000"+
+		"2\u00c4\u0001\u0000\u0000\u00004\u00ca\u0001\u0000\u0000\u00006\u00d1"+
+		"\u0001\u0000\u0000\u00008\u00d8\u0001\u0000\u0000\u0000:\u00df\u0001\u0000"+
+		"\u0000\u0000<\u00e5\u0001\u0000\u0000\u0000>@\u0003\u0002\u0001\u0000"+
+		"?>\u0001\u0000\u0000\u0000@C\u0001\u0000\u0000\u0000A?\u0001\u0000\u0000"+
+		"\u0000AB\u0001\u0000\u0000\u0000B\u0001\u0001\u0000\u0000\u0000CA\u0001"+
+		"\u0000\u0000\u0000DY\u0003\u0004\u0002\u0000EY\u0003\u0006\u0003\u0000"+
+		"FY\u0003\b\u0004\u0000GY\u0003\n\u0005\u0000HY\u0003\f\u0006\u0000IY\u0003"+
+		"\u000e\u0007\u0000JY\u0003\u0010\b\u0000KY\u0003\u0012\t\u0000LY\u0003"+
+		"\u0014\n\u0000MY\u0003\u0016\u000b\u0000NY\u0003\u0018\f\u0000OY\u0003"+
+		"\u001a\r\u0000PY\u0003\u001c\u000e\u0000QY\u0003\u001e\u000f\u0000RY\u0003"+
+		" \u0010\u0000SY\u0003\"\u0011\u0000TY\u0003$\u0012\u0000UY\u0003&\u0013"+
+		"\u0000VY\u0003(\u0014\u0000WY\u0003*\u0015\u0000XD\u0001\u0000\u0000\u0000"+
+		"XE\u0001\u0000\u0000\u0000XF\u0001\u0000\u0000\u0000XG\u0001\u0000\u0000"+
+		"\u0000XH\u0001\u0000\u0000\u0000XI\u0001\u0000\u0000\u0000XJ\u0001\u0000"+
+		"\u0000\u0000XK\u0001\u0000\u0000\u0000XL\u0001\u0000\u0000\u0000XM\u0001"+
+		"\u0000\u0000\u0000XN\u0001\u0000\u0000\u0000XO\u0001\u0000\u0000\u0000"+
+		"XP\u0001\u0000\u0000\u0000XQ\u0001\u0000\u0000\u0000XR\u0001\u0000\u0000"+
+		"\u0000XS\u0001\u0000\u0000\u0000XT\u0001\u0000\u0000\u0000XU\u0001\u0000"+
+		"\u0000\u0000XV\u0001\u0000\u0000\u0000XW\u0001\u0000\u0000\u0000Y\u0003"+
+		"\u0001\u0000\u0000\u0000Z[\u0005`\u0000\u0000[\\\u0005\u017a\u0000\u0000"+
+		"\\\u0005\u0001\u0000\u0000\u0000]^\u0005`\u0000\u0000^_\u0005\u017b\u0000"+
+		"\u0000_\u0007\u0001\u0000\u0000\u0000`a\u0005`\u0000\u0000ab\u0005\u017c"+
+		"\u0000\u0000bc\u0005\u0191\u0000\u0000c\t\u0001\u0000\u0000\u0000de\u0005"+
+		"`\u0000\u0000ef\u0005\u017d\u0000\u0000f\u000b\u0001\u0000\u0000\u0000"+
+		"gh\u0005`\u0000\u0000hi\u0005\u017e\u0000\u0000ij\u0005\u0191\u0000\u0000"+
+		"j\r\u0001\u0000\u0000\u0000kl\u0005`\u0000\u0000lm\u0005\u0183\u0000\u0000"+
+		"m\u000f\u0001\u0000\u0000\u0000no\u0005`\u0000\u0000op\u0005\u0182\u0000"+
+		"\u0000p\u0011\u0001\u0000\u0000\u0000qr\u0005`\u0000\u0000rs\u0005\u0185"+
+		"\u0000\u0000st\u00032\u0019\u0000tx\u00034\u001a\u0000uw\u0003,\u0016"+
+		"\u0000vu\u0001\u0000\u0000\u0000wz\u0001\u0000\u0000\u0000xv\u0001\u0000"+
+		"\u0000\u0000xy\u0001\u0000\u0000\u0000y|\u0001\u0000\u0000\u0000zx\u0001"+
+		"\u0000\u0000\u0000{}\u0003.\u0017\u0000|{\u0001\u0000\u0000\u0000|}\u0001"+
+		"\u0000\u0000\u0000}~\u0001\u0000\u0000\u0000~\u007f\u00030\u0018\u0000"+
+		"\u007f\u0013\u0001\u0000\u0000\u0000\u0080\u0081\u0005`\u0000\u0000\u0081"+
+		"\u0082\u0005\u0186\u0000\u0000\u0082\u0083\u00032\u0019\u0000\u0083\u0087"+
+		"\u00036\u001b\u0000\u0084\u0086\u0003,\u0016\u0000\u0085\u0084\u0001\u0000"+
+		"\u0000\u0000\u0086\u0089\u0001\u0000\u0000\u0000\u0087\u0085\u0001\u0000"+
+		"\u0000\u0000\u0087\u0088\u0001\u0000\u0000\u0000\u0088\u008b\u0001\u0000"+
+		"\u0000\u0000\u0089\u0087\u0001\u0000\u0000\u0000\u008a\u008c\u0003.\u0017"+
+		"\u0000\u008b\u008a\u0001\u0000\u0000\u0000\u008b\u008c\u0001\u0000\u0000"+
+		"\u0000\u008c\u008d\u0001\u0000\u0000\u0000\u008d\u008e\u00030\u0018\u0000"+
+		"\u008e\u0015\u0001\u0000\u0000\u0000\u008f\u0090\u0005`\u0000\u0000\u0090"+
+		"\u0091\u0005\u0187\u0000\u0000\u0091\u0092\u0005\u0191\u0000\u0000\u0092"+
+		"\u0017\u0001\u0000\u0000\u0000\u0093\u0094\u0005`\u0000\u0000\u0094\u0095"+
+		"\u0005\u0188\u0000\u0000\u0095\u0096\u0005\u0191\u0000\u0000\u0096\u0019"+
+		"\u0001\u0000\u0000\u0000\u0097\u0098\u0005`\u0000\u0000\u0098\u0099\u0005"+
+		"\u0189\u0000\u0000\u0099\u001b\u0001\u0000\u0000\u0000\u009a\u009b\u0005"+
+		"`\u0000\u0000\u009b\u009c\u0005\u018a\u0000\u0000\u009c\u009d\u0005\u0191"+
+		"\u0000\u0000\u009d\u001d\u0001\u0000\u0000\u0000\u009e\u009f\u0005`\u0000"+
+		"\u0000\u009f\u00a0\u0005\u018b\u0000\u0000\u00a0\u001f\u0001\u0000\u0000"+
+		"\u0000\u00a1\u00a2\u0005`\u0000\u0000\u00a2\u00a3\u0005\u017f\u0000\u0000"+
+		"\u00a3\u00a4\u00032\u0019\u0000\u00a4\u00a5\u0003<\u001e\u0000\u00a5!"+
+		"\u0001\u0000\u0000\u0000\u00a6\u00a7\u0005`\u0000\u0000\u00a7\u00a8\u0005"+
+		"\u0190\u0000\u0000\u00a8#\u0001\u0000\u0000\u0000\u00a9\u00aa\u0005`\u0000"+
+		"\u0000\u00aa\u00ab\u0005\u018c\u0000\u0000\u00ab\u00ac\u0005\u0191\u0000"+
+		"\u0000\u00ac%\u0001\u0000\u0000\u0000\u00ad\u00ae\u0005`\u0000\u0000\u00ae"+
+		"\u00af\u0005\u018d\u0000\u0000\u00af\u00b0\u0005\u0191\u0000\u0000\u00b0"+
+		"\'\u0001\u0000\u0000\u0000\u00b1\u00b2\u0005`\u0000\u0000\u00b2\u00b3"+
+		"\u0005\u018e\u0000\u0000\u00b3\u00b4\u00032\u0019\u0000\u00b4)\u0001\u0000"+
+		"\u0000\u0000\u00b5\u00b6\u0005`\u0000\u0000\u00b6\u00b7\u0005\u018f\u0000"+
+		"\u0000\u00b7+\u0001\u0000\u0000\u0000\u00b8\u00b9\u0005`\u0000\u0000\u00b9"+
+		"\u00ba\u0005\u0181\u0000\u0000\u00ba\u00bb\u00032\u0019\u0000\u00bb\u00bc"+
+		"\u00038\u001c\u0000\u00bc-\u0001\u0000\u0000\u0000\u00bd\u00be\u0005`"+
+		"\u0000\u0000\u00be\u00bf\u0005\u0180\u0000\u0000\u00bf\u00c0\u0003:\u001d"+
+		"\u0000\u00c0/\u0001\u0000\u0000\u0000\u00c1\u00c2\u0005`\u0000\u0000\u00c2"+
+		"\u00c3\u0005\u0184\u0000\u0000\u00c31\u0001\u0000\u0000\u0000\u00c4\u00c5"+
+		"\u0005\u0192\u0000\u0000\u00c53\u0001\u0000\u0000\u0000\u00c6\u00c9\u0005"+
+		"\u0198\u0000\u0000\u00c7\u00c9\u0003\u0002\u0001\u0000\u00c8\u00c6\u0001"+
+		"\u0000\u0000\u0000\u00c8\u00c7\u0001\u0000\u0000\u0000\u00c9\u00cc\u0001"+
+		"\u0000\u0000\u0000\u00ca\u00c8\u0001\u0000\u0000\u0000\u00ca\u00cb\u0001"+
+		"\u0000\u0000\u0000\u00cb5\u0001\u0000\u0000\u0000\u00cc\u00ca\u0001\u0000"+
+		"\u0000\u0000\u00cd\u00d0\u0005\u0198\u0000\u0000\u00ce\u00d0\u0003\u0002"+
+		"\u0001\u0000\u00cf\u00cd\u0001\u0000\u0000\u0000\u00cf\u00ce\u0001\u0000"+
+		"\u0000\u0000\u00d0\u00d3\u0001\u0000\u0000\u0000\u00d1\u00cf\u0001\u0000"+
+		"\u0000\u0000\u00d1\u00d2\u0001\u0000\u0000\u0000\u00d27\u0001\u0000\u0000"+
+		"\u0000\u00d3\u00d1\u0001\u0000\u0000\u0000\u00d4\u00d7\u0005\u0198\u0000"+
+		"\u0000\u00d5\u00d7\u0003\u0002\u0001\u0000\u00d6\u00d4\u0001\u0000\u0000"+
+		"\u0000\u00d6\u00d5\u0001\u0000\u0000\u0000\u00d7\u00da\u0001\u0000\u0000"+
+		"\u0000\u00d8\u00d6\u0001\u0000\u0000\u0000\u00d8\u00d9\u0001\u0000\u0000"+
+		"\u0000\u00d99\u0001\u0000\u0000\u0000\u00da\u00d8\u0001\u0000\u0000\u0000"+
+		"\u00db\u00de\u0005\u0198\u0000\u0000\u00dc\u00de\u0003\u0002\u0001\u0000"+
+		"\u00dd\u00db\u0001\u0000\u0000\u0000\u00dd\u00dc\u0001\u0000\u0000\u0000"+
+		"\u00de\u00e1\u0001\u0000\u0000\u0000\u00df\u00dd\u0001\u0000\u0000\u0000"+
+		"\u00df\u00e0\u0001\u0000\u0000\u0000\u00e0;\u0001\u0000\u0000\u0000\u00e1"+
+		"\u00df\u0001\u0000\u0000\u0000\u00e2\u00e4\u0007\u0000\u0000\u0000\u00e3"+
+		"\u00e2\u0001\u0000\u0000\u0000\u00e4\u00e7\u0001\u0000\u0000\u0000\u00e5"+
+		"\u00e3\u0001\u0000\u0000\u0000\u00e5\u00e6\u0001\u0000\u0000\u0000\u00e6"+
+		"=\u0001\u0000\u0000\u0000\u00e7\u00e5\u0001\u0000\u0000\u0000\u000fAX"+
+		"x|\u0087\u008b\u00c8\u00ca\u00cf\u00d1\u00d6\u00d8\u00dd\u00df\u00e5";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

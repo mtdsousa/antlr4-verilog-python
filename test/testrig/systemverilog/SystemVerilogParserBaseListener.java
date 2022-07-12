@@ -1,4 +1,4 @@
-// Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
+// Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.10.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -250,6 +250,18 @@ public class SystemVerilogParserBaseListener implements SystemVerilogParserListe
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitInterface_class_type(SystemVerilogParser.Interface_class_typeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInterface_class_declaration(SystemVerilogParser.Interface_class_declarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInterface_class_declaration(SystemVerilogParser.Interface_class_declarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

@@ -1,4 +1,4 @@
-// Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
+// Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.10.1
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -206,6 +206,16 @@ public interface SystemVerilogParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitInterface_class_type(SystemVerilogParser.Interface_class_typeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SystemVerilogParser#interface_class_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterInterface_class_declaration(SystemVerilogParser.Interface_class_declarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SystemVerilogParser#interface_class_declaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitInterface_class_declaration(SystemVerilogParser.Interface_class_declarationContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SystemVerilogParser#interface_class_item}.
 	 * @param ctx the parse tree

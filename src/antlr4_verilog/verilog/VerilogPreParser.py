@@ -1,4 +1,4 @@
-# Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/verilog/VerilogPreParser.g4 by ANTLR 4.9
+# Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4/verilog/verilog/VerilogPreParser.g4 by ANTLR 4.10.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -8,96 +8,81 @@ if sys.version_info[1] > 5:
 else:
 	from typing.io import TextIO
 
-
 def serializedATN():
-    with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\u00f0")
-        buf.write("\u00d9\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
-        buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
-        buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
-        buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
-        buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\3\2\7\2")
-        buf.write("<\n\2\f\2\16\2?\13\2\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3")
-        buf.write("\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\5\3R\n\3\3\4\3\4\3")
-        buf.write("\4\3\4\3\5\3\5\3\5\3\6\3\6\3\6\3\6\3\7\3\7\3\7\3\b\3\b")
-        buf.write("\3\b\3\t\3\t\3\t\3\t\3\t\7\tj\n\t\f\t\16\tm\13\t\3\t\5")
-        buf.write("\tp\n\t\3\t\3\t\3\n\3\n\3\n\3\n\3\n\7\ny\n\n\f\n\16\n")
-        buf.write("|\13\n\3\n\5\n\177\n\n\3\n\3\n\3\13\3\13\3\13\3\13\3\f")
-        buf.write("\3\f\3\f\3\f\3\r\3\r\3\r\3\16\3\16\3\16\3\16\3\17\3\17")
-        buf.write("\3\17\3\20\3\20\3\20\3\20\3\20\3\21\3\21\3\21\3\22\3\22")
-        buf.write("\3\22\3\22\3\23\3\23\3\23\3\23\3\24\3\24\3\24\3\24\3\25")
-        buf.write("\3\25\3\25\3\25\3\25\3\26\3\26\3\26\3\26\3\27\3\27\3\27")
-        buf.write("\3\30\3\30\3\31\3\31\7\31\u00b9\n\31\f\31\16\31\u00bc")
-        buf.write("\13\31\3\32\3\32\7\32\u00c0\n\32\f\32\16\32\u00c3\13\32")
-        buf.write("\3\33\3\33\7\33\u00c7\n\33\f\33\16\33\u00ca\13\33\3\34")
-        buf.write("\3\34\7\34\u00ce\n\34\f\34\16\34\u00d1\13\34\3\35\7\35")
-        buf.write("\u00d4\n\35\f\35\16\35\u00d7\13\35\3\35\2\2\36\2\4\6\b")
-        buf.write("\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668")
-        buf.write("\2\2\2\u00da\2=\3\2\2\2\4Q\3\2\2\2\6S\3\2\2\2\bW\3\2\2")
-        buf.write("\2\nZ\3\2\2\2\f^\3\2\2\2\16a\3\2\2\2\20d\3\2\2\2\22s\3")
-        buf.write("\2\2\2\24\u0082\3\2\2\2\26\u0086\3\2\2\2\30\u008a\3\2")
-        buf.write("\2\2\32\u008d\3\2\2\2\34\u0091\3\2\2\2\36\u0094\3\2\2")
-        buf.write("\2 \u0099\3\2\2\2\"\u009c\3\2\2\2$\u00a0\3\2\2\2&\u00a4")
-        buf.write("\3\2\2\2(\u00a8\3\2\2\2*\u00ad\3\2\2\2,\u00b1\3\2\2\2")
-        buf.write(".\u00b4\3\2\2\2\60\u00ba\3\2\2\2\62\u00c1\3\2\2\2\64\u00c8")
-        buf.write("\3\2\2\2\66\u00cf\3\2\2\28\u00d5\3\2\2\2:<\5\4\3\2;:\3")
-        buf.write("\2\2\2<?\3\2\2\2=;\3\2\2\2=>\3\2\2\2>\3\3\2\2\2?=\3\2")
-        buf.write("\2\2@R\5\6\4\2AR\5\b\5\2BR\5\n\6\2CR\5\f\7\2DR\5\16\b")
-        buf.write("\2ER\5\20\t\2FR\5\22\n\2GR\5\24\13\2HR\5\26\f\2IR\5\30")
-        buf.write("\r\2JR\5\32\16\2KR\5\34\17\2LR\5\36\20\2MR\5 \21\2NR\5")
-        buf.write("\"\22\2OR\5$\23\2PR\5&\24\2Q@\3\2\2\2QA\3\2\2\2QB\3\2")
-        buf.write("\2\2QC\3\2\2\2QD\3\2\2\2QE\3\2\2\2QF\3\2\2\2QG\3\2\2\2")
-        buf.write("QH\3\2\2\2QI\3\2\2\2QJ\3\2\2\2QK\3\2\2\2QL\3\2\2\2QM\3")
-        buf.write("\2\2\2QN\3\2\2\2QO\3\2\2\2QP\3\2\2\2R\5\3\2\2\2ST\7@\2")
-        buf.write("\2TU\7\u00d5\2\2UV\7\u00e9\2\2V\7\3\2\2\2WX\7@\2\2XY\7")
-        buf.write("\u00d6\2\2Y\t\3\2\2\2Z[\7@\2\2[\\\7\u00d7\2\2\\]\7\u00e9")
-        buf.write("\2\2]\13\3\2\2\2^_\7@\2\2_`\7\u00dc\2\2`\r\3\2\2\2ab\7")
-        buf.write("@\2\2bc\7\u00db\2\2c\17\3\2\2\2de\7@\2\2ef\7\u00de\2\2")
-        buf.write("fg\5.\30\2gk\5\60\31\2hj\5(\25\2ih\3\2\2\2jm\3\2\2\2k")
-        buf.write("i\3\2\2\2kl\3\2\2\2lo\3\2\2\2mk\3\2\2\2np\5*\26\2on\3")
-        buf.write("\2\2\2op\3\2\2\2pq\3\2\2\2qr\5,\27\2r\21\3\2\2\2st\7@")
-        buf.write("\2\2tu\7\u00df\2\2uv\5.\30\2vz\5\62\32\2wy\5(\25\2xw\3")
-        buf.write("\2\2\2y|\3\2\2\2zx\3\2\2\2z{\3\2\2\2{~\3\2\2\2|z\3\2\2")
-        buf.write("\2}\177\5*\26\2~}\3\2\2\2~\177\3\2\2\2\177\u0080\3\2\2")
-        buf.write("\2\u0080\u0081\5,\27\2\u0081\23\3\2\2\2\u0082\u0083\7")
-        buf.write("@\2\2\u0083\u0084\7\u00e0\2\2\u0084\u0085\7\u00e9\2\2")
-        buf.write("\u0085\25\3\2\2\2\u0086\u0087\7@\2\2\u0087\u0088\7\u00e1")
-        buf.write("\2\2\u0088\u0089\7\u00e9\2\2\u0089\27\3\2\2\2\u008a\u008b")
-        buf.write("\7@\2\2\u008b\u008c\7\u00e2\2\2\u008c\31\3\2\2\2\u008d")
-        buf.write("\u008e\7@\2\2\u008e\u008f\7\u00e3\2\2\u008f\u0090\7\u00e9")
-        buf.write("\2\2\u0090\33\3\2\2\2\u0091\u0092\7@\2\2\u0092\u0093\7")
-        buf.write("\u00e4\2\2\u0093\35\3\2\2\2\u0094\u0095\7@\2\2\u0095\u0096")
-        buf.write("\7\u00d8\2\2\u0096\u0097\5.\30\2\u0097\u0098\58\35\2\u0098")
-        buf.write("\37\3\2\2\2\u0099\u009a\7@\2\2\u009a\u009b\7\u00e8\2\2")
-        buf.write("\u009b!\3\2\2\2\u009c\u009d\7@\2\2\u009d\u009e\7\u00e5")
-        buf.write("\2\2\u009e\u009f\7\u00e9\2\2\u009f#\3\2\2\2\u00a0\u00a1")
-        buf.write("\7@\2\2\u00a1\u00a2\7\u00e6\2\2\u00a2\u00a3\7\u00e9\2")
-        buf.write("\2\u00a3%\3\2\2\2\u00a4\u00a5\7@\2\2\u00a5\u00a6\7\u00e7")
-        buf.write("\2\2\u00a6\u00a7\5.\30\2\u00a7\'\3\2\2\2\u00a8\u00a9\7")
-        buf.write("@\2\2\u00a9\u00aa\7\u00da\2\2\u00aa\u00ab\5.\30\2\u00ab")
-        buf.write("\u00ac\5\64\33\2\u00ac)\3\2\2\2\u00ad\u00ae\7@\2\2\u00ae")
-        buf.write("\u00af\7\u00d9\2\2\u00af\u00b0\5\66\34\2\u00b0+\3\2\2")
-        buf.write("\2\u00b1\u00b2\7@\2\2\u00b2\u00b3\7\u00dd\2\2\u00b3-\3")
-        buf.write("\2\2\2\u00b4\u00b5\7\u00ea\2\2\u00b5/\3\2\2\2\u00b6\u00b9")
-        buf.write("\7\u00f0\2\2\u00b7\u00b9\5\4\3\2\u00b8\u00b6\3\2\2\2\u00b8")
-        buf.write("\u00b7\3\2\2\2\u00b9\u00bc\3\2\2\2\u00ba\u00b8\3\2\2\2")
-        buf.write("\u00ba\u00bb\3\2\2\2\u00bb\61\3\2\2\2\u00bc\u00ba\3\2")
-        buf.write("\2\2\u00bd\u00c0\7\u00f0\2\2\u00be\u00c0\5\4\3\2\u00bf")
-        buf.write("\u00bd\3\2\2\2\u00bf\u00be\3\2\2\2\u00c0\u00c3\3\2\2\2")
-        buf.write("\u00c1\u00bf\3\2\2\2\u00c1\u00c2\3\2\2\2\u00c2\63\3\2")
-        buf.write("\2\2\u00c3\u00c1\3\2\2\2\u00c4\u00c7\7\u00f0\2\2\u00c5")
-        buf.write("\u00c7\5\4\3\2\u00c6\u00c4\3\2\2\2\u00c6\u00c5\3\2\2\2")
-        buf.write("\u00c7\u00ca\3\2\2\2\u00c8\u00c6\3\2\2\2\u00c8\u00c9\3")
-        buf.write("\2\2\2\u00c9\65\3\2\2\2\u00ca\u00c8\3\2\2\2\u00cb\u00ce")
-        buf.write("\7\u00f0\2\2\u00cc\u00ce\5\4\3\2\u00cd\u00cb\3\2\2\2\u00cd")
-        buf.write("\u00cc\3\2\2\2\u00ce\u00d1\3\2\2\2\u00cf\u00cd\3\2\2\2")
-        buf.write("\u00cf\u00d0\3\2\2\2\u00d0\67\3\2\2\2\u00d1\u00cf\3\2")
-        buf.write("\2\2\u00d2\u00d4\7\u00ee\2\2\u00d3\u00d2\3\2\2\2\u00d4")
-        buf.write("\u00d7\3\2\2\2\u00d5\u00d3\3\2\2\2\u00d5\u00d6\3\2\2\2")
-        buf.write("\u00d69\3\2\2\2\u00d7\u00d5\3\2\2\2\21=Qkoz~\u00b8\u00ba")
-        buf.write("\u00bf\u00c1\u00c6\u00c8\u00cd\u00cf\u00d5")
-        return buf.getvalue()
-
+    return [
+        4,1,236,215,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,
+        7,6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,
+        13,2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,
+        20,7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,
+        26,2,27,7,27,1,0,5,0,58,8,0,10,0,12,0,61,9,0,1,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,80,8,1,1,2,1,
+        2,1,2,1,2,1,3,1,3,1,3,1,4,1,4,1,4,1,4,1,5,1,5,1,5,1,6,1,6,1,6,1,
+        7,1,7,1,7,1,7,1,7,5,7,104,8,7,10,7,12,7,107,9,7,1,7,3,7,110,8,7,
+        1,7,1,7,1,8,1,8,1,8,1,8,1,8,5,8,119,8,8,10,8,12,8,122,9,8,1,8,3,
+        8,125,8,8,1,8,1,8,1,9,1,9,1,9,1,9,1,10,1,10,1,10,1,10,1,11,1,11,
+        1,11,1,12,1,12,1,12,1,12,1,13,1,13,1,13,1,14,1,14,1,14,1,14,1,14,
+        1,15,1,15,1,15,1,16,1,16,1,16,1,16,1,17,1,17,1,17,1,17,1,18,1,18,
+        1,18,1,18,1,19,1,19,1,19,1,19,1,19,1,20,1,20,1,20,1,20,1,21,1,21,
+        1,21,1,22,1,22,1,23,1,23,5,23,183,8,23,10,23,12,23,186,9,23,1,24,
+        1,24,5,24,190,8,24,10,24,12,24,193,9,24,1,25,1,25,5,25,197,8,25,
+        10,25,12,25,200,9,25,1,26,1,26,5,26,204,8,26,10,26,12,26,207,9,26,
+        1,27,5,27,210,8,27,10,27,12,27,213,9,27,1,27,0,0,28,0,2,4,6,8,10,
+        12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,
+        0,1,1,0,234,235,216,0,59,1,0,0,0,2,79,1,0,0,0,4,81,1,0,0,0,6,85,
+        1,0,0,0,8,88,1,0,0,0,10,92,1,0,0,0,12,95,1,0,0,0,14,98,1,0,0,0,16,
+        113,1,0,0,0,18,128,1,0,0,0,20,132,1,0,0,0,22,136,1,0,0,0,24,139,
+        1,0,0,0,26,143,1,0,0,0,28,146,1,0,0,0,30,151,1,0,0,0,32,154,1,0,
+        0,0,34,158,1,0,0,0,36,162,1,0,0,0,38,166,1,0,0,0,40,171,1,0,0,0,
+        42,175,1,0,0,0,44,178,1,0,0,0,46,184,1,0,0,0,48,191,1,0,0,0,50,198,
+        1,0,0,0,52,205,1,0,0,0,54,211,1,0,0,0,56,58,3,2,1,0,57,56,1,0,0,
+        0,58,61,1,0,0,0,59,57,1,0,0,0,59,60,1,0,0,0,60,1,1,0,0,0,61,59,1,
+        0,0,0,62,80,3,4,2,0,63,80,3,6,3,0,64,80,3,8,4,0,65,80,3,10,5,0,66,
+        80,3,12,6,0,67,80,3,14,7,0,68,80,3,16,8,0,69,80,3,18,9,0,70,80,3,
+        20,10,0,71,80,3,22,11,0,72,80,3,24,12,0,73,80,3,26,13,0,74,80,3,
+        28,14,0,75,80,3,30,15,0,76,80,3,32,16,0,77,80,3,34,17,0,78,80,3,
+        36,18,0,79,62,1,0,0,0,79,63,1,0,0,0,79,64,1,0,0,0,79,65,1,0,0,0,
+        79,66,1,0,0,0,79,67,1,0,0,0,79,68,1,0,0,0,79,69,1,0,0,0,79,70,1,
+        0,0,0,79,71,1,0,0,0,79,72,1,0,0,0,79,73,1,0,0,0,79,74,1,0,0,0,79,
+        75,1,0,0,0,79,76,1,0,0,0,79,77,1,0,0,0,79,78,1,0,0,0,80,3,1,0,0,
+        0,81,82,5,61,0,0,82,83,5,209,0,0,83,84,5,229,0,0,84,5,1,0,0,0,85,
+        86,5,61,0,0,86,87,5,210,0,0,87,7,1,0,0,0,88,89,5,61,0,0,89,90,5,
+        211,0,0,90,91,5,229,0,0,91,9,1,0,0,0,92,93,5,61,0,0,93,94,5,216,
+        0,0,94,11,1,0,0,0,95,96,5,61,0,0,96,97,5,215,0,0,97,13,1,0,0,0,98,
+        99,5,61,0,0,99,100,5,218,0,0,100,101,3,44,22,0,101,105,3,46,23,0,
+        102,104,3,38,19,0,103,102,1,0,0,0,104,107,1,0,0,0,105,103,1,0,0,
+        0,105,106,1,0,0,0,106,109,1,0,0,0,107,105,1,0,0,0,108,110,3,40,20,
+        0,109,108,1,0,0,0,109,110,1,0,0,0,110,111,1,0,0,0,111,112,3,42,21,
+        0,112,15,1,0,0,0,113,114,5,61,0,0,114,115,5,219,0,0,115,116,3,44,
+        22,0,116,120,3,48,24,0,117,119,3,38,19,0,118,117,1,0,0,0,119,122,
+        1,0,0,0,120,118,1,0,0,0,120,121,1,0,0,0,121,124,1,0,0,0,122,120,
+        1,0,0,0,123,125,3,40,20,0,124,123,1,0,0,0,124,125,1,0,0,0,125,126,
+        1,0,0,0,126,127,3,42,21,0,127,17,1,0,0,0,128,129,5,61,0,0,129,130,
+        5,220,0,0,130,131,5,229,0,0,131,19,1,0,0,0,132,133,5,61,0,0,133,
+        134,5,221,0,0,134,135,5,229,0,0,135,21,1,0,0,0,136,137,5,61,0,0,
+        137,138,5,222,0,0,138,23,1,0,0,0,139,140,5,61,0,0,140,141,5,223,
+        0,0,141,142,5,229,0,0,142,25,1,0,0,0,143,144,5,61,0,0,144,145,5,
+        224,0,0,145,27,1,0,0,0,146,147,5,61,0,0,147,148,5,212,0,0,148,149,
+        3,44,22,0,149,150,3,54,27,0,150,29,1,0,0,0,151,152,5,61,0,0,152,
+        153,5,228,0,0,153,31,1,0,0,0,154,155,5,61,0,0,155,156,5,225,0,0,
+        156,157,5,229,0,0,157,33,1,0,0,0,158,159,5,61,0,0,159,160,5,226,
+        0,0,160,161,5,229,0,0,161,35,1,0,0,0,162,163,5,61,0,0,163,164,5,
+        227,0,0,164,165,3,44,22,0,165,37,1,0,0,0,166,167,5,61,0,0,167,168,
+        5,214,0,0,168,169,3,44,22,0,169,170,3,50,25,0,170,39,1,0,0,0,171,
+        172,5,61,0,0,172,173,5,213,0,0,173,174,3,52,26,0,174,41,1,0,0,0,
+        175,176,5,61,0,0,176,177,5,217,0,0,177,43,1,0,0,0,178,179,5,230,
+        0,0,179,45,1,0,0,0,180,183,5,236,0,0,181,183,3,2,1,0,182,180,1,0,
+        0,0,182,181,1,0,0,0,183,186,1,0,0,0,184,182,1,0,0,0,184,185,1,0,
+        0,0,185,47,1,0,0,0,186,184,1,0,0,0,187,190,5,236,0,0,188,190,3,2,
+        1,0,189,187,1,0,0,0,189,188,1,0,0,0,190,193,1,0,0,0,191,189,1,0,
+        0,0,191,192,1,0,0,0,192,49,1,0,0,0,193,191,1,0,0,0,194,197,5,236,
+        0,0,195,197,3,2,1,0,196,194,1,0,0,0,196,195,1,0,0,0,197,200,1,0,
+        0,0,198,196,1,0,0,0,198,199,1,0,0,0,199,51,1,0,0,0,200,198,1,0,0,
+        0,201,204,5,236,0,0,202,204,3,2,1,0,203,201,1,0,0,0,203,202,1,0,
+        0,0,204,207,1,0,0,0,205,203,1,0,0,0,205,206,1,0,0,0,206,53,1,0,0,
+        0,207,205,1,0,0,0,208,210,7,0,0,0,209,208,1,0,0,0,210,213,1,0,0,
+        0,211,209,1,0,0,0,211,212,1,0,0,0,212,55,1,0,0,0,213,211,1,0,0,0,
+        15,59,79,105,109,120,124,182,184,189,191,196,198,203,205,211
+    ]
 
 class VerilogPreParser ( Parser ):
 
@@ -113,16 +98,16 @@ class VerilogPreParser ( Parser ):
                      "'$'", "'$fullskew'", "'$hold'", "'$nochange'", "'$period'", 
                      "'$recovery'", "'$recrem'", "'$removal'", "'$setup'", 
                      "'$setuphold'", "'$skew'", "'$timeskew'", "'$width'", 
-                     "'%'", "'&'", "'&&'", "'&&&'", "'('", "')'", "'*'", 
-                     "'**'", "'*/'", "'*>'", "'+'", "'+:'", "','", "'-'", 
-                     "'-:'", "'->'", "'-incdir'", "'.'", "'/'", "'/*'", 
-                     "'//'", "':'", "';'", "'<'", "'<<'", "'<<<'", "'<='", 
-                     "'='", "'=='", "'==='", "'=>'", "'>'", "'>='", "'>>'", 
-                     "'>>>'", "'?'", "'@'", "'PATHPULSE$'", "'['", "'''", 
-                     "']'", "'^'", "'^~'", "<INVALID>", "'always'", "'and'", 
-                     "'assign'", "'automatic'", "'begin'", "'buf'", "'bufif0'", 
-                     "'bufif1'", "'case'", "'casex'", "'casez'", "'cell'", 
-                     "'cmos'", "'config'", "'deassign'", "'default'", "'defparam'", 
+                     "'%'", "'&'", "'&&'", "'&&&'", "'''", "'('", "')'", 
+                     "'*'", "'**'", "'*/'", "'*>'", "'+'", "'+:'", "','", 
+                     "'-'", "'-:'", "'->'", "'.'", "'/'", "'/*'", "'//'", 
+                     "':'", "';'", "'<'", "'<<'", "'<<<'", "'<='", "'='", 
+                     "'=='", "'==='", "'=>'", "'>'", "'>='", "'>>'", "'>>>'", 
+                     "'?'", "'@'", "'PATHPULSE$'", "'['", "']'", "'^'", 
+                     "'^~'", "<INVALID>", "'always'", "'and'", "'assign'", 
+                     "'automatic'", "'begin'", "'buf'", "'bufif0'", "'bufif1'", 
+                     "'case'", "'casex'", "'casez'", "'cell'", "'cmos'", 
+                     "'config'", "'deassign'", "'default'", "'defparam'", 
                      "'design'", "'disable'", "'edge'", "'else'", "'end'", 
                      "'endcase'", "'endconfig'", "'endfunction'", "'endgenerate'", 
                      "'endmodule'", "'endprimitive'", "'endspecify'", "'endtable'", 
@@ -149,33 +134,33 @@ class VerilogPreParser ( Parser ):
                      "'|'", "'||'", "'}'", "'~'", "'~&'", "'~^'", "'~|'", 
                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "'-incdir'", 
                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "'celldefine'", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                     "'end_keywords'", "'endcelldefine'", "<INVALID>", "<INVALID>", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "'nounconnected_drive'", 
+                     "<INVALID>", "<INVALID>", "'celldefine'", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "'end_keywords'", 
+                     "'endcelldefine'", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "'nounconnected_drive'", 
                      "<INVALID>", "'resetall'" ]
 
     symbolicNames = [ "<INVALID>", "EM", "EMEQ", "EMEQEQ", "DQ", "HA", "DL", 
                       "DLFULLSKEW", "DLHOLD", "DLNOCHANGE", "DLPERIOD", 
                       "DLRECOVERY", "DLRECREM", "DLREMOVAL", "DLSETUP", 
                       "DLSETUPHOLD", "DLSKEW", "DLTIMESKEW", "DLWIDTH", 
-                      "MO", "AM", "AMAM", "AMAMAM", "LP", "RP", "AS", "ASAS", 
-                      "ASSL", "ASGT", "PL", "PLCL", "CO", "MI", "MICL", 
-                      "MIGT", "MIINCDIR", "DT", "SL", "SLAS", "SLSL", "CL", 
+                      "MO", "AM", "AMAM", "AMAMAM", "AP", "LP", "RP", "AS", 
+                      "ASAS", "ASSL", "ASGT", "PL", "PLCL", "CO", "MI", 
+                      "MICL", "MIGT", "DT", "SL", "SLAS", "SLSL", "CL", 
                       "SC", "LT", "LTLT", "LTLTLT", "LTEQ", "EQ", "EQEQ", 
                       "EQEQEQ", "EQGT", "GT", "GTEQ", "GTGT", "GTGTGT", 
-                      "QM", "AT", "PATHPULSEDL", "LB", "BSAP", "RB", "CA", 
-                      "CATI", "GA", "ALWAYS", "AND", "ASSIGN", "AUTOMATIC", 
-                      "BEGIN", "BUF", "BUFIFZERO", "BUFIFONE", "CASE", "CASEX", 
-                      "CASEZ", "CELL", "CMOS", "CONFIG", "DEASSIGN", "DEFAULT", 
-                      "DEFPARAM", "DESIGN", "DISABLE", "EDGE", "ELSE", "END", 
-                      "ENDCASE", "ENDCONFIG", "ENDFUNCTION", "ENDGENERATE", 
-                      "ENDMODULE", "ENDPRIMITIVE", "ENDSPECIFY", "ENDTABLE", 
-                      "ENDTASK", "EVENT", "FOR", "FORCE", "FOREVER", "FORK", 
-                      "FUNCTION", "GENERATE", "GENVAR", "HIGHZZERO", "HIGHZONE", 
-                      "IF", "IFNONE", "INCLUDE", "INITIAL", "INOUT", "INPUT", 
+                      "QM", "AT", "PATHPULSEDL", "LB", "RB", "CA", "CATI", 
+                      "GA", "ALWAYS", "AND", "ASSIGN", "AUTOMATIC", "BEGIN", 
+                      "BUF", "BUFIFZERO", "BUFIFONE", "CASE", "CASEX", "CASEZ", 
+                      "CELL", "CMOS", "CONFIG", "DEASSIGN", "DEFAULT", "DEFPARAM", 
+                      "DESIGN", "DISABLE", "EDGE", "ELSE", "END", "ENDCASE", 
+                      "ENDCONFIG", "ENDFUNCTION", "ENDGENERATE", "ENDMODULE", 
+                      "ENDPRIMITIVE", "ENDSPECIFY", "ENDTABLE", "ENDTASK", 
+                      "EVENT", "FOR", "FORCE", "FOREVER", "FORK", "FUNCTION", 
+                      "GENERATE", "GENVAR", "HIGHZZERO", "HIGHZONE", "IF", 
+                      "IFNONE", "INCLUDE", "INITIAL", "INOUT", "INPUT", 
                       "INSTANCE", "INTEGER", "JOIN", "LARGE", "LIBLIST", 
                       "LIBRARY", "LOCALPARAM", "MACROMODULE", "MEDIUM", 
                       "MODULE", "NAND", "NEGEDGE", "NMOS", "NOR", "NOSHOWCANCELLED", 
@@ -194,9 +179,9 @@ class VerilogPreParser ( Parser ):
                       "TICA", "TIVL", "DECIMAL_NUMBER", "BINARY_NUMBER", 
                       "OCTAL_NUMBER", "HEX_NUMBER", "REAL_NUMBER", "STRING", 
                       "COMMENT", "ESCAPED_IDENTIFIER", "SIMPLE_IDENTIFIER", 
-                      "SYSTEM_TF_IDENTIFIER", "WHITE_SPACE", "FILE_PATH_SPEC", 
-                      "INIT_VAL", "OUTPUT_SYMBOL", "LEVEL_SYMBOL", "EDGE_SYMBOL", 
-                      "EDGE_DESCRIPTOR", "SCALAR_CONSTANT", "BEGIN_KEYWORDS_DIRECTIVE", 
+                      "SYSTEM_TF_IDENTIFIER", "WHITE_SPACE", "MIINCDIR", 
+                      "FILE_PATH_SPEC", "OUTPUT_OR_LEVEL_SYMBOL", "LEVEL_ONLY_SYMBOL", 
+                      "EDGE_SYMBOL", "EDGE_DESCRIPTOR", "BEGIN_KEYWORDS_DIRECTIVE", 
                       "CELLDEFINE_DIRECTIVE", "DEFAULT_NETTYPE_DIRECTIVE", 
                       "DEFINE_DIRECTIVE", "ELSE_DIRECTIVE", "ELSIF_DIRECTIVE", 
                       "END_KEYWORDS_DIRECTIVE", "ENDCELLDEFINE_DIRECTIVE", 
@@ -206,7 +191,7 @@ class VerilogPreParser ( Parser ):
                       "UNCONNECTED_DRIVE_DIRECTIVE", "UNDEF_DIRECTIVE", 
                       "MACRO_USAGE", "DIRECTIVE_TEXT", "DIRECTIVE_IDENTIFIER", 
                       "DIRECTIVE_COMMENT", "DIRECTIVE_WHITE_SPACE", "DIRECTIVE_NEWLINE", 
-                      "MACRO_TEXT", "MT_ESC_NEWLINE", "SOURCE_TEXT" ]
+                      "MACRO_TEXT", "MACRO_ESC_NEWLINE", "SOURCE_TEXT" ]
 
     RULE_source_text = 0
     RULE_compiler_directive = 1
@@ -272,19 +257,19 @@ class VerilogPreParser ( Parser ):
     AM=20
     AMAM=21
     AMAMAM=22
-    LP=23
-    RP=24
-    AS=25
-    ASAS=26
-    ASSL=27
-    ASGT=28
-    PL=29
-    PLCL=30
-    CO=31
-    MI=32
-    MICL=33
-    MIGT=34
-    MIINCDIR=35
+    AP=23
+    LP=24
+    RP=25
+    AS=26
+    ASAS=27
+    ASSL=28
+    ASGT=29
+    PL=30
+    PLCL=31
+    CO=32
+    MI=33
+    MICL=34
+    MIGT=35
     DT=36
     SL=37
     SLAS=38
@@ -307,191 +292,189 @@ class VerilogPreParser ( Parser ):
     AT=55
     PATHPULSEDL=56
     LB=57
-    BSAP=58
-    RB=59
-    CA=60
-    CATI=61
-    GA=62
-    ALWAYS=63
-    AND=64
-    ASSIGN=65
-    AUTOMATIC=66
-    BEGIN=67
-    BUF=68
-    BUFIFZERO=69
-    BUFIFONE=70
-    CASE=71
-    CASEX=72
-    CASEZ=73
-    CELL=74
-    CMOS=75
-    CONFIG=76
-    DEASSIGN=77
-    DEFAULT=78
-    DEFPARAM=79
-    DESIGN=80
-    DISABLE=81
-    EDGE=82
-    ELSE=83
-    END=84
-    ENDCASE=85
-    ENDCONFIG=86
-    ENDFUNCTION=87
-    ENDGENERATE=88
-    ENDMODULE=89
-    ENDPRIMITIVE=90
-    ENDSPECIFY=91
-    ENDTABLE=92
-    ENDTASK=93
-    EVENT=94
-    FOR=95
-    FORCE=96
-    FOREVER=97
-    FORK=98
-    FUNCTION=99
-    GENERATE=100
-    GENVAR=101
-    HIGHZZERO=102
-    HIGHZONE=103
-    IF=104
-    IFNONE=105
-    INCLUDE=106
-    INITIAL=107
-    INOUT=108
-    INPUT=109
-    INSTANCE=110
-    INTEGER=111
-    JOIN=112
-    LARGE=113
-    LIBLIST=114
-    LIBRARY=115
-    LOCALPARAM=116
-    MACROMODULE=117
-    MEDIUM=118
-    MODULE=119
-    NAND=120
-    NEGEDGE=121
-    NMOS=122
-    NOR=123
-    NOSHOWCANCELLED=124
-    NOT=125
-    NOTIFZERO=126
-    NOTIFONE=127
-    OR=128
-    OUTPUT=129
-    PARAMETER=130
-    PMOS=131
-    POSEDGE=132
-    PRIMITIVE=133
-    PULLZERO=134
-    PULLONE=135
-    PULLDOWN=136
-    PULLUP=137
-    PULSESTYLE_ONDETECT=138
-    PULSESTYLE_ONEVENT=139
-    RCMOS=140
-    REAL=141
-    REALTIME=142
-    REG=143
-    RELEASE=144
-    REPEAT=145
-    RNMOS=146
-    RPMOS=147
-    RTRAN=148
-    RTRANIFZERO=149
-    RTRANIFONE=150
-    SCALARED=151
-    SHOWCANCELLED=152
-    SIGNED=153
-    SMALL=154
-    SPECIFY=155
-    SPECPARAM=156
-    STRONGZERO=157
-    STRONGONE=158
-    SUPPLYZERO=159
-    SUPPLYONE=160
-    TABLE=161
-    TASK=162
-    TIME=163
-    TRAN=164
-    TRANIFZERO=165
-    TRANIFONE=166
-    TRI=167
-    TRIZERO=168
-    TRIONE=169
-    TRIAND=170
-    TRIOR=171
-    TRIREG=172
-    USE=173
-    UWIRE=174
-    VECTORED=175
-    WAIT=176
-    WAND=177
-    WEAKZERO=178
-    WEAKONE=179
-    WHILE=180
-    WIRE=181
-    WOR=182
-    XNOR=183
-    XOR=184
-    LC=185
-    VL=186
-    VLVL=187
-    RC=188
-    TI=189
-    TIAM=190
-    TICA=191
-    TIVL=192
-    DECIMAL_NUMBER=193
-    BINARY_NUMBER=194
-    OCTAL_NUMBER=195
-    HEX_NUMBER=196
-    REAL_NUMBER=197
-    STRING=198
-    COMMENT=199
-    ESCAPED_IDENTIFIER=200
-    SIMPLE_IDENTIFIER=201
-    SYSTEM_TF_IDENTIFIER=202
-    WHITE_SPACE=203
+    RB=58
+    CA=59
+    CATI=60
+    GA=61
+    ALWAYS=62
+    AND=63
+    ASSIGN=64
+    AUTOMATIC=65
+    BEGIN=66
+    BUF=67
+    BUFIFZERO=68
+    BUFIFONE=69
+    CASE=70
+    CASEX=71
+    CASEZ=72
+    CELL=73
+    CMOS=74
+    CONFIG=75
+    DEASSIGN=76
+    DEFAULT=77
+    DEFPARAM=78
+    DESIGN=79
+    DISABLE=80
+    EDGE=81
+    ELSE=82
+    END=83
+    ENDCASE=84
+    ENDCONFIG=85
+    ENDFUNCTION=86
+    ENDGENERATE=87
+    ENDMODULE=88
+    ENDPRIMITIVE=89
+    ENDSPECIFY=90
+    ENDTABLE=91
+    ENDTASK=92
+    EVENT=93
+    FOR=94
+    FORCE=95
+    FOREVER=96
+    FORK=97
+    FUNCTION=98
+    GENERATE=99
+    GENVAR=100
+    HIGHZZERO=101
+    HIGHZONE=102
+    IF=103
+    IFNONE=104
+    INCLUDE=105
+    INITIAL=106
+    INOUT=107
+    INPUT=108
+    INSTANCE=109
+    INTEGER=110
+    JOIN=111
+    LARGE=112
+    LIBLIST=113
+    LIBRARY=114
+    LOCALPARAM=115
+    MACROMODULE=116
+    MEDIUM=117
+    MODULE=118
+    NAND=119
+    NEGEDGE=120
+    NMOS=121
+    NOR=122
+    NOSHOWCANCELLED=123
+    NOT=124
+    NOTIFZERO=125
+    NOTIFONE=126
+    OR=127
+    OUTPUT=128
+    PARAMETER=129
+    PMOS=130
+    POSEDGE=131
+    PRIMITIVE=132
+    PULLZERO=133
+    PULLONE=134
+    PULLDOWN=135
+    PULLUP=136
+    PULSESTYLE_ONDETECT=137
+    PULSESTYLE_ONEVENT=138
+    RCMOS=139
+    REAL=140
+    REALTIME=141
+    REG=142
+    RELEASE=143
+    REPEAT=144
+    RNMOS=145
+    RPMOS=146
+    RTRAN=147
+    RTRANIFZERO=148
+    RTRANIFONE=149
+    SCALARED=150
+    SHOWCANCELLED=151
+    SIGNED=152
+    SMALL=153
+    SPECIFY=154
+    SPECPARAM=155
+    STRONGZERO=156
+    STRONGONE=157
+    SUPPLYZERO=158
+    SUPPLYONE=159
+    TABLE=160
+    TASK=161
+    TIME=162
+    TRAN=163
+    TRANIFZERO=164
+    TRANIFONE=165
+    TRI=166
+    TRIZERO=167
+    TRIONE=168
+    TRIAND=169
+    TRIOR=170
+    TRIREG=171
+    USE=172
+    UWIRE=173
+    VECTORED=174
+    WAIT=175
+    WAND=176
+    WEAKZERO=177
+    WEAKONE=178
+    WHILE=179
+    WIRE=180
+    WOR=181
+    XNOR=182
+    XOR=183
+    LC=184
+    VL=185
+    VLVL=186
+    RC=187
+    TI=188
+    TIAM=189
+    TICA=190
+    TIVL=191
+    DECIMAL_NUMBER=192
+    BINARY_NUMBER=193
+    OCTAL_NUMBER=194
+    HEX_NUMBER=195
+    REAL_NUMBER=196
+    STRING=197
+    COMMENT=198
+    ESCAPED_IDENTIFIER=199
+    SIMPLE_IDENTIFIER=200
+    SYSTEM_TF_IDENTIFIER=201
+    WHITE_SPACE=202
+    MIINCDIR=203
     FILE_PATH_SPEC=204
-    INIT_VAL=205
-    OUTPUT_SYMBOL=206
-    LEVEL_SYMBOL=207
-    EDGE_SYMBOL=208
-    EDGE_DESCRIPTOR=209
-    SCALAR_CONSTANT=210
-    BEGIN_KEYWORDS_DIRECTIVE=211
-    CELLDEFINE_DIRECTIVE=212
-    DEFAULT_NETTYPE_DIRECTIVE=213
-    DEFINE_DIRECTIVE=214
-    ELSE_DIRECTIVE=215
-    ELSIF_DIRECTIVE=216
-    END_KEYWORDS_DIRECTIVE=217
-    ENDCELLDEFINE_DIRECTIVE=218
-    ENDIF_DIRECTIVE=219
-    IFDEF_DIRECTIVE=220
-    IFNDEF_DIRECTIVE=221
-    INCLUDE_DIRECTIVE=222
-    LINE_DIRECTIVE=223
-    NOUNCONNECTED_DRIVE_DIRECTIVE=224
-    PRAGMA_DIRECTIVE=225
-    RESETALL_DIRECTIVE=226
-    TIMESCALE_DIRECTIVE=227
-    UNCONNECTED_DRIVE_DIRECTIVE=228
-    UNDEF_DIRECTIVE=229
-    MACRO_USAGE=230
-    DIRECTIVE_TEXT=231
-    DIRECTIVE_IDENTIFIER=232
-    DIRECTIVE_COMMENT=233
-    DIRECTIVE_WHITE_SPACE=234
-    DIRECTIVE_NEWLINE=235
-    MACRO_TEXT=236
-    MT_ESC_NEWLINE=237
-    SOURCE_TEXT=238
+    OUTPUT_OR_LEVEL_SYMBOL=205
+    LEVEL_ONLY_SYMBOL=206
+    EDGE_SYMBOL=207
+    EDGE_DESCRIPTOR=208
+    BEGIN_KEYWORDS_DIRECTIVE=209
+    CELLDEFINE_DIRECTIVE=210
+    DEFAULT_NETTYPE_DIRECTIVE=211
+    DEFINE_DIRECTIVE=212
+    ELSE_DIRECTIVE=213
+    ELSIF_DIRECTIVE=214
+    END_KEYWORDS_DIRECTIVE=215
+    ENDCELLDEFINE_DIRECTIVE=216
+    ENDIF_DIRECTIVE=217
+    IFDEF_DIRECTIVE=218
+    IFNDEF_DIRECTIVE=219
+    INCLUDE_DIRECTIVE=220
+    LINE_DIRECTIVE=221
+    NOUNCONNECTED_DRIVE_DIRECTIVE=222
+    PRAGMA_DIRECTIVE=223
+    RESETALL_DIRECTIVE=224
+    TIMESCALE_DIRECTIVE=225
+    UNCONNECTED_DRIVE_DIRECTIVE=226
+    UNDEF_DIRECTIVE=227
+    MACRO_USAGE=228
+    DIRECTIVE_TEXT=229
+    DIRECTIVE_IDENTIFIER=230
+    DIRECTIVE_COMMENT=231
+    DIRECTIVE_WHITE_SPACE=232
+    DIRECTIVE_NEWLINE=233
+    MACRO_TEXT=234
+    MACRO_ESC_NEWLINE=235
+    SOURCE_TEXT=236
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.9")
+        self.checkVersion("4.10.1")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -499,6 +482,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Source_textContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -558,6 +542,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Compiler_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -772,6 +757,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Begin_keywords_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -828,6 +814,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Celldefine_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -879,6 +866,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Default_nettype_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -935,6 +923,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Endcelldefine_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -986,6 +975,7 @@ class VerilogPreParser ( Parser ):
 
 
     class End_keywords_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1037,6 +1027,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Ifdef_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1136,6 +1127,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Ifndef_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1235,6 +1227,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Include_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1291,6 +1284,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Line_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1347,6 +1341,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Nounconnected_drive_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1398,6 +1393,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Pragma_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1454,6 +1450,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Resetall_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1505,6 +1502,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Text_macro_definitionContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1568,6 +1566,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Text_macro_usageContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1619,6 +1618,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Timescale_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1675,6 +1675,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Unconnected_drive_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1731,6 +1732,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Undef_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1788,6 +1790,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Elsif_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1851,6 +1854,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Else_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1908,6 +1912,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Endif_directiveContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1959,6 +1964,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Text_macro_identifierContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2005,6 +2011,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Ifdef_group_of_linesContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2082,6 +2089,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Ifndef_group_of_linesContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2159,6 +2167,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Elsif_group_of_linesContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2236,6 +2245,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Else_group_of_linesContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2313,6 +2323,7 @@ class VerilogPreParser ( Parser ):
 
 
     class Macro_textContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -2323,6 +2334,12 @@ class VerilogPreParser ( Parser ):
                 return self.getTokens(VerilogPreParser.MACRO_TEXT)
             else:
                 return self.getToken(VerilogPreParser.MACRO_TEXT, i)
+
+        def MACRO_ESC_NEWLINE(self, i:int=None):
+            if i is None:
+                return self.getTokens(VerilogPreParser.MACRO_ESC_NEWLINE)
+            else:
+                return self.getToken(VerilogPreParser.MACRO_ESC_NEWLINE, i)
 
         def getRuleIndex(self):
             return VerilogPreParser.RULE_macro_text
@@ -2354,9 +2371,14 @@ class VerilogPreParser ( Parser ):
             self.state = 211
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==VerilogPreParser.MACRO_TEXT:
+            while _la==VerilogPreParser.MACRO_TEXT or _la==VerilogPreParser.MACRO_ESC_NEWLINE:
                 self.state = 208
-                self.match(VerilogPreParser.MACRO_TEXT)
+                _la = self._input.LA(1)
+                if not(_la==VerilogPreParser.MACRO_TEXT or _la==VerilogPreParser.MACRO_ESC_NEWLINE):
+                    self._errHandler.recoverInline(self)
+                else:
+                    self._errHandler.reportMatch(self)
+                    self.consume()
                 self.state = 213
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)

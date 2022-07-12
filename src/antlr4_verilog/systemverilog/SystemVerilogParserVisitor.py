@@ -1,4 +1,4 @@
-# Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4-2/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.9
+# Generated from /home/mtdsousa/workspace/antlr4-verilog-python/extra/grammars-v4/verilog/systemverilog/SystemVerilogParser.g4 by ANTLR 4.10.1
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .SystemVerilogParser import SystemVerilogParser
@@ -106,6 +106,11 @@ class SystemVerilogParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by SystemVerilogParser#interface_class_type.
     def visitInterface_class_type(self, ctx:SystemVerilogParser.Interface_class_typeContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by SystemVerilogParser#interface_class_declaration.
+    def visitInterface_class_declaration(self, ctx:SystemVerilogParser.Interface_class_declarationContext):
         return self.visitChildren(ctx)
 
 
