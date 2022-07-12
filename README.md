@@ -1,7 +1,8 @@
 # ANTLR4-Verilog-Python
 Generated files from ANTLR4 for Verilog parsing in Python
 
-[![Build Status](https://img.shields.io/circleci/build/github/mtdsousa/antlr4-verilog-python?label=build-test)](https://app.circleci.com/pipelines/github/mtdsousa/antlr4-verilog-python)
+[![Build Status](https://img.shields.io/circleci/build/github/mtdsousa/antlr4-verilog-python?label=Continuous%20integration)](https://app.circleci.com/pipelines/github/mtdsousa/antlr4-verilog-python)
+![PyPI version](https://img.shields.io/pypi/v/antlr4-verilog)
 
 ## Tutorial
 Install this Python package
