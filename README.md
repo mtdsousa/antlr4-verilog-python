@@ -100,10 +100,10 @@ jar cf test/testrig/systemverilog.jar -C test/testrig/systemverilog .
 
 4. Finally, for `test.v` and `test.sv` files:
 ```
-java -Xmx500M -cp "extra/antlr-4.9-complete.jar:test/testrig/verilog.jar:${CLASSPATH}" org.antlr.v4.gui.TestRig Verilog source_text test/testrig/test.v -tree
+java -Xmx500M -cp "extra/antlr-4.10.1-complete.jar:test/testrig/verilog.jar:${CLASSPATH}" org.antlr.v4.gui.TestRig Verilog source_text test/testrig/test.v -tree
 ```
 ```
-java -Xmx500M -cp "extra/antlr-4.9-complete.jar:test/testrig/systemverilog.jar:${CLASSPATH}" org.antlr.v4.gui.TestRig SystemVerilog source_text test/testrig/test.sv -tree
+java -Xmx500M -cp "extra/antlr-4.10.1-complete.jar:test/testrig/systemverilog.jar:${CLASSPATH}" org.antlr.v4.gui.TestRig SystemVerilog source_text test/testrig/test.sv -tree
 ```
 > You can use `-gui` to test it interactively
 
